@@ -1,6 +1,7 @@
 """Tests for build.py. Run from the repo root:  python3 -m unittest discover tests
 
 The fixtures are small cuts of real venue responses. No test uses the network.
+The page's filter script is not covered here: see tests/test_filters.py.
 """
 
 import json
@@ -15,17 +16,36 @@ import build
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
+RATINGS = {
+    "rated_on": "2026-10-03",
+    "taste": "deep comedy",
+    "ratings": {
+        "ian lara": {
+            "profile": "rising",
+            "profile_why": "HBO special <Romantic Comedy>",
+            "taste": "different",
+            "taste_why": "Smooth relationship material",
+        },
+        "louis katz": {"taste": "partial", "taste_why": "Smart and dark"},
+    },
+}
+
 
 def show(**fields):
     base = {
         "venue": "The Stand",
         "room": "Main room",
+        "location": "The Stand",
         "title": "",
         "start": "2026-10-03T20:00",
         "url": "https://thestandnyc.com/shows/show/1/x",
         "comedians": [],
     }
     return {**base, **fields}
+
+
+def snapshot(shows):
+    return {"generated": "2026-10-03T14:10", "first_day": "2026-10-03", "last_day": "2026-10-09", "shows": shows}
 
 
 class ParseCellarTest(unittest.TestCase):
@@ -45,11 +65,15 @@ class ParseCellarTest(unittest.TestCase):
     def test_links_to_the_lineup_page(self):
         self.assertEqual(self.late["url"], build.CELLAR_PAGE)
 
+    def test_all_rooms_are_one_location(self):
+        self.assertEqual(self.late["room"], "MacDougal Street")
+        self.assertEqual({self.early["location"], self.late["location"]}, {"Comedy Cellar"})
+
 
 class ParseStandTest(unittest.TestCase):
     def setUp(self):
         page = (FIXTURES / "stand_shows.html").read_text(encoding="utf-8")
-        (self.full, self.empty), self.next_url = build.parse_stand(page)
+        (self.full, self.west, self.empty), self.next_url = build.parse_stand(page)
 
     def test_reads_start_and_link_from_the_show_url(self):
         self.assertEqual(self.full["start"], "2026-10-03T20:00")
@@ -60,6 +84,11 @@ class ParseStandTest(unittest.TestCase):
 
     def test_reads_room_without_odd_spaces(self):
         self.assertEqual(self.full["room"], "Main room")
+
+    def test_the_stand_west_is_its_own_location(self):
+        self.assertEqual(self.full["location"], "The Stand")
+        self.assertEqual(self.west["room"], "The Stand West")
+        self.assertEqual(self.west["location"], "The Stand West")
 
     def test_lists_each_comedian_once(self):
         self.assertEqual(
@@ -89,9 +118,10 @@ class ParseNyccTest(unittest.TestCase):
         self.assertEqual(len(self.full["comedians"]), 5)
         self.assertTrue(self.full["url"].startswith("https://newyorkcomedyclub.com/events/"))
 
-    def test_names_the_room_from_the_street_address(self):
+    def test_names_the_room_and_location_from_the_street_address(self):
         self.assertEqual(self.full["room"], "Upper West Side")
-        self.assertEqual(self.empty["room"], "Midtown")
+        self.assertEqual(self.full["location"], "New York Comedy Club, Upper West Side")
+        self.assertEqual(self.empty["location"], "New York Comedy Club, Midtown")
 
     def test_event_without_performers_has_no_comedians(self):
         self.assertEqual(self.empty["comedians"], [])
@@ -138,29 +168,84 @@ class GroupByComedianTest(unittest.TestCase):
         self.assertEqual([s["start"] for s in comedians[1]["shows"]], ["2026-10-03T20:00", "2026-10-05T20:00"])
 
 
-class RenderTest(unittest.TestCase):
-    def snapshot(self, shows):
-        return {"generated": "2026-10-03T14:10", "first_day": "2026-10-03", "last_day": "2026-10-09", "shows": shows}
+class LoadRatingsTest(unittest.TestCase):
+    """Checks the real ratings.json. load_ratings() exits on an unknown tier or a missing reason."""
 
+    def setUp(self):
+        self.loaded = build.load_ratings()
+
+    def test_keys_ratings_like_group_by_comedian(self):
+        self.assertEqual(self.loaded["ratings"]["luis j gomez"]["profile"], "known")
+        self.assertIn("modi", self.loaded["ratings"])
+
+    def test_every_entry_has_a_rating(self):
+        for key, rating in self.loaded["ratings"].items():
+            self.assertTrue(set(rating) & set(build.SCALES), key)
+
+    def test_no_two_names_share_a_key(self):
+        names = json.loads(build.RATINGS_FILE.read_text(encoding="utf-8"))["ratings"]
+        self.assertEqual(len(names), len(self.loaded["ratings"]))
+
+    def test_names_the_taste(self):
+        self.assertIn("Marc Maron", self.loaded["taste"])
+
+
+class RenderTest(unittest.TestCase):
     def test_page_lists_comedian_with_time_and_place(self):
-        page = build.render(self.snapshot([show(comedians=["Ian Lara"])]))
-        self.assertIn("<h2>Ian Lara", page)
+        page = build.render(snapshot([show(comedians=["Ian Lara"])]), RATINGS)
+        self.assertIn('<th scope="row">Ian Lara', page)
         self.assertIn("Sat Oct 3 · 8:00 PM", page)
         self.assertIn('<a href="https://thestandnyc.com/shows/show/1/x">The Stand, Main room</a>', page)
         self.assertIn("1 comedian · 1 show", page)
 
-    def test_escapes_scraped_text(self):
-        page = build.render(self.snapshot([show(title="<script>alert(1)</script>", comedians=["A <b>B</b>"])]))
+    def test_shows_both_ratings_with_reasons(self):
+        page = build.render(snapshot([show(comedians=["Ian Lara"])]), RATINGS)
+        self.assertIn('data-profile="rising" data-taste="different"', page)
+        self.assertIn('<span class="tier profile-rising">Rising star</span>', page)
+        self.assertIn('<span class="tier taste-different">Different style</span>', page)
+        self.assertIn("Smooth relationship material", page)
+
+    def test_comedian_can_have_one_rating_or_none(self):
+        page = build.render(snapshot([show(comedians=["Louis Katz", "Nobody Known"])]), RATINGS)
+        self.assertIn('data-name="louis katz" data-profile="" data-taste="partial"', page)
+        self.assertIn('data-name="nobody known" data-profile="" data-taste=""', page)
+        self.assertEqual(page.count("Not rated</span>"), 3)
+
+    def test_footer_counts_ratings_and_names_the_taste(self):
+        page = build.render(snapshot([show(comedians=["Ian Lara", "Louis Katz", "Nobody Known"])]), RATINGS)
+        self.assertIn("Profile: 1 of 3 comedians rated.", page)
+        self.assertIn("Taste fit: 2 rated against one taste, deep comedy.", page)
+
+    def test_offers_each_night_and_location_as_a_filter(self):
+        shows = [
+            show(comedians=["Ian Lara"]),
+            show(start="2026-10-05T21:00", location="The Stand West", room="The Stand West", comedians=["Ian Lara"]),
+        ]
+        page = build.render(snapshot(shows), RATINGS)
+        self.assertIn('<option value="2026-10-03">Sat Oct 3</option>', page)
+        self.assertIn('<option value="2026-10-05">Mon Oct 5</option>', page)
+        self.assertIn('<option value="The Stand West">The Stand West</option>', page)
+        self.assertIn('<li data-night="2026-10-05" data-location="The Stand West">', page)
+
+    def test_after_midnight_show_filters_with_the_night_before(self):
+        page = build.render(snapshot([show(start="2026-10-04T00:30", comedians=["Ian Lara"])]), RATINGS)
+        self.assertIn('<li data-night="2026-10-03" data-location="The Stand">', page)
+        self.assertIn("Sun Oct 4 · 12:30 AM", page)
+        self.assertNotIn('<option value="2026-10-04">', page)
+
+    def test_escapes_scraped_text_and_rating_reasons(self):
+        page = build.render(snapshot([show(title="<script>alert(1)</script>", comedians=["A <b>B</b>", "Ian Lara"])]), RATINGS)
         self.assertNotIn("<script>alert(1)</script>", page)
         self.assertIn("A &lt;b&gt;B&lt;/b&gt;", page)
+        self.assertIn("HBO special &lt;Romantic Comedy&gt;", page)
 
     def test_does_not_link_a_url_that_is_not_https(self):
-        page = build.render(self.snapshot([show(url="javascript:alert(1)", comedians=["Ian Lara"])]))
+        page = build.render(snapshot([show(url="javascript:alert(1)", comedians=["Ian Lara"])]), RATINGS)
         self.assertNotIn("javascript:", page)
 
     def test_reports_shows_without_a_lineup(self):
         shows = [show(comedians=["Ian Lara"]), show(start="2026-10-08T20:00")]
-        page = build.render(self.snapshot(shows))
+        page = build.render(snapshot(shows), RATINGS)
         self.assertIn("The Stand: 1 show listed, lineups up to Sat Oct 3. 1 show not listed: no lineup published.", page)
 
 
