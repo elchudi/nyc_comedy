@@ -59,7 +59,7 @@ PROFILE_TIERS = {
 TASTE_TIERS = {
     "strong": ("Strong fit", "dark, personal or absurd comedy with a strong point of view"),
     "partial": ("Partial fit", "shares some of that edge or honesty"),
-    "different": ("Different style", "clean, light, or built on crowd work and act-outs"),
+    "different": ("Different style", "clean, light, raunchy, or built on crowd work and act-outs"),
 }
 # Rating kind -> its scale. A rating in ratings.json has the keys "<kind>" and "<kind>_why".
 SCALES = {"profile": PROFILE_TIERS, "taste": TASTE_TIERS}

@@ -56,6 +56,7 @@ A show has a `venue`, a `room` and a `location`. The location is the address to 
 
 - `profile`: `star` (big name), `known`, `rising` (rising star).
 - `taste`: `strong`, `partial`, `different`. It is the fit with one taste, named in the `taste` field of the file: the deep comedy of Tim Heidecker, Marc Maron, Louis C.K. and Bill Burr. The file says how to read that.
+- Raunch never raises a taste rating. The readers are not into raunchy comedy, and not put off by it. A mostly raunchy act is `different`, or `partial` when it also has real depth.
 
 Claude wrote the ratings from general knowledge on the `rated_on` date. They are judgments and the reasons are not verified against sources. Rate a name only when the tier and the reason are known with confidence. A comedian with no entry shows "Not rated".
 
