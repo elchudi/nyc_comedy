@@ -53,6 +53,7 @@ SNAPSHOT = {
 RATINGS = {
     "rated_on": "2026-10-03",
     "taste": "deep comedy",
+    "model": "test-model",
     "ratings": {
         "ian lara": {"profile": "rising", "profile_why": "x", "taste": "different", "taste_why": "x"},
         "louis katz": {"taste": "partial", "taste_why": "x"},

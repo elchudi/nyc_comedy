@@ -19,7 +19,7 @@ A show is a dict:
     url        link to the show or its reservation page
     comedians  list of names, in billing order (can be empty)
 
-ratings.json is hand-kept. It rates comedians on two scales, each with a reason: see SCALES.
+ratings.json is written by rate.py. It rates comedians on two scales, each with a reason: see SCALES.
 """
 
 import argparse
@@ -40,6 +40,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).parent
 DATA_FILE = ROOT / "data" / "shows.json"
 RATINGS_FILE = ROOT / "ratings.json"
+TASTE_FILE = ROOT / "taste.txt"
 OUTPUT_FILE = ROOT / "index.html"
 
 NYC = ZoneInfo("America/New_York")
@@ -55,7 +56,7 @@ PROFILE_TIERS = {
     "known": ("Known", "has specials or TV credits, a name that comedy fans know"),
     "rising": ("Rising star", "a newer comedian with clear momentum"),
 }
-# Fit with one taste. ratings.json names the taste.
+# Fit with one taste. taste.txt describes the taste; ratings.json keeps the text it was rated against.
 TASTE_TIERS = {
     "strong": ("Strong fit", "dark, personal or absurd comedy with a strong point of view"),
     "partial": ("Partial fit", "shares some of that edge or honesty"),
@@ -309,7 +310,13 @@ def group_by_comedian(shows):
 
 
 def load_ratings():
-    """Read ratings.json. Return it with the ratings keyed by comedian key instead of name."""
+    """Read ratings.json, written by rate.py. Return it with the ratings keyed by comedian key.
+
+    Before the first rate.py run there is no file: the page then shows every comedian as not rated.
+    """
+    if not RATINGS_FILE.exists():
+        taste = TASTE_FILE.read_text(encoding="utf-8").strip() if TASTE_FILE.exists() else ""
+        return {"rated_on": None, "taste": taste, "model": "", "ratings": {}}
     data = json.loads(RATINGS_FILE.read_text(encoding="utf-8"))
     ratings = {}
     for name, rating in data["ratings"].items():
@@ -322,7 +329,7 @@ def load_ratings():
                 sys.exit(f"{RATINGS_FILE.name}: {name} has a {kind} rating without {kind}_why")
         # Use the same key as group_by_comedian, so a rating under either billing matches.
         ratings[name_key(ALIASES.get(name_key(name), name))] = rating
-    return {"rated_on": data["rated_on"], "taste": data["taste"], "ratings": ratings}
+    return {"rated_on": data["rated_on"], "taste": data["taste"], "model": data.get("model", ""), "ratings": ratings}
 
 
 # ----------------------------------------------------------------------- Render
@@ -540,7 +547,6 @@ def render(snapshot, ratings):
             line += f" {plural(missing, 'show')} not listed: no lineup published."
         coverage.append(f"<p>{esc(line)}</p>")
 
-    rated_on = date.fromisoformat(ratings["rated_on"])
     rated = {kind: 0 for kind in SCALES}
     for entry in comedians:
         for kind in SCALES:
@@ -549,6 +555,16 @@ def render(snapshot, ratings):
         kind: " ".join(f"{label}: {meaning}." for label, meaning in tiers.values())
         for kind, tiers in SCALES.items()
     }
+
+    if ratings["rated_on"]:
+        rated_on = date.fromisoformat(ratings["rated_on"])
+        who = f"Claude ({ratings['model']})" if ratings["model"] else "Claude"
+        rating_note = (
+            f"The ratings are the judgment of {who} on {format_day(rated_on)}, {rated_on.year}, "
+            'from general knowledge. They are not verified. "Not rated" is not a bad rating: the model did not know the name.'
+        )
+    else:
+        rating_note = "No ratings yet. Run rate.py to rate the comedians with the claude CLI."
 
     comedians_html = "\n".join(
         render_comedian(entry, ratings["ratings"].get(entry["key"], {})) for entry in comedians
@@ -597,7 +613,7 @@ def render(snapshot, ratings):
 <footer>
 <p>Profile: {rated["profile"]} of {plural(len(comedians), 'comedian')} rated. {esc(legend["profile"])}</p>
 <p>Taste fit: {rated["taste"]} rated against one taste, {esc(ratings["taste"])}. {esc(legend["taste"])} "Different style" is about style, not quality.</p>
-<p>The ratings are Claude's judgment on {esc(format_day(rated_on))}, {rated_on.year}, from general knowledge. They are not verified. "Not rated" is not a bad rating.</p>
+<p>{esc(rating_note)}</p>
 {coverage_html}
 <p>Times are New York time. A show after midnight has the date of the new day. The night filter keeps it with the night before.</p>
 <p>Lineups change. Check with the venue before you go.</p>

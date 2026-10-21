@@ -19,6 +19,7 @@ FIXTURES = Path(__file__).parent / "fixtures"
 RATINGS = {
     "rated_on": "2026-10-03",
     "taste": "deep comedy",
+    "model": "test-model",
     "ratings": {
         "ian lara": {
             "profile": "rising",
@@ -169,25 +170,31 @@ class GroupByComedianTest(unittest.TestCase):
 
 
 class LoadRatingsTest(unittest.TestCase):
-    """Checks the real ratings.json. load_ratings() exits on an unknown tier or a missing reason."""
+    """Uses tests/fixtures/ratings.json. load_ratings() exits on an unknown tier or a missing reason."""
 
     def setUp(self):
+        self.real_file = build.RATINGS_FILE
+        build.RATINGS_FILE = FIXTURES / "ratings.json"
+        self.addCleanup(setattr, build, "RATINGS_FILE", self.real_file)
         self.loaded = build.load_ratings()
 
     def test_keys_ratings_like_group_by_comedian(self):
         self.assertEqual(self.loaded["ratings"]["luis j gomez"]["profile"], "known")
-        self.assertIn("modi", self.loaded["ratings"])
+        self.assertIn("modi", self.loaded["ratings"])  # the alias of Modi Rosenfeld
 
-    def test_every_entry_has_a_rating(self):
-        for key, rating in self.loaded["ratings"].items():
-            self.assertTrue(set(rating) & set(build.SCALES), key)
+    def test_keeps_taste_and_model(self):
+        self.assertEqual(self.loaded["taste"], "deep comedy, test taste")
+        self.assertEqual(self.loaded["model"], "test-model")
+        self.assertEqual(self.loaded["rated_on"], "2026-10-03")
 
-    def test_no_two_names_share_a_key(self):
-        names = json.loads(build.RATINGS_FILE.read_text(encoding="utf-8"))["ratings"]
-        self.assertEqual(len(names), len(self.loaded["ratings"]))
+    def test_an_empty_entry_is_a_name_the_model_did_not_know(self):
+        self.assertEqual(self.loaded["ratings"]["tanner simon"], {})
 
-    def test_names_the_taste(self):
-        self.assertIn("Marc Maron", self.loaded["taste"])
+    def test_without_a_file_nothing_is_rated(self):
+        build.RATINGS_FILE = FIXTURES / "no-such-file.json"
+        loaded = build.load_ratings()
+        self.assertEqual(loaded["ratings"], {})
+        self.assertIsNone(loaded["rated_on"])
 
 
 class RenderTest(unittest.TestCase):
@@ -242,6 +249,13 @@ class RenderTest(unittest.TestCase):
     def test_does_not_link_a_url_that_is_not_https(self):
         page = build.render(snapshot([show(url="javascript:alert(1)", comedians=["Ian Lara"])]), RATINGS)
         self.assertNotIn("javascript:", page)
+
+    def test_footer_names_the_model_or_asks_for_a_rating_run(self):
+        page = build.render(snapshot([show(comedians=["Ian Lara"])]), RATINGS)
+        self.assertIn("judgment of Claude (test-model) on Sat Oct 3, 2026", page)
+        page = build.render(snapshot([show(comedians=["Ian Lara"])]), {"rated_on": None, "taste": "x", "model": "", "ratings": {}})
+        self.assertIn("No ratings yet. Run rate.py", page)
+        self.assertEqual(page.count("Not rated</span>"), 2)
 
     def test_reports_shows_without_a_lineup(self):
         shows = [show(comedians=["Ian Lara"]), show(start="2026-10-08T20:00")]

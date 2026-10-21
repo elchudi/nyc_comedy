@@ -1,0 +1,11 @@
+{
+ "rated_on": "2026-10-03",
+ "taste": "deep comedy, test taste",
+ "model": "test-model",
+ "ratings": {
+  "Luis J Gomez": {"profile": "known", "profile_why": "Legion of Skanks host", "taste": "different", "taste_why": "Shock and raunch"},
+  "Modi Rosenfeld": {"profile": "known", "profile_why": "International tours"},
+  "Louis Katz": {"taste": "different", "taste_why": "Mostly sex jokes"},
+  "Tanner Simon": {}
+ }
+}
