@@ -17,7 +17,7 @@ python3 -m unittest discover tests
 For a new taste: edit `taste.txt`, run `rate.py` (a changed taste rates everyone again), then `build.py --render-only`.
 
 Needs `requests` and `beautifulsoup4`. `uv run build.py` installs them from the script header.
-`rate.py` needs the `claude` CLI on the PATH and logged in. It calls `claude -p --tools ""` once per batch of 30 names, about 30 seconds per batch.
+`rate.py` needs the `claude` CLI on the PATH and logged in. It calls `claude -p --tools ""` once per batch of 30 names, 6 batches at once. A full run of 270 names takes about 30 seconds with the default `sonnet` model, 70 seconds with `--model opus`. `haiku` is not faster in practice and knows few comedians (19 rated against 54 for sonnet and 70 for opus). A failed call is retried once, then its batch is skipped; the next run picks those names up. Answers vary a little from run to run.
 `tests/test_filters.py` runs the page script in headless Chromium. Without Chromium, it is skipped.
 
 ## Files

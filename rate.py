@@ -4,9 +4,10 @@
 Usage:
     python3 rate.py                 rate the comedians that ratings.json does not have yet
     python3 rate.py --all           rate every comedian again
-    python3 rate.py --model sonnet  pass a model to the claude CLI (default: the CLI's default)
+    python3 rate.py --model opus    use another model (default: sonnet; haiku is faster but knows few names)
+    python3 rate.py --workers 2     fewer calls at once (default: 6)
 
-The taste comes from taste.txt. When its text changes, every comedian is rated again. Each call sends a batch of names with their venues as context.
+The taste comes from taste.txt. When its text changes, every comedian is rated again. Each call sends a batch of names with their venues as context. Batches run in parallel.
 The model may answer null for a name it does not know: that comedian stays "Not rated".
 """
 
@@ -15,12 +16,15 @@ import json
 import re
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
 import build
 
 TASTE_FILE = build.ROOT / "taste.txt"
 BATCH_SIZE = 30
+DEFAULT_MODEL = "sonnet"
+DEFAULT_WORKERS = 6
 CALL_TIMEOUT_SECONDS = 600
 
 PROMPT = """You rate stand-up comedians for a web page. Answer from your own knowledge. Do not use tools.
@@ -69,7 +73,7 @@ def ask_claude(prompt, model):
         command += ["--model", model]
     result = subprocess.run(command, input=prompt, capture_output=True, text=True, timeout=CALL_TIMEOUT_SECONDS)
     if result.returncode != 0:
-        sys.exit(f"claude failed: {result.stderr.strip() or result.stdout.strip()}")
+        raise RuntimeError(f"claude failed: {result.stderr.strip() or result.stdout.strip()}"[:300])
     events = json.loads(result.stdout)
     events = events if isinstance(events, list) else [events]
     answer = next(event["result"] for event in events if event.get("type") == "result")
@@ -116,7 +120,8 @@ def load_existing(taste):
 def main():
     parser = argparse.ArgumentParser(description="Rate comedians with the claude CLI and write ratings.json.")
     parser.add_argument("--all", action="store_true", help="rate every comedian again")
-    parser.add_argument("--model", help="model for the claude CLI")
+    parser.add_argument("--model", default=DEFAULT_MODEL, help=f"model for the claude CLI (default: {DEFAULT_MODEL})")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help=f"calls at once (default: {DEFAULT_WORKERS})")
     args = parser.parse_args()
 
     taste = TASTE_FILE.read_text(encoding="utf-8").strip()
@@ -125,15 +130,30 @@ def main():
 
     existing, names = ({}, {}) if args.all else load_existing(taste)
     todo = [entry for entry in comedians if entry["key"] not in existing]
-    print(f"{len(comedians)} comedians, {len(todo)} to rate, in batches of {BATCH_SIZE}")
+    batches = [todo[start:start + BATCH_SIZE] for start in range(0, len(todo), BATCH_SIZE)]
+    print(f"{len(comedians)} comedians, {len(todo)} to rate, {len(batches)} batches, {args.workers} at once, model {args.model}")
+
+    def rate_batch(batch):
+        """Rate one batch. A call can fail once in a while: try twice, then skip the batch."""
+        label = f"{batch[0]['name']} to {batch[-1]['name']}"
+        for attempt in (1, 2):
+            try:
+                answer, model_used = ask_claude(make_prompt(batch, taste), args.model)
+                ratings = parse_answer(answer, batch)
+                print(f"  done: {label}", flush=True)
+                return ratings, model_used
+            except (RuntimeError, ValueError, StopIteration, subprocess.TimeoutExpired) as error:
+                print(f"  attempt {attempt} failed for {label}: {error}", flush=True)
+        print(f"  skipped: {label}. Run rate.py again to rate these names.", flush=True)
+        return {}, ""
 
     model_used = ""
-    for start in range(0, len(todo), BATCH_SIZE):
-        batch = todo[start:start + BATCH_SIZE]
-        print(f"batch {start // BATCH_SIZE + 1}: {batch[0]['name']} to {batch[-1]['name']} ...", flush=True)
-        answer, model_used = ask_claude(make_prompt(batch, taste), args.model)
-        existing.update(parse_answer(answer, batch))
-        names.update((entry["key"], entry["name"]) for entry in batch)
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for ratings, model in pool.map(rate_batch, batches):
+            existing.update(ratings)
+            model_used = model or model_used
+    # A skipped batch leaves its names out of ratings.json, so the next run picks them up.
+    names.update((entry["key"], entry["name"]) for entry in todo if entry["key"] in existing)
 
     rated = {kind: sum(1 for rating in existing.values() if kind in rating) for kind in build.SCALES}
     print(f"rated: {rated} of {len(existing)} tried")
