@@ -57,10 +57,11 @@ PROFILE_TIERS = {
     "rising": ("Rising star", "a newer comedian with clear momentum"),
 }
 # Fit with one taste. taste.txt describes the taste; ratings.json keeps the text it was rated against.
+# The meanings must stay neutral: rate.py puts them in the prompt next to the taste from taste.txt.
 TASTE_TIERS = {
-    "strong": ("Strong fit", "dark, personal or absurd comedy with a strong point of view"),
-    "partial": ("Partial fit", "shares some of that edge or honesty"),
-    "different": ("Different style", "clean, light, raunchy, or built on crowd work and act-outs"),
+    "strong": ("Strong fit", "the act is close to this taste; a safe pick for this reader"),
+    "partial": ("Partial fit", "the act shares some of this taste"),
+    "different": ("Different style", "the act is another kind of comedy"),
 }
 # Rating kind -> its scale. A rating in ratings.json has the keys "<kind>" and "<kind>_why".
 SCALES = {"profile": PROFILE_TIERS, "taste": TASTE_TIERS}
@@ -251,25 +252,36 @@ def fetch_all(nights):
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
 
-    shows = []
+    shows, failed = [], {}
     for venue, fetch in VENUES:
         print(f"Fetching {venue} ...", flush=True)
-        venue_shows = [
-            show
-            for show in fetch(session, first_day, last_day)
-            if first_day <= night_of(datetime.fromisoformat(show["start"])) <= last_day
-        ]
+        try:
+            venue_shows = [
+                show
+                for show in fetch(session, first_day, last_day)
+                if first_day <= night_of(datetime.fromisoformat(show["start"])) <= last_day
+            ]
+        except requests.RequestException as error:
+            # One blocked or down site must not stop the others. The page footer names it.
+            failed[venue] = str(error)[:120]
+            print(f"  failed: {failed[venue]}")
+            continue
         with_lineup = sum(1 for show in venue_shows if show["comedians"])
         print(f"  {len(venue_shows)} shows, {with_lineup} with a lineup")
-        # No lineups at all means the site changed. Stop before a wrong page is written.
         if not with_lineup:
-            sys.exit(f"{venue}: found no lineups. The site layout may have changed.")
+            # No lineups at all means the site layout changed.
+            failed[venue] = "found no lineups; the site layout may have changed"
+            print(f"  failed: {failed[venue]}")
+            continue
         shows += venue_shows
+    if not shows:
+        sys.exit("No venue could be fetched. Nothing written.")
 
     return {
         "generated": now.isoformat(timespec="minutes"),
         "first_day": first_day.isoformat(),
         "last_day": last_day.isoformat(),
+        "failed": failed,
         "shows": sorted(shows, key=lambda show: (show["start"], show["venue"], show["room"])),
     }
 
@@ -316,7 +328,7 @@ def load_ratings():
     """
     if not RATINGS_FILE.exists():
         taste = TASTE_FILE.read_text(encoding="utf-8").strip() if TASTE_FILE.exists() else ""
-        return {"rated_on": None, "taste": taste, "model": "", "ratings": {}}
+        return {"rated_on": None, "taste": taste, "model": "", "stale": False, "ratings": {}}
     data = json.loads(RATINGS_FILE.read_text(encoding="utf-8"))
     ratings = {}
     for name, rating in data["ratings"].items():
@@ -329,7 +341,12 @@ def load_ratings():
                 sys.exit(f"{RATINGS_FILE.name}: {name} has a {kind} rating without {kind}_why")
         # Use the same key as group_by_comedian, so a rating under either billing matches.
         ratings[name_key(ALIASES.get(name_key(name), name))] = rating
-    return {"rated_on": data["rated_on"], "taste": data["taste"], "model": data.get("model", ""), "ratings": ratings}
+    # ratings.json keeps the taste it was rated against. A different taste.txt means rate.py has not run yet.
+    current = TASTE_FILE.read_text(encoding="utf-8").strip() if TASTE_FILE.exists() else data["taste"]
+    stale = " ".join(current.split()) != " ".join(data["taste"].split())
+    if stale:
+        print(f"Warning: taste.txt changed since {RATINGS_FILE.name} was made. Run rate.py, then build.py --render-only.")
+    return {"rated_on": data["rated_on"], "taste": data["taste"], "model": data.get("model", ""), "stale": stale, "ratings": ratings}
 
 
 # ----------------------------------------------------------------------- Render
@@ -563,8 +580,13 @@ def render(snapshot, ratings):
             f"The ratings are the judgment of {who} on {format_day(rated_on)}, {rated_on.year}, "
             'from general knowledge. They are not verified. "Not rated" is not a bad rating: the model did not know the name.'
         )
+        if ratings.get("stale"):
+            rating_note = "taste.txt changed after these ratings were made: run rate.py, then build.py --render-only. " + rating_note
     else:
         rating_note = "No ratings yet. Run rate.py to rate the comedians with the claude CLI."
+
+    for venue, reason in snapshot.get("failed", {}).items():
+        coverage.append(f"<p>{esc(venue)}: not fetched this time ({esc(reason)}).</p>")
 
     comedians_html = "\n".join(
         render_comedian(entry, ratings["ratings"].get(entry["key"], {})) for entry in comedians

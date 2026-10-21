@@ -257,6 +257,16 @@ class RenderTest(unittest.TestCase):
         self.assertIn("No ratings yet. Run rate.py", page)
         self.assertEqual(page.count("Not rated</span>"), 2)
 
+    def test_warns_when_ratings_are_for_an_older_taste(self):
+        page = build.render(snapshot([show(comedians=["Ian Lara"])]), {**RATINGS, "stale": True})
+        self.assertIn("taste.txt changed after these ratings were made", page)
+
+    def test_names_a_venue_that_could_not_be_fetched(self):
+        snap = snapshot([show(comedians=["Ian Lara"])])
+        snap["failed"] = {"Comedy Cellar": "403 Client Error"}
+        page = build.render(snap, RATINGS)
+        self.assertIn("Comedy Cellar: not fetched this time (403 Client Error).", page)
+
     def test_reports_shows_without_a_lineup(self):
         shows = [show(comedians=["Ian Lara"]), show(start="2026-10-08T20:00")]
         page = build.render(snapshot(shows), RATINGS)

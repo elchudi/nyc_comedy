@@ -18,7 +18,7 @@ class PromptTest(unittest.TestCase):
         prompt = rate.make_prompt([entry("Zakir Khan", "New York Comedy Club", "Zakir Khan Live (IN HINDI)")], "dark  and personal\ncomedy")
         self.assertIn('fit with this taste: "dark and personal comedy"', prompt)
         self.assertIn('"star" = headlines theaters', prompt)
-        self.assertIn('"strong" = dark, personal', prompt)
+        self.assertIn('"strong" = the act is close to this taste', prompt)
         self.assertIn("- Zakir Khan (New York Comedy Club; shows: Zakir Khan Live (IN HINDI))", prompt)
         self.assertIn("Reply with one JSON object only", prompt)
 

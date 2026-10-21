@@ -1,139 +1,52 @@
 {
- "generated": "2026-10-03T14:33",
- "first_day": "2026-10-03",
- "last_day": "2026-10-09",
+ "generated": "2026-10-21T19:45",
+ "first_day": "2026-10-21",
+ "last_day": "2026-10-27",
+ "failed": {
+  "The Stand": "403 Client Error: Forbidden for url: https://thestandnyc.com/shows"
+ },
  "shows": [
   {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "Women Stand Up NYC Presents: Chicas Who Brunch",
-   "start": "2026-10-03T15:00",
-   "url": "https://thestandnyc.com/shows/show/13914/2026-10-03-150000-women-stand-up-nyc-presents-chicas-who-brunch",
+   "venue": "Comedy Cellar",
+   "room": "Greenwich Village Society for Historic Preservation benefit show",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-21T18:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Paula J. Leon",
-    "Carolina Montesquieu",
-    "Glorelys Mora",
-    "Adriana Ascencio"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Matinee with Ry Daddy ft: Olivia Stadler, Subhah Agarwal, Olga Namer, Lee Syatt, Ryan Dacalos",
-   "start": "2026-10-03T16:00",
-   "url": "https://newyorkcomedyclub.com/events/olivia-stadler-subhah-agarwal-olga-namer-lee-syatt-ryan-dacalos",
-   "comedians": [
-    "Ryan Dacalos",
-    "Subhah Agarwal",
-    "Olga Namer",
-    "Lee Syatt",
-    "Olivia Stadler"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Matinee with Ry Daddy ft: Emma Willmann, Harrison Greenbaum, Gibran Saleem, Olga Namer, Ryan Dacalos",
-   "start": "2026-10-03T17:00",
-   "url": "https://newyorkcomedyclub.com/events/emma-willmann-harrison-greenbaum-gibran-saleem-olga-namer-ryan-dacalos",
-   "comedians": [
-    "Ryan Dacalos",
-    "Emma Willmann",
-    "Gibran Saleem",
+    "James Mattern",
+    "Lynne Koplitz",
+    "Peter Revello",
+    "Adam Gilbert",
+    "Liz Glazer",
     "Harrison Greenbaum",
-    "Olga Namer"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "Laughing Buddha Comedy",
-   "start": "2026-10-03T17:00",
-   "url": "https://thestandnyc.com/shows/show/13933/2026-10-03-170000-laughing-buddha-comedy",
-   "comedians": [
-    "Daryn Passarello",
-    "Chris Miceli",
-    "Danny Hallinan",
-    "Jimmy McCullough",
-    "Adam Thomas",
-    "Michael Fleming",
-    "Mariel O’Reilly",
-    "Riley Flanagan",
-    "Tanner Simon",
-    "James Patrick",
-    "Ryan Rizzuti"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Judah Friedlander, Jared Waters, Brittany Brave, Fumi Abe",
-   "start": "2026-10-03T17:30",
-   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-jared-waters-brittany-brave-fumi-abe",
-   "comedians": [
-    "Jared Waters",
-    "Fumi Abe",
-    "Brittany Brave",
-    "Judah Friedlander",
-    "Jordan Adams",
-    "Tanner Riley",
-    "Julia Kastner"
+    "Philipp Kostelecky"
    ]
   },
   {
    "venue": "Comedy Cellar",
-   "room": "Village Underground",
+   "room": "An Hour with Jim Norton",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T18:00",
+   "start": "2026-10-21T18:01",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Ray Ellin",
-    "Dean Edwards",
-    "Geoff Chaser",
-    "Judy Gold",
-    "Gregg Rogell",
-    "Lenny Marcus"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "Kyle Lewis Presents: Character Select",
-   "start": "2026-10-03T18:00",
-   "url": "https://thestandnyc.com/shows/show/13852/2026-10-03-180000-kyle-lewis-presents-character-select",
-   "comedians": [
-    "Kyle Lewis",
-    "Gary Simons",
-    "Reg Thomas",
-    "Juli Polise",
-    "Khairy Creek",
-    "Finessica",
-    "Allan Fuks",
-    "Brad Rickert",
-    "Carolina Montesquieu"
+    "Jim Norton"
    ]
   },
   {
    "venue": "New York Comedy Club",
    "room": "Upper West Side",
    "location": "New York Comedy Club, Upper West Side",
-   "title": "Eagle Witt, Casey Balsham, Anthony Moore, Riley Lassin, Tom Cassidy",
-   "start": "2026-10-03T18:15",
-   "url": "https://newyorkcomedyclub.com/events/eagle-witt-casey-balsham-anthony-moore-riley-lassin-tom-cassidy",
+   "title": "The Boy Friends ft: Mike Feeney, Matt Lopes, Corey B, Josh Ocean Thomas, Marcus Monroe, Shelley Kim",
+   "start": "2026-10-21T19:00",
+   "url": "https://newyorkcomedyclub.com/events/the-boy-friends-ft-mike-feeney-matt-lopes-corey-b-josh-ocean-thomas-marcus-monroe-shelley-kim",
    "comedians": [
-    "Riley Lassin",
-    "Anthony Moore",
-    "Casey Balsham",
-    "Tom Cassidy",
-    "Eagle Witt",
-    "Olivia Flood-Wylie"
+    "Marcus Monroe",
+    "Matt Lopes",
+    "Corey B",
+    "Mike Feeney",
+    "Josh Ocean Thomas"
    ]
   },
   {
@@ -141,79 +54,15 @@
    "room": "MacDougal Street",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T18:45",
+   "start": "2026-10-21T19:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Jon Laster",
-    "Ophira Eisenberg",
-    "Geoff Chaser",
-    "Keith Robinson",
+    "Matt Richards",
+    "Tom Thakkar",
+    "Rachel Feinstein",
     "Greer Barnes",
-    "Lenny Marcus"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Christian Finnegan, Mike Feeney, Ayanna Dookie, Kunal C. Arora",
-   "start": "2026-10-03T19:00",
-   "url": "https://newyorkcomedyclub.com/events/christian-finnegan-mike-feeney-ayanna-dookie-kunal-c-arora",
-   "comedians": [
-    "Kunal C. Arora",
-    "Mike Feeney",
-    "Ayanna Dookie",
-    "Christian Finnegan",
-    "Chris Barnes",
-    "Sarah Barnitt"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "The Stand West",
-   "location": "The Stand West",
-   "title": "The Stand West Presents: Dave Attell, Ian Lara, Bonnie McFarlane, Dan St. Germain, & More!",
-   "start": "2026-10-03T19:00",
-   "url": "https://thestandnyc.com/shows/show/13918/2026-10-03-190000-the-stand-west-presents-ian-lara-bonnie-mcfarlane-dan-st-germain-more",
-   "comedians": [
-    "Dave Attell",
-    "Ian Lara",
-    "Marina Franklin",
-    "Bonnie McFarlane",
-    "Dan St. Germain",
-    "Brittany Schmitt"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Esther Povitsky, Mycal Dédé, Tristan Bowling, & More!",
-   "start": "2026-10-03T19:00",
-   "url": "https://thestandnyc.com/shows/show/13925/2026-10-03-190000-the-stand-presents",
-   "comedians": [
-    "Esther Povitsky",
-    "Mycal Dede",
-    "Tristan Bowling",
-    "TaTa Sherise",
-    "Tom McGuire",
-    "Nick Viagas"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-03T19:01",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Ophira Eisenberg",
-    "Leonard Ouzts",
-    "Judy Gold",
-    "Greer Barnes",
-    "Dov Davidoff"
+    "Lynne Koplitz",
+    "Ethan Simmons-Patterson"
    ]
   },
   {
@@ -221,189 +70,27 @@
    "room": "Fat Black Pussycat (Bar)",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T19:30",
+   "start": "2026-10-21T19:35",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Jon Fisch",
+    "Andrew Fiori",
     "Mike Yard",
-    "Modi",
-    "Judy Gold",
-    "Greer Barnes",
-    "Lenny Marcus"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-03T20:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Ashley Austin Morris",
-    "Ophira Eisenberg",
-    "Keith Robinson",
-    "Melissa Rauch",
-    "Modi",
-    "Lenny Marcus"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Mike Feeney, Christian Finnegan, Ayanna Dookie, Brandon Barrera",
-   "start": "2026-10-03T20:00",
-   "url": "https://newyorkcomedyclub.com/events/mike-feeney-christian-finnegan-ayanna-dookie-brandon-barrera",
-   "comedians": [
-    "Mike Feeney",
-    "Ayanna Dookie",
-    "Christian Finnegan",
-    "Brandon Barrera",
-    "Chris Barnes",
-    "Sarah Barnitt"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Rachel Feinstein, Aaron Berg, Ian Lara, Brittany Brave, & More!",
-   "start": "2026-10-03T20:00",
-   "url": "https://thestandnyc.com/shows/show/13926/2026-10-03-200000-the-stand-presents",
-   "comedians": [
-    "Rachel Feinstein",
-    "Aaron Berg",
-    "Ian Lara",
-    "Brittany Brave",
-    "Mike Vecchione",
-    "Esther Povitsky"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Judy Gold, Erin Maguire, Jared Waters, Tom Cassidy",
-   "start": "2026-10-03T20:30",
-   "url": "https://newyorkcomedyclub.com/events/judy-gold-erin-maguire-jared-waters-tom-cassidy",
-   "comedians": [
-    "Tom Cassidy",
-    "Jared Waters",
-    "Erin Maguire",
-    "Judy Gold",
-    "Tom Zappia"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Patio",
-   "location": "The Stand",
-   "title": "Live Comedy on the Outdoor Patio!",
-   "start": "2026-10-03T20:30",
-   "url": "https://thestandnyc.com/shows/show/13934/2026-10-03-203000-live-comedy-on-the-outdoor-patio",
-   "comedians": [
-    "Tom McGuire",
-    "Oscar Aydin",
-    "Tristan Bowling",
-    "Kitty Reynolds",
-    "Derek Drescher"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-03T20:45",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jon Laster",
     "Ryan Hamilton",
-    "Melissa Rauch",
-    "Modi",
-    "Dov Davidoff",
-    "Greer Barnes"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-03T21:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Emma Willmann",
-    "Greer Barnes",
-    "Dan Docimo",
-    "Ryan Hamilton",
-    "Casey Balsham"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "The Stand West",
-   "location": "The Stand West",
-   "title": "The Stand West Presents: Ian Lara, Dave Attell, Brittany Schmitt, Bonnie McFarlane, Dan St. Germain, & More!",
-   "start": "2026-10-03T21:00",
-   "url": "https://thestandnyc.com/shows/show/13917/2026-10-03-210000-the-stand-west-presents-ian-lara-bonnie-mcfarlane-dan-st-germain-more",
-   "comedians": [
-    "Ian Lara",
-    "Dave Attell",
-    "Brittany Schmitt",
-    "Bonnie McFarlane",
-    "Dan St. Germain",
-    "Marina Franklin"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Oscar Aydin, Mike Vecchione, Daniel Bridge-Gadd, & More!",
-   "start": "2026-10-03T21:00",
-   "url": "https://thestandnyc.com/shows/show/13927/2026-10-03-210000-the-stand-presents",
-   "comedians": [
-    "Oscar Aydin",
-    "Mike Vecchione",
-    "Daniel Bridge-Gadd",
-    "Aaron Berg",
-    "Onika McLean",
-    "Peter James Fowler"
+    "Jeff Bailey",
+    "Chloe Hilliard",
+    "Lenny Marcus"
    ]
   },
   {
    "venue": "New York Comedy Club",
    "room": "Midtown",
    "location": "New York Comedy Club, Midtown",
-   "title": "Reggie Conquest, Richie Redding, Liz Barrett, Kunal C. Arora",
-   "start": "2026-10-03T21:15",
-   "url": "https://newyorkcomedyclub.com/events/reggie-conquest-richie-redding-liz-barrett-kunal-c-arora",
+   "title": "Story Warz w/ Big Jay Oakerson, Luis J Gomez + Special Guests",
+   "start": "2026-10-21T19:45",
+   "url": "https://newyorkcomedyclub.com/events/story-warz-w-big-jay-oakerson-luis-j-gomez-special-guests-2026-10-21194500",
    "comedians": [
-    "Kunal C. Arora",
-    "Reggie Conquest",
-    "Liz Barrett",
-    "Richie Redding",
-    "Rachel Lenihan",
-    "Cab Washington"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-03T21:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Simeon Goodson",
-    "Emma Willmann",
-    "Melissa Rauch",
-    "Dan Docimo",
-    "Ryan Hamilton",
-    "Casey Balsham"
+    "Big Jay Oakerson",
+    "Luis J Gomez"
    ]
   },
   {
@@ -411,79 +98,30 @@
    "room": "Village Underground",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T22:00",
+   "start": "2026-10-21T20:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Ashley Austin Morris",
-    "Harrison Greenbaum",
+    "Eric Neumann",
     "Emma Willmann",
-    "Ben Bailey",
     "Dov Davidoff",
-    "Dan Docimo",
-    "Erin Jackson"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Ian Lara, Aaron Berg, Mike Vecchione, & More!",
-   "start": "2026-10-03T22:00",
-   "url": "https://thestandnyc.com/shows/show/13928/2026-10-03-220000-the-stand-presents",
-   "comedians": [
-    "Ian Lara",
-    "Aaron Berg",
-    "Mike Vecchione",
-    "Brittany Brave",
-    "Rachel Feinstein",
-    "Sherrod Small"
+    "Gregg Rogell",
+    "Greer Barnes",
+    "Jeff Bailey"
    ]
   },
   {
    "venue": "New York Comedy Club",
    "room": "East Village",
    "location": "New York Comedy Club, East Village",
-   "title": "Gastor Almonte, Kevin Dombrowski, Brandon Barrera + Surprise Guest!",
-   "start": "2026-10-03T22:30",
-   "url": "https://newyorkcomedyclub.com/events/gastor-almonte-kevin-dombrowski-brandon-barrera-surprise-guest",
+   "title": "Good Eggs ft: Mark Normand, Tom Thakkar, Gary Vider, Matt Ruby, Courtney Maginnis",
+   "start": "2026-10-21T20:00",
+   "url": "https://newyorkcomedyclub.com/events/good-eggs-ft-mark-normand-tom-thakkar-gary-vider-matt-ruby-courtney-maginnis",
    "comedians": [
-    "Kevin Dombrowski",
-    "Gastor Almonte",
-    "Brandon Barrera",
-    "Rachel Lenihan",
-    "Cab Washington"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-03T22:45",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jon Laster",
-    "Ian Lara",
-    "Casey Balsham",
-    "Ben Bailey",
-    "Andre De Freitas",
-    "Erin Jackson",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Reggie Conquest, Richie Redding, Liz Barrett, Tom Cassidy",
-   "start": "2026-10-03T22:45",
-   "url": "https://newyorkcomedyclub.com/events/reggie-conquest-richie-redding-liz-barrett-tom-cassidy",
-   "comedians": [
-    "Tom Cassidy",
-    "Reggie Conquest",
-    "Liz Barrett",
-    "Richie Redding",
-    "Tom Zappia"
+    "Mark Normand",
+    "Courtney Maginnis",
+    "Gary Vider",
+    "Matt Ruby",
+    "Tom Thakkar"
    ]
   },
   {
@@ -491,31 +129,47 @@
    "room": "fat Black Pussycat Lounge",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T23:00",
+   "start": "2026-10-21T20:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Petey DeAbreu",
-    "Andre D Thompson",
+    "Wil Sylvince",
     "Ryan Hamilton",
+    "Rachel Feinstein",
+    "Ethan Simmons-Patterson",
     "Dov Davidoff",
-    "Justin Martindale",
-    "Erin Jackson"
+    "Peter Revello",
+    "Lenny Marcus"
    ]
   },
   {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Dvontre Coleman, Tatiana Frank, Brittany Schmitt, & More!",
-   "start": "2026-10-03T23:00",
-   "url": "https://thestandnyc.com/shows/show/13929/2026-10-03-230000-the-stand-presents",
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Drew Lynch, Jay Jurden, Kevin Dombrowski, Carolina Montesquieu, Courtney Fearrington",
+   "start": "2026-10-21T21:15",
+   "url": "https://newyorkcomedyclub.com/events/drew-lynch-jay-jurden-kevin-dombrowski-carolina-montesquieu-courtney-fearrington",
    "comedians": [
-    "Dvontre Coleman",
-    "Tatiana Frank",
-    "Brittany Schmitt",
-    "Chris Barnes",
-    "Derek Drescher",
-    "Josh Mandl"
+    "Courtney Fearrington",
+    "Kevin Dombrowski",
+    "Carolina Montesquieu",
+    "Jay Jurden",
+    "Drew Lynch"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-21T21:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Matt Richards",
+    "Ian Fidance",
+    "Melissa Rauch",
+    "Julian McCullough",
+    "Peter Revello",
+    "Chris Redd"
    ]
   },
   {
@@ -523,31 +177,16 @@
    "room": "Fat Black Pussycat (Bar)",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T23:30",
+   "start": "2026-10-21T21:35",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Gray West",
-    "Mia Jackson",
-    "Michael Rowland",
-    "Casey Balsham",
-    "Andre De Freitas",
-    "Andre D Thompson"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Jared Waters, Kunal C. Arora, Jatty Robinson, Rachel Williams",
-   "start": "2026-10-03T23:30",
-   "url": "https://newyorkcomedyclub.com/events/jared-waters-kunal-c-arora-jatty-robinson-rachel-williams",
-   "comedians": [
-    "Kunal C. Arora",
-    "Jared Waters",
-    "Rachel Williams",
-    "Jatty Robinson",
-    "JC Mendoza",
-    "Liam Dalton"
+    "Marie Faustin",
+    "Andy Haynes",
+    "Josh Ocean Thomas",
+    "Todd Barry",
+    "Tommy Brennan",
+    "Ophira Eisenberg",
+    "Chris Redd"
    ]
   },
   {
@@ -555,24 +194,114 @@
    "room": "Village Underground",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-03T23:55",
+   "start": "2026-10-21T22:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Ardie Fuqua",
-    "Ryan Hamilton",
-    "Derek Gaines",
-    "Sharief Johnson",
-    "Andre De Freitas",
-    "Casey Balsham"
+    "Petey DeAbreu",
+    "Amos Gill",
+    "Melissa Rauch",
+    "Tommy Brennan",
+    "Peter Revello",
+    "Derek Gaines"
    ]
   },
   {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents",
-   "start": "2026-10-03T23:55",
-   "url": "https://thestandnyc.com/shows/show/13930/2026-10-03-235500-the-stand-presents",
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Alingon Mitra, Jay Jurden, Neko White, Carmen Lagala, Caitlin Reese",
+   "start": "2026-10-21T22:00",
+   "url": "https://newyorkcomedyclub.com/events/alingon-mitra-jay-jurden-neko-white-carmen-lagala-caitlin-reese",
+   "comedians": [
+    "Alingon Mitra",
+    "Carmen Lagala",
+    "Jay Jurden",
+    "Neko White",
+    "Caitlin Reese"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Lounge)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-21T22:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Will Sylvince",
+    "Andy Haynes",
+    "Alex English",
+    "Ophira Eisenberg",
+    "Lev Fer",
+    "Derek Gaines"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Emma Willmann, Dan St. Germain, Calise Hawkins, Carolina Montesquieu",
+   "start": "2026-10-21T22:30",
+   "url": "https://newyorkcomedyclub.com/events/emma-willmann-dan-st-germain-calise-hawkins-carolina-montesquieu",
+   "comedians": [
+    "Calise Hawkins",
+    "Emma Willmann",
+    "Dan St. Germain",
+    "Carolina Montesquieu",
+    "Neko White"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-21T23:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "James Mattern",
+    "Pete Lee",
+    "Molly Kearney",
+    "Alex English",
+    "Tyler Fischer",
+    "Lev Fer",
+    "Bobby St. Petersburg"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "An Hour with Jim Norton",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T18:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jim Norton"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Chucklefest ft: Matthew Broussard, Bo Bigelow, Konner Kienzle, Maggie Crane, Kevin Israel, Mo Mussa, Tristan Bowling",
+   "start": "2026-10-22T18:00",
+   "url": "https://newyorkcomedyclub.com/events/chucklefest-ft-matthew-broussard-bo-bigelow-konner-kienzle-maggie-crane-kevin-israel-mo-mussa-tristan-bowling",
+   "comedians": [
+    "Bo Bigelow",
+    "Kevin Israel",
+    "Matthew Broussard",
+    "Maggie Crane",
+    "Mo Mussa",
+    "Konner Kienzle"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Comedy Mob Presents: The Lineup",
+   "start": "2026-10-22T18:00",
+   "url": "https://newyorkcomedyclub.com/events/comedy-mob-presents-the-lineup-2026-10-22180000",
    "comedians": []
   },
   {
@@ -580,78 +309,15 @@
    "room": "MacDougal Street",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-04T00:30",
+   "start": "2026-10-22T18:45",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Jared Waters",
-    "Erin Jackson",
-    "Tyler Fischer",
-    "Shaun Murphy",
-    "Sharief Johnson",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T00:55",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "James Mattern",
-    "Erin Jackson",
-    "Andre De Freitas",
-    "Liza Treyger",
-    "Tyler Fischer",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T13:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jon Laster",
-    "LeClerc Andre",
-    "Ophira Eisenberg",
-    "Kam Patterson",
-    "Dan Docimo",
-    "Peter Revello"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Matinee with Ry Daddy ft: Harrison Greenbaum, Olivia Stadler, Subhah Agarwal, Alvin Kuai, Ryan Dacalos",
-   "start": "2026-10-04T17:00",
-   "url": "https://newyorkcomedyclub.com/events/harrison-greenbaum-olivia-stadler-subhah-agarwal-alvin-kuai-ryan-dacalos",
-   "comedians": [
-    "Ryan Dacalos",
-    "Subhah Agarwal",
-    "Harrison Greenbaum",
-    "Alvin Kuai",
-    "Olivia Stadler"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T18:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Ian Lara",
-    "Kevin Ryan",
-    "Emma Willmann",
-    "Daniel Simonsen",
-    "Peter Revello"
+    "Jon Fisch",
+    "Mark Gagnon",
+    "Ontonio Kareem",
+    "Lenny Marcus",
+    "Jeff Bailey",
+    "Bobby St. Petersburg"
    ]
   },
   {
@@ -659,14 +325,1051 @@
    "room": "Fat Black Pussycat (Bar)",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-04T18:30",
+   "start": "2026-10-22T19:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Gray West",
+    "Ophira Eisenberg",
+    "Matt Koff",
+    "LeClerc Andre",
+    "Zahid Dewji",
+    "Derek Gaines"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T19:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ashley Austin Morris",
+    "Harrison Greenbaum",
+    "Keith Robinson",
+    "Lenny Marcus",
+    "Greer Barnes",
+    "Jeff Bailey"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Judy Gold",
+   "start": "2026-10-22T19:30",
+   "url": "https://newyorkcomedyclub.com/events/judy-gold-we-will-laugh-again-1",
+   "comedians": [
+    "Judy Gold"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Liza Treyger, Mike Britt, Mike Figs, James Mattern",
+   "start": "2026-10-22T20:15",
+   "url": "https://newyorkcomedyclub.com/events/liza-treyger-mike-britt-mike-figs-james-mattern",
+   "comedians": [
+    "Mike Britt",
+    "James Mattern",
+    "Liza Treyger",
+    "Mike Figs"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T20:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Marie Faustin",
+    "Gina Brillon",
+    "Ryan Hamilton",
+    "Mia Jackson",
+    "Andy Haynes",
+    "Jeff Bailey"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Mike Britt, Carmen Lynch, Ismael Loutfi, Riley Lassin, Matt Ruby",
+   "start": "2026-10-22T20:30",
+   "url": "https://newyorkcomedyclub.com/events/mike-britt-carmen-lynch-ismael-loutfi-riley-lassin-matt-ruby",
+   "comedians": [
+    "Riley Lassin",
+    "Matt Ruby",
+    "Ismael Loutfi",
+    "Mike Britt",
+    "Carmen Lynch"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T20:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Kevin Dombrowski",
+    "Philipp Kostelecky",
+    "Gregg Rogell",
+    "Lynne Koplitz",
+    "Greer Barnes",
+    "Chris Redd"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T21:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Simeon Goodson",
+    "Ian Fidance",
+    "Derek Gaines",
+    "Blake Freeman",
+    "Philipp Kostelecky",
+    "Ismael Loutfi",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Live stand-up from the Village Underground streaming on Mint Comedy streaming on Mint Comedy",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T21:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Matt Richards",
+    "Tom Thakkar",
+    "Lynne Koplitz",
+    "Daniel Simonsen",
+    "Rachel Feinstein",
+    "Chris Redd"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Jay Jurden, Justin Martindale, Jonathan Randall, Meka Mo, James Mattern",
+   "start": "2026-10-22T21:45",
+   "url": "https://newyorkcomedyclub.com/events/jay-jurden-justin-martindale-jonathan-randall-meka-mo-james-mattern",
+   "comedians": [
+    "Jonathan Randall",
+    "James Mattern",
+    "Justin Martindale",
+    "Jay Jurden",
+    "Meka Mo"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T22:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Josh Ocean Thomas",
+    "Janet McNamara",
+    "Lev Fer",
+    "Justin Martindale",
+    "Chris Redd"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Ian Fidance, Daniel Simonsen, Ashley Austin Morris, Carolina Montesquieu, Riley Lassin",
+   "start": "2026-10-22T22:30",
+   "url": "https://newyorkcomedyclub.com/events/ian-fidance-daniel-simonsen-ashley-austin-morris-carolina-montesquieu-riley-lassin",
+   "comedians": [
+    "Riley Lassin",
+    "Ashley Austin Morris",
+    "Ian Fidance",
+    "Daniel Simonsen",
+    "Carolina Montesquieu"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Tom Thakkar, Mike Figs, Mia Jackson, Kate Sisk",
+   "start": "2026-10-22T22:35",
+   "url": "https://newyorkcomedyclub.com/events/tom-thakkar-mike-figs-mia-jackson-kate-sisk",
+   "comedians": [
+    "Tom Thakkar",
+    "Kate Sisk",
+    "Mike Figs",
+    "Mia Jackson"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T22:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Rich Aronovitch",
+    "Seaton C. Smith",
+    "Jaye McBride",
+    "Rachel Feinstein",
+    "Alex English",
+    "Tyler Fischer",
+    "Derek Gaines"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Lounge)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T23:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Simeon Goodson",
+    "Tom Thakkar",
+    "Seaton C. Smith",
+    "Josh Ocean Thomas",
+    "Rachel Feinstein",
+    "Chris Redd"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-22T23:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Matt Richards",
+    "Pete Lee",
+    "Jay Jurden",
+    "Adrienne Iapalucci",
+    "Alex English",
+    "Chris Redd",
+    "Bobby St. Petersburg"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T18:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ray Ellin",
+    "Casey Balsham",
+    "Colin Quinn",
+    "Ethan Simmons-Patterson",
+    "Lynne Koplitz",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Luke Severeid",
+   "start": "2026-10-23T18:00",
+   "url": "https://newyorkcomedyclub.com/events/luke-severeid-2026-10-23180000",
+   "comedians": [
+    "Luke Severeid"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Ian Fidance, Jackie Fabulous, Nick Smith, Jamell Sirleaf, Danny Rathbun",
+   "start": "2026-10-23T18:15",
+   "url": "https://newyorkcomedyclub.com/events/ian-fidance-jackie-fabulous-nick-smith-jamell-sirleaf-danny-rathbun",
+   "comedians": [
+    "Jamell Sirleaf",
+    "Nick Smith",
+    "Jackie Fabulous",
+    "Ian Fidance",
+    "Danny Rathbun"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T18:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Josh Ocean Thomas",
+    "Philipp Kostelecky",
+    "Colin Quinn",
+    "Lynne Koplitz",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Kunal C. Arora, Simeon Goodson, Matt Ruby, Humzah Azeem",
+   "start": "2026-10-23T19:00",
+   "url": "https://newyorkcomedyclub.com/events/kunal-c-arora-simeon-goodson-matt-ruby-humzah-azeem",
+   "comedians": [
+    "Kunal C. Arora",
+    "Matt Ruby",
+    "Simeon Goodson",
+    "Humzah Azeem"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T19:01",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Richie Redding",
+    "Casey Balsham",
+    "Dan Naturman",
+    "Ethan Simmons-Patterson",
+    "Molly Kearney",
+    "Philipp Kostelecky"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T19:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Josh Ocean Thomas",
+    "Ontonio Kareem",
+    "Casey Balsham",
+    "Greer Barnes",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T20:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Rich Aronovitch",
+    "Ophira Eisenberg",
+    "Gregg Rogell",
+    "Ethan Simmons-Patterson",
+    "Gina Brillon",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Marion Grodin, Mike Britt, Nore Davis, Humzah Azeem",
+   "start": "2026-10-23T20:15",
+   "url": "https://newyorkcomedyclub.com/events/marion-grodin-mike-britt-nore-davis-humzah-azeem",
+   "comedians": [
+    "Marion Grodin",
+    "Nore Davis",
+    "Mike Britt",
+    "Humzah Azeem"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Liz Glazer, Simeon Goodson, Reggie Conquest, Chris Brown",
+   "start": "2026-10-23T20:30",
+   "url": "https://newyorkcomedyclub.com/events/liz-glazer-simeon-goodson-reggie-conquest-chris-brown",
+   "comedians": [
+    "Liz Glazer",
+    "Reggie Conquest",
+    "Simeon Goodson",
+    "Chris Brown"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T20:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Josh Ocean Thomas",
+    "Jared Freid",
+    "Michael Rowland",
+    "Ethan Simmons-Patterson",
+    "Yamaneika Saunders"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T21:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Gray West",
+    "Ophira Eisenberg",
+    "Greer Barnes",
+    "Gina Brillon",
+    "Jared Freid",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Jackie Fabulous, Mike Britt, Robby Slowik, Kunal C. Arora",
+   "start": "2026-10-23T21:15",
+   "url": "https://newyorkcomedyclub.com/events/jackie-fabulous-mike-britt-robby-slowik-kunal-c-arora",
+   "comedians": [
+    "Kunal C. Arora",
+    "Robby Slowik",
+    "Jackie Fabulous",
+    "Mike Britt",
+    "Jenae Boston",
+    "Shyam Subramanian"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T21:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Tom Thakkar",
+    "Josh Ocean Thomas",
+    "Janet McNamara",
+    "Michael Rowland",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T22:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Rich Aronovitch",
+    "Reggie Conquest",
+    "Greer Barnes",
+    "Dov Davidoff",
+    "Yamaneika Saunders",
+    "Bobby St. Petersburg"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Marion Grodin, Mike Britt, Liza Treyger, Reggie Conquest",
+   "start": "2026-10-23T22:30",
+   "url": "https://newyorkcomedyclub.com/events/marion-grodin-mike-britt-liza-treyger-reggie-conquest",
+   "comedians": [
+    "Marion Grodin",
+    "Reggie Conquest",
+    "Liza Treyger",
+    "Mike Britt",
+    "Jenae Boston",
+    "Shyam Subramanian"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T22:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Jared Freid",
+    "Kc Shornima",
+    "Alex English",
+    "Onika Mclean",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Nore Davis, Robby Slowik, Liz Glazer, Alex Babbitt, Chris Brown",
+   "start": "2026-10-23T22:45",
+   "url": "https://newyorkcomedyclub.com/events/nore-davis-robby-slowik-liz-glazer-alex-babbitt-chris-brown",
+   "comedians": [
+    "Alex Babbitt",
+    "Robby Slowik",
+    "Liz Glazer",
+    "Nore Davis",
+    "Chris Brown"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T23:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ryan Reiss",
+    "Reggie Conquest",
+    "Dov Davidoff",
+    "Kc Shornima",
+    "Michael Rowland",
+    "Yamaneika Saunders"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T23:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Jourdain Fisher",
+    "Dov Davidoff",
+    "Jaye McBride",
+    "Blake Freeman",
+    "Liza Treyger"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Jessica Levin, Kunal C. Arora, Andre D Thompson, Geo Perez, Chris Pattwell, Sam Kochman",
+   "start": "2026-10-23T23:30",
+   "url": "https://newyorkcomedyclub.com/events/jessica-levin-kunal-c-arora-andre-d-thompson-geo-perez-chris-pattwell-sam-kochman",
+   "comedians": [
+    "Geo Perez",
+    "Kunal C. Arora",
+    "Chris Pattwell",
+    "Jessica Levin",
+    "Andre D Thompson",
+    "Sam Kochman"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-23T23:55",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Simeon Goodson",
+    "Fabrizio Copano",
+    "Kc Shornima",
+    "Jourdain Fisher",
+    "Alex Babbitt",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T00:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "James Mattern",
+    "LeClerc Andre",
+    "Brian Scolaro",
+    "Liza Treyger",
+    "Blake Freeman",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T00:55",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Neko White",
+    "Yamaneika Saunders",
+    "Ian Fidance",
+    "Alex English",
+    "Justin Martindale",
+    "LeClerc Andre",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "One Funny Lisa Marie",
+   "start": "2026-10-24T15:00",
+   "url": "https://newyorkcomedyclub.com/events/one-funny-lisa-marie-2026-10-24150000",
+   "comedians": [
+    "Lisa Marie"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Matinee with Ry Daddy",
+   "start": "2026-10-24T16:00",
+   "url": "https://newyorkcomedyclub.com/events/matinee-with-ry-daddy-2026-10-24160000",
+   "comedians": [
+    "Ryan Dacalos"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Todd Barry, Patricia Dinglasan, Meka Mo, Adam Gilbert",
+   "start": "2026-10-24T17:00",
+   "url": "https://newyorkcomedyclub.com/events/todd-barry-patricia-dinglasan-meka-mo-adam-gilbert",
+   "comedians": [
+    "Patricia Dinglasan",
+    "Meka Mo",
+    "Adam Gilbert",
+    "Kristal Adams",
+    "Todd Barry",
+    "Joey Rinaldi"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Judah Friedlander, Meka Mo, Dan Davies, Joey Rinaldi",
+   "start": "2026-10-24T17:30",
+   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-meka-mo-dan-davies-joey-rinaldi",
+   "comedians": [
+    "Dan Davies",
+    "Meka Mo",
+    "Judah Friedlander",
+    "Joey Rinaldi"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T18:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ray Ellin",
+    "Lynne Koplitz",
+    "Colin Quinn",
+    "Ethan Simmons-Patterson",
+    "Gregg Rogell",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Marina Franklin, Todd Barry, Talent Harris Jr, Adam Gilbert",
+   "start": "2026-10-24T18:15",
+   "url": "https://newyorkcomedyclub.com/events/marina-franklin-todd-barry-talent-harris-jr-adam-gilbert",
+   "comedians": [
+    "Maggie Lalley",
+    "Talent Harris Jr",
+    "Marina Franklin",
+    "Adam Gilbert",
+    "Todd Barry",
+    "Humzah Choudry"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T18:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Peng Dang",
+    "Colin Quinn",
+    "Jeff Bailey",
+    "Lynne Koplitz",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Judah Friedlander, Liz Barrett, Jatty Robinson, Tom Cassidy",
+   "start": "2026-10-24T19:00",
+   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-liz-barrett-jatty-robinson-tom-cassidy",
+   "comedians": [
+    "Tom Cassidy",
+    "Jatty Robinson",
+    "Liz Barrett",
+    "Judah Friedlander",
+    "Lukas Arnold",
+    "Karla Watkins"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T19:01",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Gray West",
+    "Casey Balsham",
+    "Lenny Marcus",
+    "Ethan Simmons-Patterson",
+    "Dan Naturman",
+    "Jeff Bailey"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T19:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ryan Reiss",
+    "Gina Brillon",
+    "Alex Babbitt",
+    "Casey Balsham",
+    "Greer Barnes",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T20:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ray Ellin",
+    "Lenny Marcus",
+    "Keith Robinson",
+    "Ethan Simmons-Patterson",
+    "Melissa Rauch",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Marina Franklin, Mike Britt, Terry Thomas Jr., Phil Duckett",
+   "start": "2026-10-24T20:00",
+   "url": "https://newyorkcomedyclub.com/events/marina-franklin-mike-britt-terry-thomas-jr-phil-duckett",
+   "comedians": [
+    "Phil Duckett",
+    "Terry Thomas Jr.",
+    "Marina Franklin",
+    "Mike Britt",
+    "Lukas Arnold",
+    "Karla Watkins"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Mike Feeney, Liz Barrett, Jatty Robinson, Courtney Fearrington",
+   "start": "2026-10-24T20:30",
+   "url": "https://newyorkcomedyclub.com/events/mike-feeney-liz-barrett-jatty-robinson-courtney-fearrington",
+   "comedians": [
+    "Courtney Fearrington",
+    "Jatty Robinson",
+    "Liz Barrett",
+    "Mike Feeney",
+    "Maggie Naughton"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T20:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Sydnee Washington",
+    "Lenny Marcus",
+    "Keith Robinson",
+    "Ethan Simmons-Patterson",
+    "Jeff Bailey"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T21:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Josh Ocean Thomas",
+    "Greer Barnes",
+    "Sydnee Washington",
+    "Dov Davidoff",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Aminah Imani, Mike Britt, Alexis Guerreros, Tom Cassidy",
+   "start": "2026-10-24T21:15",
+   "url": "https://newyorkcomedyclub.com/events/aminah-imani-mike-britt-alexis-guerreros-tom-cassidy",
+   "comedians": [
+    "Tom Cassidy",
+    "Alexis Guerreros",
+    "Aminah Imani",
+    "Mike Britt",
+    "Paige Smith-Hogan",
+    "Jason King"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T21:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Richie Redding",
+    "Harrison Greenbaum",
+    "Melissa Rauch",
+    "Reggie Conquest",
+    "Jeff Bailey",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T22:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Gray West",
+    "Philipp Kostelecky",
+    "Greer Barnes",
+    "Sydnee Washington",
+    "Dov Davidoff",
+    "Yamaneika Saunders"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Calise Hawkins, Mike Britt, Alexis Guerreros, Phil Duckett",
+   "start": "2026-10-24T22:30",
+   "url": "https://newyorkcomedyclub.com/events/calise-hawkins-mike-britt-alexis-guerreros-phil-duckett",
+   "comedians": [
+    "Phil Duckett",
+    "Alexis Guerreros",
+    "Calise Hawkins",
+    "Mike Britt",
+    "Paige Smith-Hogan",
+    "Jason King"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T22:45",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Jordan Carlos",
+    "Melissa Rauch",
+    "Kc Shornima",
+    "Dov Davidoff",
+    "Chris Turner"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Aminah Imani, Gastor Almonte, Courtney Fearrington, Terry Thomas Jr.",
+   "start": "2026-10-24T22:45",
+   "url": "https://newyorkcomedyclub.com/events/aminah-imani-gastor-almonte-courtney-fearrington-terry-thomas-jr",
+   "comedians": [
+    "Courtney Fearrington",
+    "Terry Thomas Jr.",
+    "Aminah Imani",
+    "Gastor Almonte",
+    "Maggie Naughton"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T23:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Seaton C. Smith",
+    "Philipp Kostelecky",
+    "Kc Shornima",
+    "Daniel Simonsen",
+    "Yamaneika Saunders"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T23:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
     "Ophira Eisenberg",
-    "Ian Lara",
-    "Elle Orlando",
-    "Andre De Freitas",
-    "Mia Jackson",
+    "Mike Feeney",
+    "Dan Davies",
+    "Janet McNamara",
+    "LeClerc Andre",
+    "Blake Freeman"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Liz Glazer, Michael Fleming, Talent Harris Jr, Aaron McCann",
+   "start": "2026-10-24T23:30",
+   "url": "https://newyorkcomedyclub.com/events/liz-glazer-michael-fleming-talent-harris-jr-aaron-mccann",
+   "comedians": [
+    "Dj Collins",
+    "Tom Cassidy",
+    "Liz Glazer",
+    "Talent Harris Jr",
+    "Aaron McCann",
+    "Michael Fleming"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-24T23:55",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Simeon Goodson",
+    "Ian Fidance",
+    "Kc Shornima",
+    "Alex English",
+    "Tyler Fischer",
+    "Yamaneika Saunders"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T00:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "James Mattern",
+    "Justin Martindale",
+    "Molly Kearney",
+    "Alex English",
+    "Blake Freeman",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T00:55",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Rich Aronovitch",
+    "Sharief Johnson",
+    "Liza Treyger",
+    "Ismael Loutfi",
+    "LeClerc Andre",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T13:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jon Laster",
+    "Peng Dang",
+    "Philipp Kostelecky",
+    "Sydnee Washington",
+    "Amos Gill",
     "Peter Revello"
    ]
   },
@@ -675,8 +1378,8 @@
    "room": "Upper West Side",
    "location": "New York Comedy Club, Upper West Side",
    "title": "Laughing Buddha Comedy",
-   "start": "2026-10-04T18:30",
-   "url": "https://newyorkcomedyclub.com/events/laughing-buddha-comedy-2026-10-04183000",
+   "start": "2026-10-25T16:00",
+   "url": "https://newyorkcomedyclub.com/events/laughing-buddha-comedy-2026-10-25183000",
    "comedians": [
     "Daryn Passarello",
     "Chris Miceli",
@@ -693,432 +1396,33 @@
   },
   {
    "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat Lounge",
+   "room": "Louie CK Working on VERY NEW Material.",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-04T19:00",
+   "start": "2026-10-25T17:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Kevin Dombrowski",
-    "Leonard Ouzts",
-    "Danny Jolles",
-    "Emma Willmann",
-    "Daniel Simonsen",
-    "Peter Revello"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Yerrrlywood ft: Aaron Branch, Jonas Jeannot, Lea'h Sampson, Gadiel Del Orbe & Cris Sosa",
-   "start": "2026-10-04T19:00",
-   "url": "https://newyorkcomedyclub.com/events/yerrrlywood-ft-aaron-branch-jonas-jeannot-lea-h-sampson-gadiel-del-orbe-cris-sosa",
-   "comedians": [
-    "Aaron Branch",
-    "Jonas Jeannot",
-    "Lea'h Sampson",
-    "Cris Sosa",
-    "Gadiel Del Orbe"
+    "Louis CK"
    ]
   },
   {
    "venue": "New York Comedy Club",
    "room": "Midtown",
    "location": "New York Comedy Club, Midtown",
-   "title": "Angelo Colina: La Residencia (En Español)",
-   "start": "2026-10-04T19:00",
-   "url": "https://newyorkcomedyclub.com/events/angelo-colina-la-residencia-en-espanol",
+   "title": "Matt Ruby Tapes His New Comedy Special!",
+   "start": "2026-10-25T17:00",
+   "url": "https://newyorkcomedyclub.com/events/matt-ruby-live-special-taping-2026-10-25170000",
    "comedians": [
-    "Angelo Colina"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T19:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Eric Neumann",
-    "Mike Feeney",
-    "Kc Shornima",
-    "Dan Docimo",
-    "Michael Rowland",
-    "Kam Patterson"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T20:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
-    "Ontonio Kareem",
-    "Danny Jolles",
-    "Janet McNamara",
-    "Dan Docimo",
-    "Kam Patterson"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Modi, Nataly Aukar, Brittany Schmitt, & More!",
-   "start": "2026-10-04T20:00",
-   "url": "https://thestandnyc.com/shows/show/13935/2026-10-04-200000-the-stand-presents",
-   "comedians": [
-    "Modi Rosenfeld",
-    "Nataly Aukar",
-    "Brittany Schmitt",
-    "Tristan Bowling",
-    "Daniel Bridge-Gadd",
-    "Dan St. Germain"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T20:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Gray West",
-    "Alex English",
-    "Kc Shornima",
-    "LeClerc Andre",
-    "Michael Rowland",
-    "Kam Patterson"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T21:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Simeon Goodson",
-    "Emma Willmann",
-    "Shafi Hossain",
-    "Janet McNamara",
-    "Dan Docimo",
-    "Sydnee Washington",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Runnin' Late ft: Eeland Stribling, Dan Davies, Colin Cab Washington, Kareem Green",
-   "start": "2026-10-04T21:00",
-   "url": "https://newyorkcomedyclub.com/events/runnin-late-ft-eeland-stribling-dan-davies-colin-cab-washington-kareem-green",
-   "comedians": [
-    "Colin Cab Washington",
-    "Kareem Green",
-    "Dan Davies",
-    "Eeland Stribling"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Nataly Aukar, Modi, Anna Roisman, Dan St. Germain, & More!",
-   "start": "2026-10-04T21:00",
-   "url": "https://thestandnyc.com/shows/show/13936/2026-10-04-210000-the-stand-presents",
-   "comedians": [
-    "Nataly Aukar",
-    "Modi Rosenfeld",
-    "Anna Roisman",
-    "Dan St. Germain",
-    "Chris Barnes",
-    "Oscar Aydin"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Carolina Montesquieu, Louis Katz, Fabrizio Copano, Igor Martinez, Jared Harvin",
-   "start": "2026-10-04T21:15",
-   "url": "https://newyorkcomedyclub.com/events/carolina-montesquieu-louis-katz-fabrizio-copano-igor-martinez-jared-harvin",
-   "comedians": [
-    "Igor Martinez",
-    "Jared Harvin",
-    "Carolina Montesquieu",
-    "Louis Katz",
-    "Fabrizio Copano"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T21:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Eric Neumann",
-    "Alex English",
-    "Kc Shornima",
-    "Robby Hoffman",
-    "Shafi Hossain",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Zakir Khan Live (A Trial Show) (IN HINDI)",
-   "start": "2026-10-04T21:30",
-   "url": "https://newyorkcomedyclub.com/events/zakir-khan-live-a-trial-show-in-hindi",
-   "comedians": [
-    "Zakir Khan"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T22:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
-    "Daniel Geneen",
-    "LeClerc Andre",
-    "Robby Hoffman",
-    "Kam Patterson",
-    "Sydnee Washington"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T22:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jared Waters",
-    "Harrison Greenbaum",
-    "Dan Docimo",
-    "Derek Gaines",
-    "Rafi Bastos",
-    "Sydnee Washington"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-04T23:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "James Mattern",
-    "LeClerc Andre",
-    "Dan Davies",
-    "Sydnee Washington",
-    "Rafi Bastos",
-    "Andre D Thompson",
-    "Tyler Fischer"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "An Hour with Keith Robinson Show: Final Fat",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-05T19:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Keith Robinson"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "NYCC 11th Annual Fall Invitational - Round 1 Part 1",
-   "start": "2026-10-05T19:00",
-   "url": "https://newyorkcomedyclub.com/events/nycc-11th-annual-fall-invitational-round-1-part-1",
-   "comedians": [
-    "Daniel Speiser",
-    "Alexis Bradby",
-    "Alon Elian",
-    "Paige Smith-Hogan",
-    "Andy Aluise",
-    "Miss Lissa Knows",
-    "Ben Herwitz",
-    "Alyce Chan",
-    "Alaina Bamfield",
-    "Chris Reiter",
-    "Jesse Eigner",
-    "Liz Glazer",
-    "Tatiana Frank"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Jamie Wolf, Michael Longfellow, Dan Donohue, & More!",
-   "start": "2026-10-05T19:00",
-   "url": "https://thestandnyc.com/shows/show/13937/2026-10-05-190000-the-stand-presents",
-   "comedians": [
-    "Jamie Wolf",
-    "Michael Longfellow",
-    "Dan Donohue",
-    "Aaron Berg",
-    "Nataly Aukar",
-    "Kitty Reynolds"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Good Eggs ft: Matthew Broussard, Todd Barry, Gary Vider, Matt Ruby, Lissa Lenis",
-   "start": "2026-10-05T19:30",
-   "url": "https://newyorkcomedyclub.com/events/good-eggs-ft-matthew-broussard-todd-barry-gary-vider-matt-ruby-lissa-lenis",
-   "comedians": [
-    "Lissa Lenis",
-    "Matthew Broussard",
-    "Todd Barry",
-    "Gary Vider",
     "Matt Ruby"
    ]
   },
   {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-05T19:35",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Isiah Kelly",
-    "Ethan Simmons-Patterson",
-    "Peter Revello",
-    "Robby Hoffman",
-    "Kam Patterson"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-05T20:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Ashley Austin Morris",
-    "Philipp Kostelecky",
-    "Matt Goldich",
-    "Lynne Koplitz",
-    "Ethan Simmons-Patterson",
-    "Peter Revello"
-   ]
-  },
-  {
    "venue": "New York Comedy Club",
    "room": "East Village",
    "location": "New York Comedy Club, East Village",
-   "title": "Good Bits ft: Peter Liu, Julian Breheny, Philipp Kostelecky, Janet McNamara, Shaun Murphy, Sonya Vai",
-   "start": "2026-10-05T20:00",
-   "url": "https://newyorkcomedyclub.com/events/good-bits-ft-peter-liu-julian-breheny-philipp-kostelecky-janet-mcnamara-shaun-murphy-sonya-vai",
-   "comedians": [
-    "Janet McNamara",
-    "Peter Liu",
-    "Philipp Kostelecky",
-    "Sonya Vai",
-    "Julian Breheny",
-    "Shaun Murphy"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Legion Of Skanks Podcast Live",
-   "start": "2026-10-05T20:00",
-   "url": "https://thestandnyc.com/shows/show/13938/2026-10-05-200000-the-legion-of-skanks-podcast-live",
-   "comedians": [
-    "Big Jay Oakerson",
-    "Luis J. Gomez",
-    "Steve Rannazzisi",
-    "Mark Normand",
-    "Brendan Sagalow"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "FRANTIC! FREE SHOW",
-   "start": "2026-10-05T21:00",
-   "url": "https://thestandnyc.com/shows/show/13939/2026-10-05-210000-frantic-free-show",
-   "comedians": [
-    "Aaron Berg",
-    "Dvontre Coleman",
-    "Dan Donohue",
-    "Jonathan Williams",
-    "Brittany Schmitt",
-    "Murahd Shawki",
-    "Lukas McCrary",
-    "Brittany Brave"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Marie Faustin, Brendan Sagalow, Jamie Wolf, Liz Glazer, Alex Babbitt",
-   "start": "2026-10-05T21:15",
-   "url": "https://newyorkcomedyclub.com/events/marie-faustin-brendan-sagalow-jamie-wolf-liz-glazer-alex-babbitt",
-   "comedians": [
-    "Liz Glazer",
-    "Alex Babbitt",
-    "Brendan Sagalow",
-    "Marie Faustin",
-    "Jamie Wolf"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-05T21:35",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Petey DeAbreu",
-    "Emma Willmann",
-    "Julian McCullough",
-    "Dan Docimo",
-    "Danny Jolles",
-    "Brendan Sagalow"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "New Jokes & Newbies",
-   "start": "2026-10-05T21:45",
-   "url": "https://newyorkcomedyclub.com/events/new-jokes-newbies-2026-10-05214500",
+   "title": "Comedy Mob Open Mic",
+   "start": "2026-10-25T17:30",
+   "url": "https://newyorkcomedyclub.com/events/comedy-mob-open-mic-2026-10-25173000",
    "comedians": []
   },
   {
@@ -1126,30 +1430,475 @@
    "room": "Village Underground",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-05T22:00",
+   "start": "2026-10-25T18:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Kevin Dombrowski",
-    "Derek Gaines",
+    "Rich Aronovitch",
+    "Seaton C. Smith",
+    "Matt Koff",
+    "Ryan Hamilton",
     "Kc Shornima",
-    "Blake Freeman",
-    "Ian Lara",
-    "Brendan Sagalow"
+    "Josh Ocean Thomas"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T18:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Eric Neumann",
+    "Ismael Loutfi",
+    "Philipp Kostelecky",
+    "Judah Friedlander",
+    "Peter Revello",
+    "Sydnee Washington"
    ]
   },
   {
    "venue": "New York Comedy Club",
    "room": "Upper West Side",
    "location": "New York Comedy Club, Upper West Side",
-   "title": "Maddy Smith, Neko White, Fumi Abe, Jake Velazquez, Eeland Stribling",
-   "start": "2026-10-05T22:00",
-   "url": "https://newyorkcomedyclub.com/events/maddy-smith-neko-white-fumi-abe-jake-velazquez-eeland-stribling",
+   "title": "Julian McCullough, Dan Ahdoot, Will Purpura, Carolina Montesquieu, Chris Scopo",
+   "start": "2026-10-25T18:30",
+   "url": "https://newyorkcomedyclub.com/events/julian-mccullough-dan-ahdoot-will-purpura-carolina-montesquieu-chris-scopo",
    "comedians": [
+    "Chris Scopo",
+    "Dan Ahdoot",
+    "Carolina Montesquieu",
+    "Julian McCullough",
+    "Will Purpura"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T19:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Gray West",
+    "Andre D Thompson",
+    "Ryan Hamilton",
+    "Jenny Tian",
+    "Peter Revello",
+    "Amos Gill"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Matt Ruby Tapes His New Comedy Special!",
+   "start": "2026-10-25T19:00",
+   "url": "https://newyorkcomedyclub.com/events/matt-ruby-live-special-taping-2026-10-25190000",
+   "comedians": [
+    "Matt Ruby"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T19:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Kevin Dombrowski",
+    "Reggie Conquest",
+    "Philipp Kostelecky",
+    "Kc Shornima",
+    "Peter Revello",
+    "Sydnee Washington"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T20:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Rich Aronovitch",
+    "Julio Diaz",
+    "Gary Simons",
+    "Shafi Hossain",
+    "Amos Gill",
+    "Sydnee Washington"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "In Rhythm Comedy ft: Zubi Ahmed, Gary Simons, JC Mendoza, Samantha Santos, Ja-Ron Young",
+   "start": "2026-10-25T20:00",
+   "url": "https://newyorkcomedyclub.com/events/in-rhythm-comedy-ft-zubi-ahmed-gary-simons-jc-mendoza-samantha-santos-ja-ron-young",
+   "comedians": [
+    "Gary Simons",
+    "Zubi Ahmed",
+    "Ja-Ron Young",
+    "JC Mendoza",
+    "Samantha Santos"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T20:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Jared Waters",
+    "Andy Haynes",
+    "Philipp Kostelecky",
+    "Mike Vecchione",
+    "Peter Revello",
+    "Sydnee Washington"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T21:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "James Mattern",
+    "Jordan Carlos",
+    "Julio Diaz",
+    "Erin Maguire",
+    "Daniel Simonsen",
+    "Mike Vecchione",
+    "Josh Ocean Thomas"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Highly Suspicious ft: Aaron Putnam, Zach Liss, Kerryn Feehan",
+   "start": "2026-10-25T21:00",
+   "url": "https://newyorkcomedyclub.com/events/highly-suspicious-ft-aaron-putnam-zach-liss-kerryn-feehan",
+   "comedians": [
+    "Kerryn Feehan",
+    "Aaron Putnam",
+    "Zach Liss"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T21:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Kevin Dombrowski",
+    "Orion Levine",
+    "Ryan Hamilton",
+    "Onika Mclean",
+    "Amos Gill",
+    "Peter Revello"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "New Jokes & Newbies",
+   "start": "2026-10-25T21:45",
+   "url": "https://newyorkcomedyclub.com/events/new-jokes-newbies-2026-10-25214500",
+   "comedians": []
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Ian Fidance, Emma Willmann, Alingon Mitra, Chris Scopo",
+   "start": "2026-10-25T21:45",
+   "url": "https://newyorkcomedyclub.com/events/ian-fidance-emma-willmann-alingon-mitra-chris-scopo",
+   "comedians": [
+    "Chris Scopo",
+    "Alingon Mitra",
+    "Emma Willmann",
+    "Ian Fidance"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T22:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ryan Reiss",
+    "LeClerc Andre",
+    "Justin Martindale",
+    "Adrienne Iapalucci",
+    "Alex English",
+    "Tyler Fischer"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T22:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Simeon Goodson",
+    "Harrison Greenbaum",
+    "Todd Barry",
+    "Liza Treyger",
+    "Sharief Johnson",
+    "Peter Revello"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-25T23:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Dave Temple",
+    "Josh Ocean Thomas",
+    "Zahid Dewji",
+    "Alex English",
+    "Tyler Fischer",
+    "Jaye McBride",
+    "Bobby St. Petersburg"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Colin Quinn Returns to The CQ Room",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T19:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Nick Griffin",
+    "Colin Quinn"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Mike Cannon, Maddy Smith, Jared Waters, Brandon Barrera",
+   "start": "2026-10-26T19:00",
+   "url": "https://newyorkcomedyclub.com/events/mike-cannon-maddy-smith-jared-waters-brandon-barrera",
+   "comedians": [
+    "Brandon Barrera",
+    "Jared Waters",
+    "Mike Cannon",
+    "Maddy Smith"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T19:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "James Mattern",
+    "Dan Naturman",
+    "Alex English",
+    "Lenny Marcus",
+    "Lynne Koplitz",
+    "Peter Revello"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Good Eggs Presented by Mark Normand, Gary Vider, Matt Ruby",
+   "start": "2026-10-26T19:30",
+   "url": "https://newyorkcomedyclub.com/events/good-eggs-presented-by-mark-normand-gary-vider-matt-ruby-2026-10-26193000",
+   "comedians": []
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T19:35",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Ashley Austin Morris",
+    "Jay Jurden",
+    "Mike Vecchione",
+    "Erin Maguire",
+    "Lenny Marcus",
+    "Jeff Bailey"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "8pm The Matteo Lane Holiday Special Live Taping",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T20:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Matteo lane"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Mike Cannon, Jared Waters, Juan Nicolón, Ellen Harrold",
+   "start": "2026-10-26T20:00",
+   "url": "https://newyorkcomedyclub.com/events/mike-cannon-jared-waters-juan-nicolon-ellen-harrold",
+   "comedians": [
+    "Juan Nicolón",
+    "Jared Waters",
+    "Ellen Harrold",
+    "Mike Cannon"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Sean Patton, Jake Velazquez, Brandon Barrera, Tocarra Elise",
+   "start": "2026-10-26T21:15",
+   "url": "https://newyorkcomedyclub.com/events/sean-patton-jake-velazquez-brandon-barrera-tocarra-elise",
+   "comedians": [
+    "Brandon Barrera",
     "Jake Velazquez",
-    "Fumi Abe",
-    "Neko White",
-    "Maddy Smith",
-    "Eeland Stribling"
+    "Tocarra Elise",
+    "Sean Patton"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T21:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Gray West",
+    "Julio Diaz",
+    "Jeff Bailey",
+    "Janet McNamara",
+    "Blake Freeman",
+    "Peter Revello"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T21:35",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Petey DeAbreu",
+    "Peter Revello",
+    "Kc Shornima",
+    "Dan Docimo",
+    "Amos Gill",
+    "Sharief Johnson"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "New Jokes & Newbies",
+   "start": "2026-10-26T21:45",
+   "url": "https://newyorkcomedyclub.com/events/new-jokes-newbies-2026-10-26214500",
+   "comedians": []
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Village Underground",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T22:00",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Rich Aronovitch",
+    "Terry Thomas",
+    "Tommy Brennan",
+    "Eva Evans",
+    "Lev Fer",
+    "Tyler Fischer",
+    "Usama Siddiquee"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Mike Cannon, Sean Patton, Jessica Levin, Kaneez Surka",
+   "start": "2026-10-26T22:00",
+   "url": "https://newyorkcomedyclub.com/events/mike-cannon-sean-patton-jessica-levin-kaneez-surka",
+   "comedians": [
+    "Jessica Levin",
+    "Mike Cannon",
+    "Kaneez Surka",
+    "Sean Patton"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Andy Haynes: Run For Your Money",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T22:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Andy Haynes"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "MacDougal Street",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-26T23:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Simeon Goodson",
+    "Josh Ocean Thomas",
+    "Amos Gill",
+    "Eva Evans",
+    "Andre De Freitas",
+    "Philipp Kostelecky",
+    "Bobby St. Petersburg"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Mangia & Laugh with Chef Mario Vitolo ft: Chris Distefano, Vinny Guadagnino, Tara Cannistraci, Eric D’Alessandro, James Mattern",
+   "start": "2026-10-27T18:45",
+   "url": "https://newyorkcomedyclub.com/events/chris-distefano-vinny-guadagnino-tara-cannistraci-eric-d-alessandro-james-mattern",
+   "comedians": [
+    "James Mattern",
+    "Vinny Guadagnino",
+    "Tara Cannistraci",
+    "Eric D’Alessandro",
+    "Chris Distefano"
    ]
   },
   {
@@ -1157,7 +1906,7 @@
    "room": "Robert Kelly - A One Man Show",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-06T19:00",
+   "start": "2026-10-27T19:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
     "Robert Kelly"
@@ -1167,65 +1916,11 @@
    "venue": "New York Comedy Club",
    "room": "Midtown",
    "location": "New York Comedy Club, Midtown",
-   "title": "NYCC 11th Annual Fall Invitational - Round 1 Part 2",
-   "start": "2026-10-06T19:00",
-   "url": "https://newyorkcomedyclub.com/events/nycc-11th-annual-fall-invitational-round-1-part-2",
+   "title": "Jessica Kirson Live in New York",
+   "start": "2026-10-27T19:00",
+   "url": "https://newyorkcomedyclub.com/events/jessica-kirson-live-in-new-york-2026-10-27190000",
    "comedians": [
-    "Joshua Lampley",
-    "Will Purpura",
-    "Jenae Boston",
-    "David Marcoe",
-    "Jenna Sherriton",
-    "Billy Hockman",
-    "Sarah Barnitt",
-    "Byron Austin",
-    "Maggie Naughton",
-    "Crenshaw White",
-    "Ashley Austin Morris",
-    "Ryan Thomas",
-    "Jared Waters"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Sahib Singh, Matthew Broussard, Jamie Wolf, & More!",
-   "start": "2026-10-06T19:00",
-   "url": "https://thestandnyc.com/shows/show/13940/2026-10-06-190000-the-stand-presents",
-   "comedians": [
-    "Sahib Singh",
-    "Matthew Broussard",
-    "Jamie Wolf",
-    "Pete Lee",
-    "Mark Normand",
-    "Brittany Brave"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "The Stand West",
-   "location": "The Stand West",
-   "title": "Home By 3 Pregame & Live Watch Party: Rangers vs. Islanders",
-   "start": "2026-10-06T19:00",
-   "url": "https://thestandnyc.com/shows/show/13891/2026-10-06-190000-home-by-3-pregame-live-watch-party-rangers-vs-islanders",
-   "comedians": []
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Come To Papa Live with Tom Papa",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-06T19:25",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Come To Papa",
-    "Tom Papa",
-    "Rick Crom",
-    "Mike Yard",
-    "Dave Hill",
-    "Jim Gaffigan",
-    "Jackie Kashian"
+    "Jessica Kirson"
    ]
   },
   {
@@ -1233,165 +1928,31 @@
    "room": "MacDougal Street",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-06T19:30",
+   "start": "2026-10-27T19:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
     "Jon Laster",
-    "Andy Haynes",
-    "Geoff Chaser",
-    "Lenny Marcus",
-    "Jeff Bailey",
+    "Peter Revello",
+    "Jourdain Fisher",
+    "Lynne Koplitz",
+    "Keith Robinson",
     "Bobby St. Petersburg"
    ]
   },
   {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Good Bits ft: Nataly Aukar, Louis Katz, Shaun Murphy, Jesse Eigner, Shivani Dave, Max Fine",
-   "start": "2026-10-06T19:30",
-   "url": "https://newyorkcomedyclub.com/events/good-bits-ft-nataly-aukar-louis-katz-shaun-murphy-jesse-eigner-shivani-dave-max-fine",
-   "comedians": [
-    "Nataly Aukar",
-    "Louis Katz",
-    "Jesse Eigner",
-    "Max Fine",
-    "Shivani Dave",
-    "Shaun Murphy"
-   ]
-  },
-  {
    "venue": "Comedy Cellar",
    "room": "Fat Black Pussycat (Bar)",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-06T19:35",
+   "start": "2026-10-27T19:35",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Rich Aronovitch",
-    "Isiah Kelly",
-    "Emma Willmann",
-    "Dan Docimo",
-    "Julian McCullough",
-    "Drew Dunn"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Closed For Private Event",
-   "start": "2026-10-06T20:00",
-   "url": "https://newyorkcomedyclub.com/events/closed-for-private-event-5",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "Infamous Ray",
-   "start": "2026-10-06T20:00",
-   "url": "https://thestandnyc.com/shows/show/13957/2026-10-06-200000-infamous-ray",
-   "comedians": [
-    "Ray Devito",
-    "Danny Polishchuk",
-    "Big Jay Oakerson",
-    "Judah Friedlander",
-    "Emma Willmann",
-    "Josh Adam Meyers",
-    "Steve Rinaldi"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-06T20:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
-    "Peter Revello",
-    "Greer Barnes",
-    "Erin Jackson",
-    "Jeff Bailey",
+    "Gray West",
+    "Julio Diaz",
     "Lucas Zelnick",
-    "Drew Dunn"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Jay Jurden, Mark Normand, Jamie Wolf, & More!",
-   "start": "2026-10-06T21:00",
-   "url": "https://thestandnyc.com/shows/show/13941/2026-10-06-210000-the-stand-presents",
-   "comedians": [
-    "Jay Jurden",
-    "Mark Normand",
-    "Jamie Wolf",
-    "Sahib Singh",
-    "Matthew Broussard",
-    "Olivia Carter"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "H. Foley, Ashley Austin Morris, Jamell Sirleaf",
-   "start": "2026-10-06T21:15",
-   "url": "https://newyorkcomedyclub.com/events/h-foley-ashley-austin-morris-jamell-sirleaf",
-   "comedians": [
-    "Jamell Sirleaf",
-    "Ashley Austin Morris",
-    "H. Foley"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-06T21:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jon Laster",
-    "Ian Lara",
-    "Greer Barnes",
-    "Danny Jolles",
-    "Erin Jackson",
+    "Ethan Simmons-Patterson",
+    "Ophira Eisenberg",
     "Peter Revello"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-06T21:35",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jared Waters",
-    "Casey Balsham",
-    "Blake Freeman",
-    "Daniel Simonsen",
-    "Brendan Sagalow",
-    "Matt Goldich"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Eric Neumann, Jack Finnegan, Rojo Perez, Ryan Thomas",
-   "start": "2026-10-06T21:45",
-   "url": "https://newyorkcomedyclub.com/events/eric-neumann-jack-finnegan-rojo-perez-ryan-thomas",
-   "comedians": [
-    "Jack Finnegan",
-    "Rojo Perez",
-    "Ryan Thomas",
-    "Eric Neumann"
    ]
   },
   {
@@ -1399,32 +1960,62 @@
    "room": "Village Underground",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-06T22:00",
+   "start": "2026-10-27T20:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Simeon Goodson",
-    "Cipha Sounds",
-    "Robby Hoffman",
-    "Blake Freeman",
-    "Alex Kumin",
-    "Peter Revello"
+    "Rich Aronovitch",
+    "Mike Yard",
+    "Dan Docimo",
+    "Greer Barnes",
+    "Melissa Rauch",
+    "Ethan Simmons-Patterson"
    ]
   },
   {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Olivia Carter, Matthew Broussard, Jamie Wolf, & More!",
-   "start": "2026-10-06T22:00",
-   "url": "https://thestandnyc.com/shows/show/13714/2026-10-06-220000-the-stand-presents",
+   "venue": "New York Comedy Club",
+   "room": "East Village",
+   "location": "New York Comedy Club, East Village",
+   "title": "Nice Try ft: Michael Kosta, Emma Willmann, Ashley Austin Morris, Charles McBee, Erin Maguire, Oscar Aydin",
+   "start": "2026-10-27T20:00",
+   "url": "https://newyorkcomedyclub.com/events/nice-try-ft-michael-kosta-emma-willmann-ashley-austin-morris-charles-mcbee-erin-maguire-oscar-aydin",
    "comedians": [
-    "Olivia Carter",
-    "Matthew Broussard",
-    "Jamie Wolf",
-    "Dvontre Coleman",
-    "Chris Barnes",
-    "Lukas McCrary",
-    "Michael Longfellow"
+    "Ashley Austin Morris",
+    "Emma Willmann",
+    "Charles McBee",
+    "Erin Maguire",
+    "Oscar Aydin",
+    "Michael Kosta"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Upper West Side",
+   "location": "New York Comedy Club, Upper West Side",
+   "title": "Chris Distefano, Vinny Guadagnino, Tara Cannistraci, Eric D’Alessandro, James Mattern",
+   "start": "2026-10-27T20:00",
+   "url": "https://newyorkcomedyclub.com/events/chris-distefano-vinny-guadagnino-tara-cannistraci-eric-d-alessandro-james-mattern-1",
+   "comedians": [
+    "James Mattern",
+    "Vinny Guadagnino",
+    "Tara Cannistraci",
+    "Eric D’Alessandro",
+    "Chris Distefano"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "fat Black Pussycat Lounge",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-27T20:30",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Marie Faustin",
+    "Reggie Conquest",
+    "Keith Alberstadt",
+    "Greer Barnes",
+    "Dan Docimo",
+    "Lenny Marcus"
    ]
   },
   {
@@ -1432,795 +2023,109 @@
    "room": "MacDougal Street",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-06T23:30",
+   "start": "2026-10-27T21:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "James Mattern",
-    "Rafi Bastos",
-    "Michael Rowland",
-    "Shaun Murphy",
-    "Eva Evans",
-    "Tyler Fischer",
+    "Jon Laster",
+    "Amos Gill",
+    "Melissa Rauch",
+    "Lenny Marcus",
+    "Daniel Simonsen",
+    "Ethan Simmons-Patterson"
+   ]
+  },
+  {
+   "venue": "New York Comedy Club",
+   "room": "Midtown",
+   "location": "New York Comedy Club, Midtown",
+   "title": "Jessica Kirson Live in New York",
+   "start": "2026-10-27T21:30",
+   "url": "https://newyorkcomedyclub.com/events/jessica-kirson-live-in-new-york-2026-10-27213000",
+   "comedians": [
+    "Jessica Kirson"
+   ]
+  },
+  {
+   "venue": "Comedy Cellar",
+   "room": "Fat Black Pussycat (Bar)",
+   "location": "Comedy Cellar",
+   "title": "",
+   "start": "2026-10-27T21:35",
+   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "comedians": [
+    "Andrew Fiori",
+    "Seaton C. Smith",
+    "Brendan Sagalow",
+    "Alex Kumin",
+    "Chris Lamberth",
+    "Amos Gill",
     "Usama Siddiquee"
    ]
   },
   {
    "venue": "Comedy Cellar",
-   "room": "An Hour with Jim Norton",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T19:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jim Norton"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "Judy Gold: We Will Laugh Again",
-   "start": "2026-10-07T19:00",
-   "url": "https://newyorkcomedyclub.com/events/judy-gold-we-will-laugh-again",
-   "comedians": [
-    "Judy Gold"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Caitlin Peluffo, Jay Jurden, Sahib Singh, & More!",
-   "start": "2026-10-07T19:00",
-   "url": "https://thestandnyc.com/shows/show/13942/2026-10-07-190000-the-stand-presents",
-   "comedians": [
-    "Caitlin Peluffo",
-    "Jay Jurden",
-    "Sahib Singh",
-    "Matthew Broussard",
-    "Mark Normand"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "The Stand West",
-   "location": "The Stand West",
-   "title": "Jeff Dye Live",
-   "start": "2026-10-07T19:00",
-   "url": "https://thestandnyc.com/shows/show/13911/2026-10-07-190000-jeff-dye-live",
-   "comedians": [
-    "Jeff Dye"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T19:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jon Laster",
-    "Erin Jackson",
-    "Dov Davidoff",
-    "Gregg Rogell",
-    "Philipp Kostelecky",
-    "Ethan Simmons-Patterson"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T19:35",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Richie Redding",
-    "Sydnee Washington",
-    "Greer Barnes",
-    "Judah Friedlander",
-    "Erin Jackson",
-    "Jeff Bailey"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Story Warz w/ Big Jay Oakerson, Luis J Gomez + Special Guests",
-   "start": "2026-10-07T19:45",
-   "url": "https://newyorkcomedyclub.com/events/story-warz-w-big-jay-oakerson-luis-j-gomez-special-guests-2026-10-07194500",
-   "comedians": [
-    "Big Jay Oakerson",
-    "Luis J Gomez"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
    "room": "Village Underground",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-07T20:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Sydnee Washington",
-    "Dan Docimo",
-    "Greer Barnes",
-    "Dov Davidoff",
-    "Jeff Bailey"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Good Eggs Presented by Mark Normand, Gary Vider, Matt Ruby",
-   "start": "2026-10-07T20:00",
-   "url": "https://newyorkcomedyclub.com/events/good-eggs-presented-by-mark-normand-gary-vider-matt-ruby-2026-10-07200000",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "Allie Mae & Na'im Ali Presents: DRIP",
-   "start": "2026-10-07T20:00",
-   "url": "https://thestandnyc.com/shows/show/13958/2026-10-07-200000-allie-mae-naim-ali-presents-drip",
-   "comedians": [
-    "Allie Mae",
-    "Na’im Ali"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T20:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
-    "Isiah Kelly",
-    "Sydnee Washington",
-    "Peter Revello",
-    "Drew Dunn",
-    "Ethan Simmons-Patterson",
-    "Ryan Hamilton"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Jourdain Fisher, Matthew Broussard, Sean Patton, & More!",
-   "start": "2026-10-07T21:00",
-   "url": "https://thestandnyc.com/shows/show/13943/2026-10-07-210000-the-stand-presents",
-   "comedians": [
-    "Jourdain Fisher",
-    "Matthew Broussard",
-    "Sean Patton",
-    "Caitlin Peluffo",
-    "Sahib Singh",
-    "Mark Normand",
-    "Brittany Brave"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "The Hamburber Combo ft: Alonzo Hamburger Jones, Alex Pavone, Bria Hiebert, Monty Mason, Max Higgins",
-   "start": "2026-10-07T21:15",
-   "url": "https://newyorkcomedyclub.com/events/the-hamburber-combo-ft-alonzo-hamburger-jones-alex-pavone-bria-hiebert-monty-mason-max-higgins",
-   "comedians": [
-    "Alonzo Hamburger Jones",
-    "Alex Pavone",
-    "Bria Hiebert"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T21:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Jon Laster",
-    "Julian McCullough",
-    "Keith Robinson",
-    "Peter Revello",
-    "Sydnee Washington",
-    "Drew Dunn"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T21:35",
+   "start": "2026-10-27T22:00",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
     "Petey DeAbreu",
-    "Matthew Broussard",
-    "Janet McNamara",
-    "Blake Freeman",
-    "Ryan Goodcase",
-    "Kam Patterson"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T22:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Ardie Fuqua",
-    "Danny Jolles",
-    "Ian Lara",
-    "Adrienne Iapalucci",
-    "Ryan Hamilton",
-    "Caitlin Peluffo",
-    "Sean Patton"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Caitlin Peluffo, Aaron Berg, Ahri Findling, Eeland Stribling, Terry Thomas Jr.",
-   "start": "2026-10-07T22:00",
-   "url": "https://newyorkcomedyclub.com/events/caitlin-peluffo-aaron-berg-ahri-findling-eeland-stribling-terry-thomas-jr",
-   "comedians": [
-    "Ahri Findling",
-    "Caitlin Peluffo",
-    "Terry Thomas Jr.",
-    "Eeland Stribling",
-    "Aaron Berg"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Cipha Sounds, Lukas McCrary, Dvontre Coleman, & More!",
-   "start": "2026-10-07T22:00",
-   "url": "https://thestandnyc.com/shows/show/13944/2026-10-07-220000-the-stand-presents",
-   "comedians": [
-    "Cipha Sounds",
-    "Lukas McCrary",
-    "Dvontre Coleman",
-    "Oscar Aydin"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Lounge)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T22:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
-    "Blake Freeman",
-    "Ian Lara",
-    "Nathan Macintosh",
-    "Kc Shornima",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "Caitlin Peluffo, Calise Hawkins, Meka Mo, Lucas O'Neil, Terry Thomas Jr.",
-   "start": "2026-10-07T22:30",
-   "url": "https://newyorkcomedyclub.com/events/caitlin-peluffo-calise-hawkins-meka-mo-lucas-o-neil-terry-thomas-jr",
-   "comedians": [
-    "Calise Hawkins",
-    "Lucas O'Neil",
-    "Meka Mo",
-    "Terry Thomas Jr.",
-    "Caitlin Peluffo"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-07T23:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Andrew Fiori",
-    "Pete Lee",
-    "Kam Patterson",
-    "Nathan Macintosh",
-    "Kc Shornima",
-    "Derek Gaines",
-    "Bobby St. Petersburg"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "Comedy Mob Presents: The Lineup",
-   "start": "2026-10-08T18:00",
-   "url": "https://newyorkcomedyclub.com/events/comedy-mob-presents-the-lineup-2026-10-08180000",
-   "comedians": []
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T18:45",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
-    "Drew Dunn",
-    "Geoff Chaser",
-    "Lynne Koplitz",
-    "Jeff Bailey",
-    "Bobby St. Petersburg"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "fat Black Pussycat Lounge",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T19:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Richie Redding",
-    "Ian Lara",
-    "Casey Balsham",
-    "Michael Rowland",
-    "Erin Jackson",
-    "Derrick Stroup"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Andre Kim, Anna Roisman, Lukas McCrary, & More!",
-   "start": "2026-10-08T19:00",
-   "url": "https://thestandnyc.com/shows/show/13945/2026-10-08-190000-the-stand-presents",
-   "comedians": [
-    "Andre Kim",
-    "Anna Roisman",
-    "Lukas McCrary",
-    "Jourdain Fisher"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T19:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Eva Evans",
-    "Geoff Chaser",
-    "Dan Docimo",
-    "Jeff Bailey",
-    "Derrick Stroup"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-08T19:30",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-08193000",
-   "comedians": []
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-08T20:00",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-08200000",
-   "comedians": []
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T20:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Ashley Austin Morris",
-    "Drew Dunn",
-    "Melissa Rauch",
-    "Kam Patterson",
-    "Greer Barnes",
-    "Derrick Stroup"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-08T20:30",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-08203000",
-   "comedians": []
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "MacDougal Street",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T20:45",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Wil Sylvince",
     "Philipp Kostelecky",
-    "Derrick Stroup",
     "Gregg Rogell",
-    "Kc Shornima",
-    "Drew Dunn"
+    "Yamaneika Saunders",
+    "Blake Freeman",
+    "Jared Freid"
    ]
   },
   {
    "venue": "Comedy Cellar",
-   "room": "fat Black Pussycat Lounge",
+   "room": "Hot Soup in the FBPC",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-08T21:00",
+   "start": "2026-10-27T22:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Simeon Goodson",
-    "Ontonio Kareem",
-    "Melissa Rauch",
-    "Matt Goldich",
-    "Greer Barnes",
-    "Lynne Koplitz",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "The Stand West",
-   "location": "The Stand West",
-   "title": "Nataly Aukar Work in Progress Show",
-   "start": "2026-10-08T21:00",
-   "url": "https://thestandnyc.com/shows/show/13872/2026-10-08-210000-nataly-aukar-work-in-progress-show",
-   "comedians": [
-    "Nataly Aukar"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Pete Lee, Ian Lara, Caitlin Peluffo, & More!",
-   "start": "2026-10-08T21:00",
-   "url": "https://thestandnyc.com/shows/show/13946/2026-10-08-210000-the-stand-presents",
-   "comedians": [
-    "Pete Lee",
-    "Ian Lara",
-    "Caitlin Peluffo",
-    "Torey Cole",
-    "Jourdain Fisher",
-    "Andre Kim",
-    "Dvontre Coleman"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Live stand-up from the Village Underground streaming on Mint Comedy streaming on Mint Comedy",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T21:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Rich Aronovitch",
-    "Lynne Koplitz",
+    "Hot Soup",
+    "Andy Haynes",
     "Dan Davies",
-    "Caitlin Peluffo",
-    "Kam Patterson",
-    "Derrick Stroup"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-08T21:45",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-08214500",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Ian Lara, Cipha Sounds, Jourdain Fisher, & More!",
-   "start": "2026-10-08T22:00",
-   "url": "https://thestandnyc.com/shows/show/13947/2026-10-08-220000-the-stand-presents",
-   "comedians": [
-    "Ian Lara",
-    "Cipha Sounds",
+    "Gary Vider",
     "Jourdain Fisher",
-    "Pete Lee",
-    "Caitlin Peluffo",
-    "Tristan Bowling"
+    "Mark Normand",
+    "Matt Ruby"
    ]
   },
   {
    "venue": "New York Comedy Club",
    "room": "East Village",
    "location": "New York Comedy Club, East Village",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-08T22:15",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-08221500",
-   "comedians": []
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Bar)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T22:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
+   "title": "Nore Davis, Ashley Austin Morris, James Davis, Carmen Lagala, Ellen Harrold",
+   "start": "2026-10-27T22:30",
+   "url": "https://newyorkcomedyclub.com/events/nore-davis-ashley-austin-morris-james-davis-carmen-lagala-ellen-harrold",
    "comedians": [
-    "Dave Temple",
-    "Isiah Kelly",
-    "Nick Griffin",
-    "Casey Balsham",
-    "Sahib Singh",
-    "Brendan Sagalow"
+    "Ellen Harrold",
+    "Ashley Austin Morris",
+    "Nore Davis",
+    "Carmen Lagala",
+    "James Davis"
    ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-08T22:30",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-08223000",
-   "comedians": []
   },
   {
    "venue": "Comedy Cellar",
    "room": "MacDougal Street",
    "location": "Comedy Cellar",
    "title": "",
-   "start": "2026-10-08T22:45",
+   "start": "2026-10-27T23:30",
    "url": "https://www.comedycellar.com/new-york-line-up/",
    "comedians": [
-    "Petey DeAbreu",
-    "Harrison Greenbaum",
-    "Alex Kumin",
-    "Daniel Simonsen",
-    "Derrick Stroup",
-    "Andre D Thompson",
-    "Brendan Sagalow"
+    "James Mattern",
+    "Josh Ocean Thomas",
+    "Yamaneika Saunders",
+    "Jared Freid",
+    "Shafi Hossain",
+    "Liza Treyger",
+    "Tyler Fischer"
    ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Fat Black Pussycat (Lounge)",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T23:00",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Simeon Goodson",
-    "Seaton C. Smith",
-    "Derrick Stroup",
-    "Daniel Simonsen",
-    "Alex Kumin",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "Comedy Cellar",
-   "room": "Village Underground",
-   "location": "Comedy Cellar",
-   "title": "",
-   "start": "2026-10-08T23:30",
-   "url": "https://www.comedycellar.com/new-york-line-up/",
-   "comedians": [
-    "Ardie Fuqua",
-    "Phil Duckett",
-    "Alex Kumin",
-    "Seaton C. Smith",
-    "Adrienne Iapalucci",
-    "Louis Katz",
-    "Derek Gaines"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T18:15",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09181500",
-   "comedians": []
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T19:00",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09190000",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Kyle Dunnigan, Nataly Aukar, Andre Kim, & More!",
-   "start": "2026-10-09T19:00",
-   "url": "https://thestandnyc.com/shows/show/13948/2026-10-09-190000-the-stand-presents",
-   "comedians": [
-    "Kyle Dunnigan",
-    "Nataly Aukar",
-    "Dvontre Coleman",
-    "Andre Kim",
-    "Esther Povitsky",
-    "Tom McGuire"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T20:00",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09200000",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Caitlin Peluffo, Esther Povitsky, Sahib Singh, & More!",
-   "start": "2026-10-09T20:00",
-   "url": "https://thestandnyc.com/shows/show/13949/2026-10-09-200000-the-stand-presents",
-   "comedians": [
-    "Caitlin Peluffo",
-    "Esther Povitsky",
-    "Sahib Singh",
-    "Aaron Berg",
-    "Jourdain Fisher",
-    "Mike Figs"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T20:30",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09203000",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Patio",
-   "location": "The Stand",
-   "title": "Live Comedy on the Outdoor Patio!",
-   "start": "2026-10-09T20:30",
-   "url": "https://thestandnyc.com/shows/show/13950/2026-10-09-203000-live-comedy-on-the-outdoor-patio",
-   "comedians": [
-    "Daniel Bridge-Gadd",
-    "Tom McGuire",
-    "Derek Drescher",
-    "Oscar Aydin"
-   ]
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Jourdain Fisher, Sahib Singh, Aaron Berg, & More!",
-   "start": "2026-10-09T21:00",
-   "url": "https://thestandnyc.com/shows/show/13951/2026-10-09-210000-the-stand-presents",
-   "comedians": [
-    "Jourdain Fisher",
-    "Sahib Singh",
-    "Aaron Berg",
-    "Kitty Reynolds",
-    "Kyle Dunnigan",
-    "Caitlin Peluffo"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T21:15",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09211500",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents: Pete Lee, Kyle Dunnigan, Caitlin Peluffo, & More!",
-   "start": "2026-10-09T22:00",
-   "url": "https://thestandnyc.com/shows/show/13952/2026-10-09-220000-the-stand-presents",
-   "comedians": [
-    "Pete Lee",
-    "Kyle Dunnigan",
-    "Caitlin Peluffo",
-    "Jourdain Fisher",
-    "Sahib Singh",
-    "Aaron Berg",
-    "Mike Figs"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "East Village",
-   "location": "New York Comedy Club, East Village",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T22:30",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09223000",
-   "comedians": []
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Upper West Side",
-   "location": "New York Comedy Club, Upper West Side",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T22:45",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09224500",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Upstairs",
-   "location": "The Stand",
-   "title": "The Stand Presents: Jay Jurden, Carolina Montesquieu, Max Manticof, & More!",
-   "start": "2026-10-09T23:00",
-   "url": "https://thestandnyc.com/shows/show/13953/2026-10-09-230000-the-stand-presents",
-   "comedians": [
-    "Jay Jurden",
-    "Carolina Montesquieu",
-    "Max Manticof",
-    "Oscar Aydin",
-    "TaTa Sherise",
-    "Derek Drescher"
-   ]
-  },
-  {
-   "venue": "New York Comedy Club",
-   "room": "Midtown",
-   "location": "New York Comedy Club, Midtown",
-   "title": "New York Comedy Club Presents",
-   "start": "2026-10-09T23:30",
-   "url": "https://newyorkcomedyclub.com/events/new-york-comedy-club-presents-2026-10-09233000",
-   "comedians": []
-  },
-  {
-   "venue": "The Stand",
-   "room": "Main room",
-   "location": "The Stand",
-   "title": "The Stand Presents",
-   "start": "2026-10-09T23:55",
-   "url": "https://thestandnyc.com/shows/show/13954/2026-10-09-235500-the-stand-presents",
-   "comedians": []
   }
  ]
 }

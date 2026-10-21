@@ -68,14 +68,16 @@ A show has a `venue`, a `room` and a `location`. The location is the address to 
 
 The prompt (`PROMPT` in `rate.py`) tells the model to rate a scale only when it is confident it knows the comedian, else `null`, and to keep reasons to facts it is sure of. An empty entry `{}` in `ratings.json` means the model did not know the name; the page shows "Not rated". The answers are judgments from the model's general knowledge and are not verified. `ratings.json` records the taste text and the model, and the page footer names them.
 
-`rate.py` skips names that `ratings.json` already has. A changed `taste.txt` makes it rate everyone again. `build.py` works without `ratings.json` (everyone "Not rated") and stops if a tier is unknown or a reason is missing. The scales and their page labels are in `SCALES` in `build.py`; the prompt reads them from there.
+`rate.py` skips names that `ratings.json` already has. A changed `taste.txt` makes it rate everyone again. `build.py` works without `ratings.json` (everyone "Not rated") and stops if a tier is unknown or a reason is missing. The scales and their page labels are in `SCALES` in `build.py`; the prompt reads them from there, so the tier meanings must stay taste-neutral ("close to this taste", not "dark comedy").
+
+`build.py` warns, in the terminal and in the page footer, when `taste.txt` changed after `ratings.json` was made.
 
 ## Rules that the code follows
 
 - A show `start` is NYC local time on the real calendar day. The Cellar bills a 12:30 AM show under the night before; `parse_cellar` moves it to the next day.
 - A night ends at 04:00 (`NIGHT_ENDS_HOUR`). `night_of()` decides which night a show belongs to. The window and the night filter count in nights.
 - A show with no published lineup stays in `data/shows.json` but not on the page. The page footer counts these shows.
-- If a venue returns no lineup at all, the build stops and writes nothing. This usually means the site layout changed.
+- A venue whose site fails (HTTP error, bot challenge, no lineups at all) is skipped. `data/shows.json` lists it under `failed` and the page footer names it. The build stops only when every venue fails. The Stand has been behind a Cloudflare challenge since Oct 2026.
 - Comedy Cellar shows link to the lineup page. The reservation links in the API carry today's date for every night, so they are wrong for later nights.
 - `name_key()` merges spellings of one name (case, accents, apostrophes, periods). Ratings use the same key.
 - `ALIASES` and `NOT_COMEDIANS` in `build.py` are hand-kept. Add a line when the page shows one person twice, or shows a show name as a person.
