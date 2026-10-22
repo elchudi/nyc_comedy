@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """Rate the comedians in data/shows.json with a language model, and write ratings.json.
 
+The default model is Gemma 4 (gemma4:12b), run locally through Ollama. The claude CLI is the fallback.
+
 Usage:
     python3 rate.py                      rate the comedians that ratings.json does not have yet
     python3 rate.py --all                rate every comedian again
-    python3 rate.py --model opus         another claude model (default: sonnet; haiku knows few names)
-    python3 rate.py --workers 2          fewer calls at once (default: 6 for claude, 1 for ollama)
-    python3 rate.py --backend ollama     use a local model through Ollama (default model: gemma4:12b)
+    python3 rate.py --model gemma4:26b-a4b   another Ollama model
+    python3 rate.py --backend claude     use the claude CLI instead (default model sonnet; 6 calls at once)
     python3 rate.py --taste examples/x/taste.txt --ratings examples/x/ratings.json
                                          rate against another taste file, into another ratings file
 
-Backends: "claude" runs the claude CLI; "ollama" posts to a local Ollama server (http://localhost:11434).
-
-The taste comes from taste.txt. When its text changes, every comedian is rated again. Each call sends a batch of names with their venues as context. Batches run in parallel.
+Backends: "ollama" posts to a local Ollama server (http://localhost:11434); "claude" runs the claude CLI.
+The taste comes from taste.txt. When its text changes, every comedian is rated again.
+Each call sends a batch of names with their venues as context.
 The model may answer null for a name it does not know: that comedian stays "Not rated".
 """
 
@@ -29,12 +30,13 @@ from pathlib import Path
 import build
 
 TASTE_FILE = build.ROOT / "taste.txt"
-# Per backend: names per call, calls at once, default model. A local model gets small batches: it
+# Per backend: names per call, calls at once, default model. The local model gets small batches: it
 # keeps the JSON valid more often, and Ollama answers one call at a time anyway.
 BACKENDS = {
-    "claude": {"batch": 30, "workers": 6, "model": "sonnet"},
     "ollama": {"batch": 10, "workers": 1, "model": "gemma4:12b"},
+    "claude": {"batch": 30, "workers": 6, "model": "sonnet"},
 }
+DEFAULT_BACKEND = "ollama"
 OLLAMA_URL = "http://localhost:11434/api/chat"
 CALL_TIMEOUT_SECONDS = 600
 
@@ -155,9 +157,9 @@ def load_existing(ratings_file, taste):
 def main():
     parser = argparse.ArgumentParser(description="Rate comedians with the claude CLI and write ratings.json.")
     parser.add_argument("--all", action="store_true", help="rate every comedian again")
-    parser.add_argument("--backend", choices=BACKENDS, default="claude", help="claude CLI or local Ollama (default: claude)")
-    parser.add_argument("--model", help="model name for the backend (default: sonnet for claude, gemma4:12b for ollama)")
-    parser.add_argument("--workers", type=int, help="calls at once (default: 6 for claude, 1 for ollama)")
+    parser.add_argument("--backend", choices=BACKENDS, default=DEFAULT_BACKEND, help="local Ollama or the claude CLI (default: ollama)")
+    parser.add_argument("--model", help="model name for the backend (default: gemma4:12b for ollama, sonnet for claude)")
+    parser.add_argument("--workers", type=int, help="calls at once (default: 1 for ollama, 6 for claude)")
     parser.add_argument("--taste", type=Path, default=TASTE_FILE, help="taste file (default: taste.txt)")
     parser.add_argument("--ratings", type=Path, default=build.RATINGS_FILE, help="ratings file to write (default: ratings.json)")
     args = parser.parse_args()
@@ -204,7 +206,7 @@ def main():
         "rated_on": datetime.now(build.NYC).date().isoformat(),
         "taste": taste,
         "model": model_used,
-        "note": f"Written by rate.py with the {args.backend} backend. The model answered from general knowledge; "
+        "note": f"Written by rate.py with the {args.backend} backend, model {model_used}. The model answered from general knowledge; "
                 "reasons are not verified. An empty entry means the model did not know the name.",
         "ratings": {names[key]: existing[key] for key in sorted(existing, key=lambda key: names[key].casefold())},
     }

@@ -21,7 +21,7 @@ A show is a dict:
     url        link to the show or its reservation page
     comedians  list of names, in billing order (can be empty)
 
-ratings.json is written by rate.py. It rates comedians on two scales, each with a reason: see SCALES.
+ratings.json is written by rate.py (Gemma through Ollama, or the claude CLI). Two scales, each with a reason: see SCALES.
 """
 
 import argparse
@@ -577,15 +577,15 @@ def render(snapshot, ratings):
 
     if ratings["rated_on"]:
         rated_on = date.fromisoformat(ratings["rated_on"])
-        who = f"Claude ({ratings['model']})" if ratings["model"] else "Claude"
+        who = ratings["model"] or "a language model"
         rating_note = (
-            f"The ratings are the judgment of {who} on {format_day(rated_on)}, {rated_on.year}, "
+            f"The ratings are the judgment of the model {who} on {format_day(rated_on)}, {rated_on.year}, "
             'from general knowledge. They are not verified. "Not rated" is not a bad rating: the model did not know the name.'
         )
         if ratings.get("stale"):
             rating_note = "taste.txt changed after these ratings were made: run rate.py, then build.py --render-only. " + rating_note
     else:
-        rating_note = "No ratings yet. Run rate.py to rate the comedians with the claude CLI."
+        rating_note = "No ratings yet. Run rate.py to rate the comedians."
 
     for venue, reason in snapshot.get("failed", {}).items():
         coverage.append(f"<p>{esc(venue)}: not fetched this time ({esc(reason)}).</p>")

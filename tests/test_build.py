@@ -248,7 +248,7 @@ class RenderTest(unittest.TestCase):
 
     def test_footer_names_the_model_or_asks_for_a_rating_run(self):
         page = build.render(snapshot([show(comedians=["Ian Lara"])]), RATINGS)
-        self.assertIn("judgment of Claude (test-model) on Sat Oct 3, 2026", page)
+        self.assertIn("judgment of the model test-model on Sat Oct 3, 2026", page)
         page = build.render(snapshot([show(comedians=["Ian Lara"])]), {"rated_on": None, "taste": "x", "model": "", "ratings": {}})
         self.assertIn("No ratings yet. Run rate.py", page)
         self.assertEqual(page.count("Not rated</span>"), 2)
