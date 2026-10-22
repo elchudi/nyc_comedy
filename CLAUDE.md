@@ -8,14 +8,14 @@
 python3 build.py                 # fetch, write data/shows.json and index.html (about 20 requests, 30 seconds)
 python3 build.py --nights 14     # default is 7 nights, from tonight
 python3 build.py --render-only   # rebuild index.html from data/shows.json, no network
-python3 rate.py                  # Gemma rates the comedians that ratings.json lacks (needs Ollama)
+python3 rate.py                  # Gemma rates the comedians that ratings.json lacks (needs Ollama), then writes index.html
 python3 rate.py --all            # rate everyone again
 python3 rate.py --backend claude # fallback: the claude CLI instead of Gemma
 python3 build.py --render-only   # put the new ratings on the page
 python3 -m unittest discover tests
 ```
 
-For a new taste: edit `taste.txt`, run `rate.py` (a changed taste rates everyone again), then `build.py --render-only`.
+For a new taste: edit `taste.txt` and run `rate.py` (a changed taste rates everyone again; the page is written at the end).
 `rate.py --taste X --ratings Y` and `build.py --ratings Y --taste X --out Z` work on other files, for the examples or a second taste side by side.
 
 Needs `requests` and `beautifulsoup4`. `uv run build.py` installs them from the script header.

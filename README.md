@@ -6,8 +6,7 @@ Who is playing the NYC comedy clubs this week, and how well each comedian fits *
 
 ```
 python3 build.py                 # download this week's lineups
-python3 rate.py                  # Gemma rates every comedian against taste.txt
-python3 build.py --render-only   # write the page
+python3 rate.py                  # Gemma rates every comedian against taste.txt and writes the page
 ```
 
 Open `index.html`. Filter by name, night, location, profile and taste fit.
@@ -19,7 +18,7 @@ Edit `taste.txt`. Plain words, a few lines:
 > Lighthearted comedy for a night out with my parents: warm, clean, observational, upbeat.
 > No dark themes, no politics, no crude material.
 
-Run `rate.py` and `build.py --render-only` again. Gemma re-rates the week in about ten minutes on a laptop GPU.
+Run `rate.py` again. Gemma re-rates the week in about ten minutes on a laptop GPU.
 
 Three ready examples are in `examples/`: **deep-comedy**, **lighthearted**, **latin-storytelling**. Each folder has the taste, the ratings and the finished page.
 

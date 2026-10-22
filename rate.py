@@ -4,7 +4,7 @@
 The default model is Gemma 4 (gemma4:12b), run locally through Ollama. The claude CLI is the fallback.
 
 Usage:
-    python3 rate.py                      rate the comedians that ratings.json does not have yet
+    python3 rate.py                      rate the comedians that ratings.json does not have yet, and write index.html
     python3 rate.py --all                rate every comedian again
     python3 rate.py --model gemma4:26b-a4b   another Ollama model
     python3 rate.py --backend claude     use the claude CLI instead (default model sonnet; 6 calls at once)
@@ -212,6 +212,11 @@ def main():
     }
     args.ratings.write_text(json.dumps(output, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {args.ratings}")
+
+    # Render the page in the same step. Another ratings file gets a page next to it.
+    page = build.OUTPUT_FILE if args.ratings == build.RATINGS_FILE else args.ratings.with_name("index.html")
+    page.write_text(build.render(snapshot, build.load_ratings(args.ratings, args.taste)), encoding="utf-8")
+    print(f"Wrote {page}")
 
 
 if __name__ == "__main__":
