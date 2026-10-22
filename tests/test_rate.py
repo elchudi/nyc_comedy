@@ -48,3 +48,28 @@ class ParseAnswerTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AskOllamaTest(unittest.TestCase):
+    """The Ollama call is tested against a fake requests.post. No server is needed."""
+
+    def test_posts_a_json_chat_request_and_returns_the_answer(self):
+        from unittest import mock
+
+        reply = mock.Mock(status_code=200)
+        reply.json.return_value = {"model": "gemma4:12b", "message": {"content": '{"A B": {}}'}}
+        with mock.patch.object(rate.requests, "post", return_value=reply) as post:
+            answer, model = rate.ask_ollama("the prompt", "gemma4:12b")
+        self.assertEqual((answer, model), ('{"A B": {}}', "gemma4:12b"))
+        body = post.call_args.kwargs["json"]
+        self.assertEqual(body["model"], "gemma4:12b")
+        self.assertEqual(body["format"], "json")
+        self.assertEqual(body["messages"][0]["content"], "the prompt")
+
+    def test_says_how_to_start_the_server_when_it_is_down(self):
+        from unittest import mock
+
+        with mock.patch.object(rate.requests, "post", side_effect=rate.requests.ConnectionError()):
+            with self.assertRaises(RuntimeError) as caught:
+                rate.ask_ollama("p", "m")
+        self.assertIn("ollama serve", str(caught.exception))

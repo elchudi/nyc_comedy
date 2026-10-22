@@ -10,6 +10,7 @@ python3 build.py --nights 14     # default is 7 nights, from tonight
 python3 build.py --render-only   # rebuild index.html from data/shows.json, no network
 python3 rate.py                  # rate the comedians that ratings.json lacks (needs the claude CLI)
 python3 rate.py --all            # rate everyone again
+python3 rate.py --backend ollama # rate with a local Gemma through Ollama instead of the claude CLI
 python3 build.py --render-only   # put the new ratings on the page
 python3 -m unittest discover tests
 ```
@@ -18,6 +19,8 @@ For a new taste: edit `taste.txt`, run `rate.py` (a changed taste rates everyone
 
 Needs `requests` and `beautifulsoup4`. `uv run build.py` installs them from the script header.
 `rate.py` needs the `claude` CLI on the PATH and logged in. It calls `claude -p --tools ""` once per batch of 30 names, 6 batches at once. A full run of 270 names takes about 30 seconds with the default `sonnet` model, 70 seconds with `--model opus`. `haiku` is not faster in practice and knows few comedians (19 rated against 54 for sonnet and 70 for opus). A failed call is retried once, then its batch is skipped; the next run picks those names up. Answers vary a little from run to run.
+For the Ollama backend: Ollama is installed without sudo in `~/.local/opt/ollama/bin/ollama`. Start the server with `~/.local/opt/ollama/bin/ollama serve` (in another terminal or in the background), pull a model once with `ollama pull gemma4:12b`, then run `rate.py --backend ollama`. The machine has an 8 GB GPU, so the 12B model runs partly on the GPU and partly in RAM. Batches are 10 names, one call at a time.
+
 `tests/test_filters.py` runs the page script in headless Chromium. Without Chromium, it is skipped.
 
 ## Files
