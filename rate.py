@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Rate the comedians in data/shows.json with a language model, and write ratings.json.
 
-The default model is Gemma 4 (gemma4:12b), run locally through Ollama. The claude CLI is the fallback.
+Two backends: the claude CLI (default, 30 seconds for a week) and Gemma 4 through a local Ollama server (--backend ollama, about 10 minutes on a laptop GPU, no cloud).
 
 Usage:
     python3 rate.py                      rate the comedians that ratings.json does not have yet, and write index.html
     python3 rate.py --all                rate every comedian again
-    python3 rate.py --model gemma4:26b-a4b   another Ollama model
-    python3 rate.py --backend claude     use the claude CLI instead (default model sonnet; 6 calls at once)
+    python3 rate.py --backend ollama     Gemma 4 on your own machine (default model gemma4:12b)
+    python3 rate.py --model opus         another claude model (default sonnet; haiku knows few names)
     python3 rate.py --taste examples/x/taste.txt --ratings examples/x/ratings.json
                                          rate against another taste file, into another ratings file
 
@@ -36,7 +36,7 @@ BACKENDS = {
     "ollama": {"batch": 10, "workers": 1, "model": "gemma4:12b"},
     "claude": {"batch": 30, "workers": 6, "model": "sonnet"},
 }
-DEFAULT_BACKEND = "ollama"
+DEFAULT_BACKEND = "claude"
 OLLAMA_URL = "http://localhost:11434/api/chat"
 CALL_TIMEOUT_SECONDS = 600
 
@@ -157,9 +157,9 @@ def load_existing(ratings_file, taste):
 def main():
     parser = argparse.ArgumentParser(description="Rate comedians with the claude CLI and write ratings.json.")
     parser.add_argument("--all", action="store_true", help="rate every comedian again")
-    parser.add_argument("--backend", choices=BACKENDS, default=DEFAULT_BACKEND, help="local Ollama or the claude CLI (default: ollama)")
-    parser.add_argument("--model", help="model name for the backend (default: gemma4:12b for ollama, sonnet for claude)")
-    parser.add_argument("--workers", type=int, help="calls at once (default: 1 for ollama, 6 for claude)")
+    parser.add_argument("--backend", choices=BACKENDS, default=DEFAULT_BACKEND, help="the claude CLI or local Ollama with Gemma (default: claude)")
+    parser.add_argument("--model", help="model name for the backend (default: sonnet for claude, gemma4:12b for ollama)")
+    parser.add_argument("--workers", type=int, help="calls at once (default: 6 for claude, 1 for ollama)")
     parser.add_argument("--taste", type=Path, default=TASTE_FILE, help="taste file (default: taste.txt)")
     parser.add_argument("--ratings", type=Path, default=build.RATINGS_FILE, help="ratings file to write (default: ratings.json)")
     args = parser.parse_args()

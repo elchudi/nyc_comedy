@@ -1,399 +1,232 @@
 {
  "rated_on": "2026-10-21",
  "taste": "i like really harsh roasts",
- "model": "gemma4:12b",
- "note": "Written by rate.py with the ollama backend. The model answered from general knowledge; reasons are not verified. An empty entry means the model did not know the name.",
+ "model": "claude-sonnet-5-5",
+ "note": "Written by rate.py with the claude backend, model claude-sonnet-5-5. The model answered from general knowledge; reasons are not verified. An empty entry means the model did not know the name.",
  "ratings": {
   "Aaron McCann": {},
   "Aaron Putnam": {},
   "Adam Gilbert": {},
   "Adam Thomas": {},
-  "Adrienne Iapalucci": {},
+  "Adrienne Iapalucci": {
+   "profile": "known",
+   "profile_why": "Comedy Central and Netflix credits; Roast Battle appearances",
+   "taste": "strong",
+   "taste_why": "Brash, confrontational style; Roast Battle and roast-circuit experience"
+  },
   "Alex Babbitt": {},
-  "Alex English": {},
+  "Alex English": {
+   "profile": "known",
+   "profile_why": "Regular at Comedy Cellar; Comedy Central and Netflix appearances"
+  },
   "Alex Kumin": {},
   "Alexis Guerreros": {},
-  "Alingon Mitra": {},
-  "Aminah Imani": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the NYC club circuit",
-   "taste": "different",
-   "taste_why": "Focuses on observational and storytelling styles"
+  "Alingon Mitra": {
+   "profile": "known",
+   "profile_why": "Comedy Central half-hour and Netflix appearances; New York stand-up"
   },
+  "Aminah Imani": {},
   "Amos Gill": {
-   "profile": "rising",
-   "profile_why": "Regular performer at the Comedy Cellar",
-   "taste": "partial",
-   "taste_why": "Uses sharp wit but not exclusively roast style"
+   "profile": "known",
+   "profile_why": "Australian comedian with Netflix and Comedy Central appearances"
   },
-  "Andre D Thompson": {
-   "profile": "rising",
-   "profile_why": "Active in NYC comedy scene with multiple club appearances",
-   "taste": "partial",
-   "taste_why": "Features some aggressive and high-energy delivery"
-  },
+  "Andre D Thompson": {},
   "Andre De Freitas": {},
   "Andrew Fiori": {},
   "Andy Haynes": {},
   "Ashley Austin Morris": {
-   "profile": "rising",
-   "profile_why": "Growing reputation in the NYC comedy scene",
-   "taste": "different",
-   "taste_why": "Style is more character and observational based"
+   "profile": "known",
+   "profile_why": "Comedy Central and Netflix credits; Roast Battle alum",
+   "taste": "strong",
+   "taste_why": "Sharp, aggressive crowd-facing style; Roast Battle experience"
   },
   "Big Jay Oakerson": {
-   "profile": "star",
-   "profile_why": "Known for TV roles and major comedy specials",
-   "taste": "partial",
-   "taste_why": "High energy but leans toward observational comedy"
+   "profile": "known",
+   "profile_why": "Hosts Legion of Skanks podcast; Netflix and Comedy Central specials",
+   "taste": "strong",
+   "taste_why": "Raunchy, insult-heavy comedy; frequent roast participant"
   },
   "Blake Freeman": {},
-  "Bo Bigelow": {
-   "profile": "rising",
-   "profile_why": "Appearing in curated comedy showcases in NYC",
-   "taste": "partial",
-   "taste_why": "Includes some biting and confrontational humor"
-  },
-  "Bobby St. Petersburg": {
-   "profile": "rising",
-   "profile_why": "Developing comedian with growing presence in NYC clubs",
-   "taste": "different",
-   "taste_why": "Focuses on observational and storytelling rather than harsh roasts"
-  },
-  "Brandon Barrera": {
-   "profile": "rising",
-   "profile_why": "Active performer on the New York club circuit",
-   "taste": "partial",
-   "taste_why": "Uses aggressive delivery but often focuses on personal anecdotes"
-  },
-  "Brendan Sagalow": {
-   "profile": "rising",
-   "profile_why": "Frequent performer at major NYC comedy clubs",
-   "taste": "different",
-   "taste_why": "Style is more conversational and less focused on roasting"
-  },
-  "Brian Scolaro": {
-   "profile": "known",
-   "profile_why": "Has multiple specials and a long career in stand-up",
-   "taste": "strong",
-   "taste_why": "Known for high-energy, aggressive, and confrontational comedy style"
-  },
+  "Bo Bigelow": {},
+  "Bobby St. Petersburg": {},
+  "Brandon Barrera": {},
+  "Brendan Sagalow": {},
+  "Brian Scolaro": {},
   "Caitlin Reese": {},
   "Calise Hawkins": {},
   "Carmen Lagala": {},
-  "Carmen Lynch": {},
+  "Carmen Lynch": {
+   "profile": "known",
+   "profile_why": "Comedy Central and Netflix appearances; deadpan New York comedian",
+   "taste": "different",
+   "taste_why": "Dry, observational, self-deprecating style rather than harsh roasting"
+  },
   "Carolina Montesquieu": {},
-  "Casey Balsham": {
-   "profile": "rising",
-   "profile_why": "Regular performer at the Comedy Cellar",
-   "taste": "partial",
-   "taste_why": "Combines sharp wit with some aggressive comedic elements"
-  },
-  "Charles McBee": {
-   "profile": "rising",
-   "profile_why": "Active in NYC scene with growing local momentum",
-   "taste": "different",
-   "taste_why": "Focuses on observational and storytelling rather than harsh roasts"
-  },
-  "Chloe Hilliard": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the NYC club circuit",
-   "taste": "different",
-   "taste_why": "Style is more observational and personality-driven"
-  },
+  "Casey Balsham": {},
+  "Charles McBee": {},
+  "Chloe Hilliard": {},
   "Chris Brown": {},
   "Chris Distefano": {
-   "profile": "known",
-   "profile_why": "Has multiple specials and significant TV appearances",
-   "taste": "strong",
-   "taste_why": "Known for aggressive, high-energy, and confrontational style"
+   "profile": "star",
+   "profile_why": "Hosts Gamble On podcast and Hey Guys; Netflix and Comedy Central specials",
+   "taste": "partial",
+   "taste_why": "Loud, joke-heavy banter with plenty of ribbing, but not built on roasts"
   },
   "Chris Lamberth": {},
   "Chris Miceli": {},
   "Chris Pattwell": {},
-  "Chris Redd": {},
+  "Chris Redd": {
+   "profile": "known",
+   "profile_why": "Former Saturday Night Live cast member; Netflix and Comedy Central credits",
+   "taste": "different",
+   "taste_why": "Playful, character-driven and musical comedy rather than harsh roasting"
+  },
   "Chris Scopo": {},
   "Chris Turner": {},
   "Colin Quinn": {
    "profile": "star",
-   "profile_why": "Veteran comedian with numerous specials and mainstream recognition",
+   "profile_why": "Former SNL Weekend Update anchor; hosted Tough Crowd; Netflix specials",
    "taste": "strong",
-   "taste_why": "Known for observational humor and sharp, biting delivery"
+   "taste_why": "Blunt, cranky delivery; hosted Tough Crowd and appeared on Comedy Central Roasts"
   },
-  "Corey B": {
-   "profile": "rising",
-   "profile_why": "Appearing in local club lineups with growing momentum",
-   "taste": "partial",
-   "taste_why": "Style is less focused on harsh roasts"
-  },
-  "Courtney Fearrington": {
-   "profile": "rising",
-   "profile_why": "Active in the NYC club circuit",
-   "taste": "different",
-   "taste_why": "Focuses on different comedic styles than harsh roasts"
-  },
-  "Courtney Maginnis": {
-   "profile": "rising",
-   "profile_why": "Performing in local club sets",
-   "taste": "different",
-   "taste_why": "Style does not align with harsh roast comedy"
-  },
+  "Corey B": {},
+  "Courtney Fearrington": {},
+  "Courtney Maginnis": {},
   "Dan Ahdoot": {
    "profile": "known",
-   "profile_why": "Has a cult following and established niche presence",
-   "taste": "different",
-   "taste_why": "Known for surreal and abstract comedy styles"
+   "profile_why": "Hosted Nickelodeon's Fresh Off the Boat-era Comedy Central credits; Hell Yeah podcast host"
   },
-  "Dan Davies": {
-   "profile": "rising",
-   "profile_why": "Performing in multiple NYC comedy clubs",
-   "taste": "partial",
-   "taste_why": "Shares some elements of edgy observational humor"
-  },
+  "Dan Davies": {},
   "Dan Docimo": {},
   "Dan Naturman": {
    "profile": "known",
-   "profile_why": "Established presence in the NYC comedy scene",
-   "taste": "partial",
-   "taste_why": "Features some sharp and observational humor"
+   "profile_why": "Longtime Comedy Cellar regular; Conan and Letterman appearances",
+   "taste": "different",
+   "taste_why": "Deadpan, observational and self-deprecating, not roast-oriented"
   },
   "Dan St. Germain": {
-   "profile": "rising",
-   "profile_why": "Performing in local club lineups",
-   "taste": "different",
-   "taste_why": "Style is not primarily roast-based"
-  },
-  "Daniel Simonsen": {
-   "profile": "rising",
-   "profile_why": "Active in the NYC comedy club circuit",
-   "taste": "different",
-   "taste_why": "Comedy style differs from harsh roast preferences"
-  },
-  "Danny Hallinan": {
-   "profile": "rising",
-   "profile_why": "Active in NYC scene with growing local momentum",
-   "taste": "different",
-   "taste_why": "Style is not primarily focused on harsh roasting"
-  },
-  "Danny Rathbun": {
-   "profile": "rising",
-   "profile_why": "Appearing in various NYC club lineups",
-   "taste": "different",
-   "taste_why": "Comedy style does not align with harsh roasting"
-  },
-  "Daryn Passarello": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the New York comedy circuit",
-   "taste": "partial",
-   "taste_why": "Often uses edgy and observational humor"
-  },
-  "Dave Temple": {
    "profile": "known",
-   "profile_why": "Has established presence in the NYC comedy scene",
+   "profile_why": "Comedy Central and Netflix credits; Netflix special Dan St. Germain: Ok",
    "taste": "partial",
-   "taste_why": "Uses observational humor with some sharp edges"
+   "taste_why": "Dark, self-lacerating and sharp, but more confessional than roast-style"
   },
-  "Derek Gaines": {
-   "profile": "rising",
-   "profile_why": "Regular performer at the Comedy Cellar",
-   "taste": "different",
-   "taste_why": "Style is not characterized by harsh roasting"
-  },
-  "Dj Collins": {
-   "profile": "rising",
-   "profile_why": "Active performer in New York comedy clubs",
-   "taste": "different",
-   "taste_why": "Comedy style is not primarily roast-based"
-  },
+  "Daniel Simonsen": {},
+  "Danny Hallinan": {},
+  "Danny Rathbun": {},
+  "Daryn Passarello": {},
+  "Dave Temple": {},
+  "Derek Gaines": {},
+  "Dj Collins": {},
   "Dov Davidoff": {
-   "profile": "rising",
-   "profile_why": "Performing regularly at the Comedy Cellar",
-   "taste": "different",
-   "taste_why": "Style does not match harsh roast preferences"
+   "profile": "known",
+   "profile_why": "Comedy Cellar regular; Comedy Central roast and TV credits",
+   "taste": "strong",
+   "taste_why": "Edgy, politically incorrect, confrontational style with roast appearances"
   },
   "Drew Lynch": {
-   "profile": "rising",
-   "profile_why": "Building a following in the NYC comedy scene",
-   "taste": "partial",
-   "taste_why": "Features some sharp and biting comedic elements"
-  },
-  "Ellen Harrold": {
-   "profile": "rising",
-   "profile_why": "Active in New York comedy club lineups",
-   "taste": "different",
-   "taste_why": "Comedy style is not focused on harsh roasting"
-  },
-  "Emma Willmann": {
    "profile": "known",
-   "profile_why": "Has a significant following and multiple club appearances",
-   "taste": "partial",
-   "taste_why": "Uses sharp wit and observational humor"
-  },
-  "Eric D’Alessandro": {},
-  "Eric Neumann": {
-   "profile": "rising",
-   "profile_why": "Active on social media and performing at major NYC clubs",
-   "taste": "partial",
-   "taste_why": "Uses observational humor with some edgy social commentary"
-  },
-  "Erin Maguire": {
-   "profile": "rising",
-   "profile_why": "Appearing in multi-comic showcases at Comedy Cellar",
+   "profile_why": "Finalist on Americas Got Talent season 10; touring comedian",
    "taste": "different",
-   "taste_why": "Focuses on personal storytelling and relatable observational humor"
+   "taste_why": "Upbeat, clean-leaning, personal storytelling rather than harsh roasting"
   },
-  "Ethan Simmons-Patterson": {
-   "profile": "rising",
-   "profile_why": "Regular performer at the Comedy Cellar"
-  },
-  "Eva Evans": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the NYC comedy scene"
-  },
+  "Ellen Harrold": {},
+  "Emma Willmann": {},
+  "Eric D’Alessandro": {},
+  "Eric Neumann": {},
+  "Erin Maguire": {},
+  "Ethan Simmons-Patterson": {},
+  "Eva Evans": {},
   "Fabrizio Copano": {
    "profile": "known",
-   "profile_why": "Has a Netflix special and international recognition",
-   "taste": "partial",
-   "taste_why": "Uses high-energy delivery and sharp social observations"
+   "profile_why": "Chilean comedian with Netflix specials and Comedy Cellar appearances"
   },
-  "Gary Simons": {
-   "profile": "rising",
-   "profile_why": "Performing in recurring showcases at major NYC clubs"
-  },
+  "Gary Simons": {},
   "Gary Vider": {
-   "profile": "rising",
-   "profile_why": "Performing with established comics like Mark Normand",
-   "taste": "strong",
-   "taste_why": "Known for a more aggressive and blunt comedic style"
+   "profile": "known",
+   "profile_why": "New York comic, frequent Comedy Cellar performer with TV appearances"
   },
   "Gastor Almonte": {
-   "profile": "rising",
-   "profile_why": "Building momentum in the NYC club circuit"
-  },
-  "Geo Perez": {
-   "profile": "rising",
-   "profile_why": "Active performer in New York Comedy Club showcases"
-  },
-  "Gina Brillon": {
-   "profile": "rising",
-   "profile_why": "Active on social media and performing in major NYC clubs",
-   "taste": "different",
-   "taste_why": "Focuses on observational and storytelling rather than harsh roasts"
-  },
-  "Gray West": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the NYC stand-up scene",
-   "taste": "partial",
-   "taste_why": "Uses sharp wit but lacks extreme roast intensity"
-  },
-  "Greer Barnes": {
-   "profile": "rising",
-   "profile_why": "Emerging talent performing at established comedy clubs",
-   "taste": "different",
-   "taste_why": "Style is more personality-driven than aggressive roasting"
-  },
-  "Gregg Rogell": {
    "profile": "known",
-   "profile_why": "Has established a following and regular club appearances",
-   "taste": "strong",
-   "taste_why": "Known for high-energy, aggressive, and confrontational comedy"
+   "profile_why": "Dominican-American comic with Netflix and Comedy Central credits"
   },
-  "Harrison Greenbaum": {
-   "profile": "rising",
-   "profile_why": "Newer comedian building momentum in the NYC circuit",
-   "taste": "partial",
-   "taste_why": "Features some biting humor but varies in intensity"
-  },
-  "Hot Soup": {
-   "profile": "rising",
-   "profile_why": "Gaining traction in the local NYC comedy scene",
+  "Geo Perez": {},
+  "Gina Brillon": {
+   "profile": "known",
+   "profile_why": "Bronx-born comic with Comedy Central special and TV credits",
    "taste": "different",
-   "taste_why": "Comedy style is more abstract and observational"
+   "taste_why": "Warm, observational family and relationship humor, not roast-style"
   },
-  "Humzah Azeem": {
-   "profile": "rising",
-   "profile_why": "Active performer with multiple club bookings",
-   "taste": "partial",
-   "taste_why": "Includes sharp social commentary and biting humor"
+  "Gray West": {},
+  "Greer Barnes": {
+   "profile": "known",
+   "profile_why": "Veteran comic with long TV and club credits"
   },
+  "Gregg Rogell": {},
+  "Harrison Greenbaum": {
+   "profile": "known",
+   "profile_why": "Magician-comedian with TV appearances and long club career",
+   "taste": "different",
+   "taste_why": "Magic-driven, playful act, not harsh roasting"
+  },
+  "Hot Soup": {},
+  "Humzah Azeem": {},
   "Humzah Choudry": {},
   "Ian Fidance": {
-   "profile": "rising",
-   "profile_why": "Regularly booked at major NYC comedy venues",
+   "profile": "known",
+   "profile_why": "British-born New York comic, regular at Comedy Cellar",
    "taste": "partial",
-   "taste_why": "Combines observational humor with sharp, edgy delivery"
+   "taste_why": "Deadpan, dark and irreverent, but not centered on roasting"
   },
   "Ismael Loutfi": {
    "profile": "rising",
-   "profile_why": "Developing career with consistent club appearances",
-   "taste": "partial",
-   "taste_why": "Features some aggressive humor and sharp delivery"
+   "profile_why": "Comedy Cellar regular building a following"
   },
-  "Ja-Ron Young": {
-   "profile": "rising",
-   "profile_why": "Active in local NYC scene with growing momentum",
-   "taste": "different",
-   "taste_why": "Style is not primarily focused on harsh roasts"
-  },
+  "Ja-Ron Young": {},
   "Jackie Fabulous": {
    "profile": "known",
-   "profile_why": "Has a significant social media presence and public persona",
-   "taste": "partial",
-   "taste_why": "Uses high-energy performance and personality-driven humor"
+   "profile_why": "Comic with TV credits and a long New York club career"
   },
-  "Jake Velazquez": {
-   "profile": "rising",
-   "profile_why": "Developing career within the NYC comedy circuit",
-   "taste": "different",
-   "taste_why": "Focuses on observational and narrative storytelling"
-  },
-  "Jamell Sirleaf": {
-   "profile": "rising",
-   "profile_why": "Emerging talent performing in established NYC clubs",
-   "taste": "different",
-   "taste_why": "Style does not align with harsh roast comedy"
-  },
+  "Jake Velazquez": {},
+  "Jamell Sirleaf": {},
   "James Davis": {},
-  "James Mattern": {},
+  "James Mattern": {
+   "profile": "known",
+   "profile_why": "Comedian and writer, regular at New York clubs"
+  },
   "James Patrick": {},
   "Janet McNamara": {},
-  "Jared Freid": {},
-  "Jared Waters": {
-   "profile": "rising",
-   "profile_why": "Regular performer at major NYC comedy clubs",
+  "Jared Freid": {
+   "profile": "known",
+   "profile_why": "Comic and podcaster with TV credits, regular at Comedy Cellar",
    "taste": "partial",
-   "taste_why": "Shares some aggressive and high-energy comedic elements"
+   "taste_why": "Sharp, edgy crowd-friendly style, with some roast-like bite"
   },
+  "Jared Waters": {},
   "Jason King": {},
   "Jatty Robinson": {},
   "Jay Jurden": {
-   "profile": "rising",
-   "profile_why": "Active on the NYC club circuit with growing momentum",
+   "profile": "known",
+   "profile_why": "Comedian and writer with TV appearances and a Comedy Central special",
    "taste": "partial",
-   "taste_why": "Uses observational humor with some sharp edges"
+   "taste_why": "Sharp, pointed observational humor, but not built around harsh roasting"
   },
   "Jaye McBride": {},
   "JC Mendoza": {},
   "Jeff Bailey": {},
-  "Jenae Boston": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the NYC comedy scene",
-   "taste": "partial",
-   "taste_why": "Mixes personal storytelling with sharp social commentary"
-  },
+  "Jenae Boston": {},
   "Jenny Tian": {},
   "Jessica Kirson": {
-   "profile": "star",
-   "profile_why": "Known for TV appearances and high-profile comedy specials",
-   "taste": "strong",
-   "taste_why": "Known for high-energy, aggressive, and confrontational roasting style"
+   "profile": "known",
+   "profile_why": "Veteran comic with Netflix and Showtime specials and a large touring following",
+   "taste": "partial",
+   "taste_why": "Raunchy, aggressive, high-energy character work, but not roast-driven"
   },
   "Jessica Levin": {},
   "Jim Norton": {
-   "profile": "known",
-   "profile_why": "Has multiple specials and a long career in stand-up",
+   "profile": "star",
+   "profile_why": "Headlines theaters, longtime Opie and Anthony cohost, multiple HBO specials",
    "taste": "strong",
-   "taste_why": "Known for a blunt, aggressive, and confrontational style"
+   "taste_why": "Raunchy, brutal comic who is a regular on Comedy Central roasts"
   },
   "Jimmy McCullough": {},
   "Joey Rinaldi": {},
@@ -402,80 +235,61 @@
   "Jonathan Randall": {},
   "Jordan Carlos": {
    "profile": "known",
-   "profile_why": "Has TV credits and a recognizable presence in comedy",
-   "taste": "different",
-   "taste_why": "Focuses more on observational and character-driven humor"
+   "profile_why": "Comedian and actor, known for The Colbert Report and Comedy Central work"
   },
   "Josh Ocean Thomas": {},
   "Jourdain Fisher": {},
   "Juan Nicolón": {},
   "Judah Friedlander": {
-   "profile": "star",
-   "profile_why": "Host of TheJudge_In_Court and frequent late-night guest",
+   "profile": "known",
+   "profile_why": "Known for 30 Rock and his self-styled World Champion persona",
    "taste": "different",
-   "taste_why": "His style is observational and conversational rather than harsh roasting"
+   "taste_why": "Deadpan absurdist persona comedy, not harsh roasting"
   },
   "Judy Gold": {
    "profile": "known",
-   "profile_why": "Has multiple stand-up specials and a significant online presence",
+   "profile_why": "Veteran comic with HBO special, Emmy-winning writer on The Rosie O'Donnell Show",
    "taste": "partial",
-   "taste_why": "Uses sharp wit but focuses more on personal storytelling"
+   "taste_why": "Blunt, sharp, confrontational style, plus appearances on roast-style shows"
   },
   "Julian McCullough": {
-   "profile": "rising",
-   "profile_why": "Building momentum in the NYC club circuit",
-   "taste": "partial",
-   "taste_why": "Features edgy humor but varies in intensity"
+   "profile": "known",
+   "profile_why": "Comedian with TV credits and a Comedy Central special, regular at Cellar"
   },
   "Julio Diaz": {},
-  "Justin Martindale": {
-   "profile": "known",
-   "profile_why": "Known for high-energy, surreal, and aggressive comedic style",
-   "taste": "strong",
-   "taste_why": "His act is loud, abrasive, and fits a harsh preference"
-  },
+  "Justin Martindale": {},
   "Kaneez Surka": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the New York comedy scene",
-   "taste": "partial",
-   "taste_why": "Shares some sharp observational humor"
+   "profile": "known",
+   "profile_why": "Comedian and actor, known for Comedy Central and Netflix appearances",
+   "taste": "different",
+   "taste_why": "Character-driven, observational comedy rather than harsh roasting"
   },
   "Karla Watkins": {},
   "Kate Sisk": {},
   "Kc Shornima": {},
   "Keith Alberstadt": {
    "profile": "known",
-   "profile_why": "Established comedian with various club appearances and credits",
-   "taste": "partial",
-   "taste_why": "Offers dry, observational humor rather than pure roasting"
+   "profile_why": "Comedian with TV credits, known for song parody and observational material",
+   "taste": "different",
+   "taste_why": "Clean-leaning observational and musical parody, not harsh roasting"
   },
   "Keith Robinson": {
-   "profile": "rising",
-   "profile_why": "Regular performer at Comedy Cellar with growing local recognition",
+   "profile": "known",
+   "profile_why": "Veteran NYC comic, regular at Comedy Cellar with TV appearances",
    "taste": "partial",
-   "taste_why": "Known for observational and character-driven humor"
+   "taste_why": "Sharp, edgy observational style with some bite"
   },
   "Kerryn Feehan": {},
-  "Kevin Dombrowski": {
-   "profile": "rising",
-   "profile_why": "Frequent performer at major NYC clubs like Comedy Cellar",
-   "taste": "partial",
-   "taste_why": "Delivers high-energy observational and relatable comedy"
-  },
+  "Kevin Dombrowski": {},
   "Kevin Israel": {},
   "Konner Kienzle": {},
   "Kristal Adams": {},
-  "Kunal C. Arora": {
-   "profile": "rising",
-   "profile_why": "Active in NYC scene with consistent club appearances",
-   "taste": "partial",
-   "taste_why": "Focuses on storytelling and personal anecdotes"
-  },
+  "Kunal C. Arora": {},
   "LeClerc Andre": {
-   "profile": "rising",
-   "profile_why": "Regular at Comedy Cellar with a developing fan base",
+   "profile": "known",
+   "profile_why": "Longtime Comedy Cellar regular, appeared on Showtime and Def Comedy Jam",
    "taste": "partial",
-   "taste_why": "Style is more observational than harsh roast"
+   "taste_why": "Brash, confrontational delivery with sharp crowd-facing jokes"
   },
   "Lenny Marcus": {},
   "Lev Fer": {},
@@ -484,344 +298,163 @@
   "Liz Glazer": {},
   "Liza Treyger": {
    "profile": "known",
-   "profile_why": "Has multiple specials and a significant online presence",
-   "taste": "different",
-   "taste_why": "Focuses on observational and personal storytelling rather than harsh roasts"
+   "profile_why": "Has Netflix special Each Ruthless Child and Comedy Central credits",
+   "taste": "strong",
+   "taste_why": "Blunt, raunchy, aggressive style with a confrontational edge"
   },
   "Louis CK": {
    "profile": "star",
-   "profile_why": "Massive mainstream fame and numerous successful comedy specials",
-   "taste": "strong",
-   "taste_why": "Known for dark, blunt, and often harsh observational humor"
+   "profile_why": "Headlines theaters, multiple acclaimed specials, creator of Louie",
+   "taste": "partial",
+   "taste_why": "Dark, brutally self-lacerating material, though not roast-based"
   },
   "Lucas Zelnick": {},
-  "Luis J Gomez": {},
+  "Luis J Gomez": {
+   "profile": "known",
+   "profile_why": "Co-host of Legion of Skanks podcast with Big Jay Oakerson",
+   "taste": "strong",
+   "taste_why": "Crude, insult-heavy podcast and stage comedy; Story Warz is raunchy"
+  },
   "Lukas Arnold": {},
   "Luke Severeid": {},
-  "Lynne Koplitz": {},
-  "Maddy Smith": {
-   "profile": "rising",
-   "profile_why": "Active in NYC scene with growing local presence",
-   "taste": "different",
-   "taste_why": "Focuses on observational and storytelling style"
+  "Lynne Koplitz": {
+   "profile": "known",
+   "profile_why": "Comedy Central roast regular, Chelsea Lately panelist, has specials",
+   "taste": "strong",
+   "taste_why": "Raunchy, blunt comic with Comedy Central roast experience"
   },
+  "Maddy Smith": {},
   "Maggie Crane": {},
   "Maggie Lalley": {},
   "Maggie Naughton": {},
-  "Marcus Monroe": {
-   "profile": "rising",
-   "profile_why": "Developing career in the NYC comedy circuit",
-   "taste": "partial",
-   "taste_why": "Uses some aggressive delivery and sharp wit"
-  },
-  "Marie Faustin": {
-   "profile": "known",
-   "profile_why": "Has multiple specials and established TV credits",
-   "taste": "partial",
-   "taste_why": "Features sharp social commentary and biting wit"
-  },
+  "Marcus Monroe": {},
+  "Marie Faustin": {},
   "Mariel O'Reilly": {},
   "Marina Franklin": {
-   "profile": "rising",
-   "profile_why": "Building a consistent presence in NYC clubs",
-   "taste": "different",
-   "taste_why": "Style is more observational and personality-driven"
+   "profile": "known",
+   "profile_why": "Has a Comedy Central special and Late Night TV credits",
+   "taste": "partial",
+   "taste_why": "Sharp, blunt observational comic with a cutting edge"
   },
   "Marion Grodin": {},
-  "Mark Gagnon": {
-   "profile": "rising",
-   "profile_why": "Regular performer at major NYC venues",
-   "taste": "partial",
-   "taste_why": "Combines high energy with sharp, direct humor"
-  },
+  "Mark Gagnon": {},
   "Mark Normand": {
    "profile": "star",
-   "profile_why": "He is a veteran comedian with multiple Netflix specials",
+   "profile_why": "Headlining comedian with Netflix specials and the Tough Crowd podcast",
    "taste": "strong",
-   "taste_why": "He is known for a mean-spirited, insulting, and abrasive style"
+   "taste_why": "Quick, irreverent, deliberately offensive jokes; he's known for edgy, roast-style punchlines"
   },
   "Matt Koff": {},
   "Matt Lopes": {},
   "Matt Richards": {},
-  "Matt Ruby": {},
-  "Matteo lane": {},
+  "Matt Ruby": {
+   "profile": "known",
+   "profile_why": "NYC club regular with TV appearances and a Comedy Cellar presence"
+  },
+  "Matteo lane": {
+   "profile": "known",
+   "profile_why": "Has Netflix and HBO specials and tours theaters",
+   "taste": "partial",
+   "taste_why": "Bawdy, campy and cutting, but more playful than harsh"
+  },
   "Matthew Broussard": {},
   "Meka Mo": {},
   "Melissa Rauch": {
-   "profile": "star",
-   "profile_why": "She is a well-known actress from Brooklyn Nine-Nine",
+   "profile": "known",
+   "profile_why": "Actress known for The Big Bang Theory; also does stand-up",
    "taste": "different",
-   "taste_why": "Her comedy style is generally observational and character-driven"
+   "taste_why": "Known mostly as an actress; her comedy is not roast-style"
   },
-  "Mia Jackson": {},
+  "Mia Jackson": {
+   "profile": "known",
+   "profile_why": "Has a Netflix special and tours widely",
+   "taste": "partial",
+   "taste_why": "Blunt, sharp storytelling about relationships and family, not roast-driven"
+  },
   "Michael Fleming": {},
   "Michael Kosta": {
    "profile": "known",
-   "profile_why": "Has multiple stand-up specials and a significant social media presence",
-   "taste": "strong",
-   "taste_why": "Known for high-energy, aggressive, and often harsh observational humor"
+   "profile_why": "Correspondent on The Daily Show and a touring headliner",
+   "taste": "partial",
+   "taste_why": "Quick, sarcastic and cutting, but mainstream rather than harsh"
   },
   "Michael Rowland": {},
   "Mike Britt": {},
   "Mike Cannon": {},
   "Mike Feeney": {},
   "Mike Figs": {},
-  "Mike Vecchione": {},
-  "Mike Yard": {
+  "Mike Vecchione": {
    "profile": "known",
-   "profile_why": "Has multiple specials and a large following in the comedy scene",
-   "taste": "strong",
-   "taste_why": "Known for very aggressive, loud, and harsh roast-style delivery"
+   "profile_why": "Has TV credits and specials and is a Comedy Cellar regular",
+   "taste": "partial",
+   "taste_why": "Blunt, working-class and brash, but not built on roasting"
   },
+  "Mike Yard": {},
   "Mo Mussa": {},
   "Molly Kearney": {
-   "profile": "rising",
-   "profile_why": "Growing presence in the NYC indie comedy scene",
-   "taste": "partial",
-   "taste_why": "Uses observational humor with some sharp edges"
-  },
-  "Neko White": {
-   "profile": "rising",
-   "profile_why": "Developing career with consistent club appearances",
+   "profile": "known",
+   "profile_why": "Former Saturday Night Live cast member and stand-up",
    "taste": "different",
-   "taste_why": "Focuses on storytelling and personal narrative"
+   "taste_why": "Warm, personal, observational comedy rather than harsh roasting"
   },
+  "Neko White": {},
   "Nick Griffin": {
-   "profile": "rising",
-   "profile_why": "Regular performer at major NYC comedy clubs",
+   "profile": "known",
+   "profile_why": "Longtime Comedy Cellar regular and writer",
    "taste": "strong",
-   "taste_why": "Known for aggressive and high-energy delivery"
+   "taste_why": "Famously dark, provocative and abrasive material"
   },
   "Nick Smith": {},
   "Nore Davis": {
-   "profile": "rising",
-   "profile_why": "Active in the NYC club circuit",
+   "profile": "known",
+   "profile_why": "Has TV and special credits and tours clubs",
    "taste": "partial",
-   "taste_why": "Mixes relatable content with sharp wit"
+   "taste_why": "Energetic and sharp, with some edge, but not roast-focused"
   },
   "Onika Mclean": {},
   "Ontonio Kareem": {},
   "Ophira Eisenberg": {
    "profile": "known",
-   "profile_why": "Known for podcasting and stand-up appearances",
+   "profile_why": "Host of NPR's Ask Me Another and author",
    "taste": "different",
-   "taste_why": "Style is more conversational and intellectual"
+   "taste_why": "Storytelling and personal humor, not harsh roasting"
   },
   "Orion Levine": {},
   "Oscar Aydin": {},
-  "Paige Smith-Hogan": {
-   "profile": "rising",
-   "profile_why": "Developing career with consistent club appearances",
-   "taste": "different",
-   "taste_why": "Focuses on observational and relatable humor"
-  },
-  "Patricia Dinglasan": {
-   "profile": "rising",
-   "profile_why": "Emerging talent building a local following",
-   "taste": "different",
-   "taste_why": "Style is more observational than roast-heavy"
-  },
-  "Peng Dang": {
-   "profile": "rising",
-   "profile_why": "Gaining traction in the NYC club circuit",
-   "taste": "partial",
-   "taste_why": "Features sharp wit and dry delivery"
-  },
-  "Pete Lee": {
-   "profile": "rising",
-   "profile_why": "Active performer in the New York scene",
-   "taste": "partial",
-   "taste_why": "Includes some biting and edgy material"
-  },
-  "Peter Revello": {
-   "profile": "rising",
-   "profile_why": "Regular performer at the Comedy Cellar",
-   "taste": "partial",
-   "taste_why": "Uses a sharp and cynical comedic lens"
-  },
-  "Petey DeAbreu": {
-   "profile": "rising",
-   "profile_why": "Building momentum in the NYC comedy scene",
-   "taste": "different",
-   "taste_why": "Style is more high-energy and character-based"
-  },
-  "Phil Duckett": {
-   "profile": "rising",
-   "profile_why": "Consistent presence in New York comedy clubs",
-   "taste": "partial",
-   "taste_why": "Combines observational humor with sharp critiques"
-  },
-  "Philipp Kostelecky": {
-   "profile": "rising",
-   "profile_why": "Developing career with regular club spots",
-   "taste": "different",
-   "taste_why": "Focuses on storytelling and personal anecdotes"
-  },
-  "Rachel Feinstein": {
-   "profile": "known",
-   "profile_why": "Has multiple specials and significant TV credits",
-   "taste": "strong",
-   "taste_why": "Known for high-energy, aggressive, and sharp delivery"
-  },
-  "Ray Ellin": {
-   "profile": "known",
-   "profile_why": "Longtime veteran with many TV appearances",
-   "taste": "strong",
-   "taste_why": "Specializes in harsh roasts and insult comedy"
-  },
-  "Reggie Conquest": {
-   "profile": "rising",
-   "profile_why": "Developing presence in the NYC club circuit",
-   "taste": "partial",
-   "taste_why": "Focuses on observational and character-driven humor"
-  },
-  "Rich Aronovitch": {},
-  "Richie Redding": {},
-  "Riley Flanagan": {
-   "profile": "rising",
-   "profile_why": "Active in the NYC indie comedy scene",
-   "taste": "different",
-   "taste_why": "Style is more whimsical and observational"
-  },
-  "Riley Lassin": {
-   "profile": "rising",
-   "profile_why": "Building momentum in the NYC club scene",
-   "taste": "partial",
-   "taste_why": "Mixes personal anecdotes with sharp delivery"
-  },
-  "Robby Slowik": {
-   "profile": "rising",
-   "profile_why": "Regular performer in NYC comedy clubs",
-   "taste": "partial",
-   "taste_why": "Uses a mix of dry and edgy humor"
-  },
-  "Robert Kelly": {},
-  "Ryan Dacalos": {
-   "profile": "rising",
-   "profile_why": "Known for specific NYC club appearances",
-   "taste": "different",
-   "taste_why": "Comedy style is more lighthearted and conversational"
-  },
-  "Ryan Hamilton": {},
-  "Ryan Reiss": {
-   "profile": "known",
-   "profile_why": "Has established presence in the NYC comedy scene",
-   "taste": "strong",
-   "taste_why": "Known for high-energy and aggressive delivery"
-  },
-  "Ryan Rizzuti": {},
-  "Sam Kochman": {},
-  "Samantha Santos": {},
-  "Sean Patton": {},
-  "Seaton C. Smith": {},
-  "Shafi Hossain": {},
-  "Sharief Johnson": {},
-  "Shyam Subramanian": {},
-  "Simeon Goodson": {
-   "profile": "rising",
-   "profile_why": "Active performer with growing presence in NYC comedy scene",
-   "taste": "partial",
-   "taste_why": "Known for observational and character-driven humor"
-  },
-  "Sydnee Washington": {},
-  "Talent Harris Jr": {
-   "profile": "rising",
-   "profile_why": "Appearing on club lineups with consistent local momentum",
-   "taste": "partial",
-   "taste_why": "Style is observational and conversational rather than purely roast-heavy"
-  },
+  "Talent Harris Jr": {},
   "Tanner Simon": {},
-  "Tara Cannistraci": {
-   "profile": "rising",
-   "profile_why": "Performing with established names like Chris Distefano",
-   "taste": "partial",
-   "taste_why": "Shares some edgy humor but focuses on personal storytelling"
-  },
+  "Tara Cannistraci": {},
   "Terry Thomas": {},
-  "Terry Thomas Jr.": {
-   "profile": "rising",
-   "profile_why": "Active on the NYC club circuit with multiple bookings",
-   "taste": "partial",
-   "taste_why": "Mixes high-energy delivery with standard club comedy tropes"
-  },
-  "Tocarra Elise": {
-   "profile": "rising",
-   "profile_why": "Building a presence in the New York comedy scene",
-   "taste": "different",
-   "taste_why": "Focuses more on relatable, lighthearted observational humor"
-  },
+  "Terry Thomas Jr.": {},
+  "Tocarra Elise": {},
   "Todd Barry": {
-   "profile": "rising",
-   "profile_why": "Regularly booked at major NYC venues like Comedy Cellar",
-   "taste": "partial",
-   "taste_why": "Features sharp wit but lacks extreme roast aggression"
-  },
-  "Tom Cassidy": {
-   "profile": "rising",
-   "profile_why": "Developing a steady presence in the NYC club circuit",
-   "taste": "different",
-   "taste_why": "Style is more character-driven and narrative-based"
-  },
-  "Tom Thakkar": {
-   "profile": "rising",
-   "profile_why": "Performing with veterans like Mark Normand",
-   "taste": "strong",
-   "taste_why": "Known for a sharper, more aggressive comedic style"
-  },
-  "Tommy Brennan": {},
-  "Tyler Fischer": {
-   "profile": "rising",
-   "profile_why": "Developing comedian with growing presence in the NYC scene",
-   "taste": "partial",
-   "taste_why": "Focuses on observational humor and relatable personal anecdotes"
-  },
-  "Usama Siddiquee": {
    "profile": "known",
-   "profile_why": "Has multiple stand-up specials and a significant social media following",
-   "taste": "strong",
-   "taste_why": "Known for high-energy, aggressive, and confrontational comedic style"
+   "profile_why": "Veteran comic with HBO and Netflix specials, appeared on Louie and Flight of the Conchords",
+   "taste": "partial",
+   "taste_why": "Deadpan, sardonic crowd-aware style; sharp but dry rather than harsh roasting"
   },
+  "Tom Cassidy": {},
+  "Tom Thakkar": {},
+  "Tommy Brennan": {},
+  "Tyler Fischer": {},
+  "Usama Siddiquee": {},
   "Vinny Guadagnino": {
-   "profile": "rising",
-   "profile_why": "Gaining traction in the New York comedy club circuit",
+   "profile": "known",
+   "profile_why": "Jersey Shore cast member who now tours as a stand-up comedian",
    "taste": "partial",
-   "taste_why": "Uses a mix of storytelling and standard observational comedy"
+   "taste_why": "Brash, cocky persona with some self-mocking, but not a roast act"
   },
-  "Wil Sylvince": {
-   "profile": "rising",
-   "profile_why": "Active performer building a reputation in NYC clubs",
-   "taste": "partial",
-   "taste_why": "Delivers a mix of personality-driven and observational humor"
-  },
-  "Will Purpura": {
-   "profile": "rising",
-   "profile_why": "Emerging talent performing in established NYC comedy venues",
-   "taste": "partial",
-   "taste_why": "Style leans toward standard observational and relatable comedy"
-  },
+  "Wil Sylvince": {},
+  "Will Purpura": {},
+  "Will Sylvince": {},
   "Yamaneika Saunders": {
-   "profile": "rising",
-   "profile_why": "Increasingly visible performer in the New York comedy scene",
+   "profile": "known",
+   "profile_why": "Comedian with TV credits including Showtime and Comedy Central appearances",
    "taste": "partial",
-   "taste_why": "Combines personal narrative with sharp observational humor"
+   "taste_why": "Bold, confrontational personality with edgy material, though not primarily roast-based"
   },
-  "Zach Liss": {
-   "profile": "rising",
-   "profile_why": "Developing comedian appearing in curated NYC comedy showcases",
-   "taste": "partial",
-   "taste_why": "Focuses on relatable content and standard stand-up structures"
-  },
-  "Zahid Dewji": {
-   "profile": "rising",
-   "profile_why": "Active performer building a following in the NYC circuit",
-   "taste": "partial",
-   "taste_why": "Uses a blend of observational and personal storytelling"
-  },
-  "Zubi Ahmed": {
-   "profile": "rising",
-   "profile_why": "Newer comedian gaining momentum in the NYC comedy scene",
-   "taste": "partial",
-   "taste_why": "Delivers a mix of observational and character-based humor"
-  }
+  "Zach Liss": {},
+  "Zahid Dewji": {},
+  "Zubi Ahmed": {}
  }
 }
