@@ -176,7 +176,7 @@ def main():
     existing, names = ({}, {}) if args.all else load_existing(args.ratings, taste)
     todo = [entry for entry in comedians if entry["key"] not in existing]
     batches = [todo[start:start + batch_size] for start in range(0, len(todo), batch_size)]
-    print(f"{len(comedians)} comedians, {len(todo)} to rate, {len(batches)} batches, {workers} at once, {args.backend} model {model}")
+    print(f"{len(comedians)} comedians, {len(todo)} to rate in {len(batches)} batches")
 
     def rate_batch(batch):
         """Rate one batch. A call can fail once in a while: try three times, then skip the batch."""
