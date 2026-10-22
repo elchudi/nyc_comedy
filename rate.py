@@ -179,9 +179,9 @@ def main():
     print(f"{len(comedians)} comedians, {len(todo)} to rate, {len(batches)} batches, {workers} at once, {args.backend} model {model}")
 
     def rate_batch(batch):
-        """Rate one batch. A call can fail once in a while: try twice, then skip the batch."""
+        """Rate one batch. A call can fail once in a while: try three times, then skip the batch."""
         label = f"{batch[0]['name']} to {batch[-1]['name']}"
-        for attempt in (1, 2):
+        for attempt in (1, 2, 3):
             try:
                 answer, model_used = ask(make_prompt(batch, taste), model)
                 ratings = parse_answer(answer, batch)
