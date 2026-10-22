@@ -16,6 +16,7 @@ python3 -m unittest discover tests
 ```
 
 For a new taste: edit `taste.txt`, run `rate.py` (a changed taste rates everyone again), then `build.py --render-only`.
+`rate.py --taste X --ratings Y` and `build.py --ratings Y --taste X --out Z` work on other files, for the examples or a second taste side by side.
 
 Needs `requests` and `beautifulsoup4`. `uv run build.py` installs them from the script header.
 `rate.py` needs the `claude` CLI on the PATH and logged in. It calls `claude -p --tools ""` once per batch of 30 names, 6 batches at once. A full run of 270 names takes about 30 seconds with the default `sonnet` model, 70 seconds with `--model opus`. `haiku` is not faster in practice and knows few comedians (19 rated against 54 for sonnet and 70 for opus). A failed call is retried once, then its batch is skipped; the next run picks those names up. Answers vary a little from run to run.
@@ -34,6 +35,11 @@ For the Ollama backend: Ollama is installed without sudo in `~/.local/opt/ollama
 - `tests/test_build.py`: parser, ratings and render tests. They use `tests/fixtures/`, small cuts of real responses.
 - `tests/test_rate.py`: prompt and answer parsing of `rate.py`. No test calls the CLI.
 - `tests/test_filters.py`: browser test of the filters, on a small fixed page.
+- `README.md`: how to use the project, for people who do not change the code. Keep it short.
+- `examples/<name>/`: a finished page per taste: `taste.txt`, `ratings.json`, `index.html`. Rebuild one with
+  `python3 rate.py --all --taste examples/<name>/taste.txt --ratings examples/<name>/ratings.json` then
+  `python3 build.py --render-only --ratings examples/<name>/ratings.json --taste examples/<name>/taste.txt --out examples/<name>/index.html`.
+  They share `data/shows.json`, so they show the week of the last download.
 - `.scratch_pads/` (not in git): saved full responses, `make_fixtures.py`, `wikipedia_check.py`, `filter_check.py` (filters against live data), screenshots.
 
 ## The page

@@ -1,0 +1,496 @@
+{
+ "rated_on": "2026-10-21",
+ "taste": "The deep comedy of Tim Heidecker, Marc Maron, Louis C.K. and Bill Burr.\nThat means dark, personal or confessional material, long rants with a strong point of view, or deadpan absurdism.\nNot into raunchy comedy at all, but not afraid of it: filth or shock never raises a rating.\nAn act that is mostly sex or shock material is a different style, or a partial fit when it also has real depth.",
+ "model": "claude-sonnet-5-5",
+ "note": "Written by rate.py with the claude backend. The model answered from general knowledge; reasons are not verified. An empty entry means the model did not know the name.",
+ "ratings": {
+  "Aaron McCann": {},
+  "Aaron Putnam": {},
+  "Adam Gilbert": {},
+  "Adam Thomas": {},
+  "Adrienne Iapalucci": {
+   "profile": "known",
+   "profile_why": "Has TV credits and specials; regular at Comedy Cellar",
+   "taste": "partial",
+   "taste_why": "Blunt, personal storytelling with edge, often raunchy and brash"
+  },
+  "Alex Babbitt": {},
+  "Alex English": {},
+  "Alex Kumin": {},
+  "Alexis Guerreros": {},
+  "Alingon Mitra": {
+   "profile": "known",
+   "profile_why": "Has TV late-night credits and a comedy special",
+   "taste": "partial",
+   "taste_why": "Observational, personal material about identity and family"
+  },
+  "Aminah Imani": {},
+  "Amos Gill": {},
+  "Andre D Thompson": {},
+  "Andre De Freitas": {},
+  "Andrew Fiori": {},
+  "Andy Haynes": {},
+  "Ashley Austin Morris": {
+   "profile": "known",
+   "profile_why": "Has TV credits and specials; frequent Comedy Cellar performer",
+   "taste": "different",
+   "taste_why": "Brash, high-energy crowd-pleasing style, not confessional or deadpan"
+  },
+  "Big Jay Oakerson": {
+   "profile": "known",
+   "profile_why": "Hosts Legion of Skanks podcast; has comedy specials",
+   "taste": "different",
+   "taste_why": "Raunchy, crude, storytelling-driven club comedy"
+  },
+  "Blake Freeman": {},
+  "Bo Bigelow": {},
+  "Bobby St. Petersburg": {},
+  "Brandon Barrera": {},
+  "Brendan Sagalow": {},
+  "Brian Scolaro": {},
+  "Caitlin Reese": {},
+  "Calise Hawkins": {},
+  "Carmen Lagala": {},
+  "Carmen Lynch": {
+   "profile": "known",
+   "profile_why": "Has TV credits and specials; deadpan, dry delivery",
+   "taste": "strong",
+   "taste_why": "Deadpan, self-deprecating, absurdist observations delivered flatly"
+  },
+  "Carolina Montesquieu": {},
+  "Casey Balsham": {},
+  "Charles McBee": {},
+  "Chloe Hilliard": {},
+  "Chris Brown": {},
+  "Chris Distefano": {
+   "profile": "known",
+   "profile_why": "Podcast Hey Babe and Comedy Central/Netflix credits; headlines clubs",
+   "taste": "different",
+   "taste_why": "Loud, relatable bro-style storytelling rather than confessional depth"
+  },
+  "Chris Lamberth": {},
+  "Chris Miceli": {},
+  "Chris Pattwell": {},
+  "Chris Redd": {
+   "profile": "known",
+   "profile_why": "Former Saturday Night Live cast member and actor",
+   "taste": "different",
+   "taste_why": "Energetic, musical, sketch-influenced performer rather than confessional or ranting"
+  },
+  "Chris Scopo": {},
+  "Chris Turner": {},
+  "Colin Quinn": {
+   "profile": "known",
+   "profile_why": "Former SNL Weekend Update anchor; Comedy Cellar regular; Unconstitutional",
+   "taste": "strong",
+   "taste_why": "Opinionated, rant-driven, cynical comedy with a strong point of view"
+  },
+  "Corey B": {},
+  "Courtney Fearrington": {},
+  "Courtney Maginnis": {},
+  "Dan Ahdoot": {
+   "profile": "known",
+   "profile_why": "Comedian and TV host; co-hosts Fox's Dan Ahdoot's Hot Pot show"
+  },
+  "Dan Davies": {},
+  "Dan Docimo": {},
+  "Dan Naturman": {
+   "profile": "known",
+   "profile_why": "Longtime Comedy Cellar regular with TV appearances",
+   "taste": "partial",
+   "taste_why": "Deadpan, dry observational style with some dark, personal edge"
+  },
+  "Dan St. Germain": {
+   "profile": "known",
+   "profile_why": "Has specials and Comedy Cellar regular; Netflix and Comedy Central credits",
+   "taste": "partial",
+   "taste_why": "Dark, self-deprecating material but more joke-driven than confessional"
+  },
+  "Daniel Simonsen": {
+   "profile": "known",
+   "profile_why": "Norwegian-born comedian with a Comedy Central half-hour and club headlining",
+   "taste": "partial",
+   "taste_why": "Deadpan, self-deprecating style with an absurdist, offbeat streak"
+  },
+  "Danny Hallinan": {},
+  "Danny Rathbun": {},
+  "Daryn Passarello": {},
+  "Dave Temple": {},
+  "Derek Gaines": {},
+  "Dj Collins": {},
+  "Dov Davidoff": {
+   "profile": "known",
+   "profile_why": "Longtime Comedy Cellar regular with TV credits and specials",
+   "taste": "partial",
+   "taste_why": "Edgy, confrontational and personal, though often provocative for effect"
+  },
+  "Drew Lynch": {
+   "profile": "known",
+   "profile_why": "Finalist on America's Got Talent; touring comedian",
+   "taste": "different",
+   "taste_why": "Upbeat, personal-story crowd-pleasing style rather than dark or ranting"
+  },
+  "Ellen Harrold": {},
+  "Emma Willmann": {
+   "profile": "rising",
+   "profile_why": "Frequent New York club performer with growing profile"
+  },
+  "Eric D’Alessandro": {},
+  "Eric Neumann": {},
+  "Erin Maguire": {},
+  "Ethan Simmons-Patterson": {},
+  "Eva Evans": {},
+  "Fabrizio Copano": {
+   "profile": "known",
+   "profile_why": "Chilean comedian with TV and streaming specials"
+  },
+  "Gary Simons": {},
+  "Gary Vider": {},
+  "Gastor Almonte": {
+   "profile": "known",
+   "profile_why": "Dominican-American comedian with Comedy Central and late-night TV credits"
+  },
+  "Geo Perez": {},
+  "Gina Brillon": {
+   "profile": "known",
+   "profile_why": "Bronx comedian with a streaming special and TV appearances"
+  },
+  "Gray West": {},
+  "Greer Barnes": {
+   "profile": "known",
+   "profile_why": "Veteran comedian with Showtime at the Apollo and Def Comedy Jam credits"
+  },
+  "Gregg Rogell": {},
+  "Harrison Greenbaum": {},
+  "Hot Soup": {},
+  "Humzah Azeem": {},
+  "Humzah Choudry": {},
+  "Ian Fidance": {
+   "profile": "known",
+   "profile_why": "British-born New York comedian, Comedy Cellar regular with TV credits"
+  },
+  "Ismael Loutfi": {},
+  "Ja-Ron Young": {},
+  "Jackie Fabulous": {},
+  "Jake Velazquez": {},
+  "Jamell Sirleaf": {},
+  "James Davis": {},
+  "James Mattern": {},
+  "James Patrick": {},
+  "Janet McNamara": {},
+  "Jared Freid": {},
+  "Jared Waters": {},
+  "Jason King": {},
+  "Jatty Robinson": {},
+  "Jay Jurden": {
+   "profile": "known",
+   "profile_why": "Comedian and writer with TV credits and specials; Comedy Cellar regular",
+   "taste": "partial",
+   "taste_why": "Personal, observational storytelling about identity, with a sharp point of view"
+  },
+  "Jaye McBride": {},
+  "JC Mendoza": {},
+  "Jeff Bailey": {},
+  "Jenae Boston": {},
+  "Jenny Tian": {},
+  "Jessica Kirson": {
+   "profile": "known",
+   "profile_why": "Veteran comic with Netflix and Showtime specials and high-energy character work",
+   "taste": "different",
+   "taste_why": "Loud, physical character comedy rather than deadpan or confessional rant"
+  },
+  "Jessica Levin": {},
+  "Jim Norton": {
+   "profile": "star",
+   "profile_why": "Headlining comic with HBO specials, Opie and Anthony alum, hosts Normal Show",
+   "taste": "partial",
+   "taste_why": "Confessional and self-lacerating, though much of the act is raunchy shock"
+  },
+  "Jimmy McCullough": {},
+  "Joey Rinaldi": {},
+  "Jon Fisch": {},
+  "Jon Laster": {},
+  "Jonathan Randall": {},
+  "Jordan Carlos": {
+   "profile": "known",
+   "profile_why": "Comedian and actor, known from Colbert Report appearances and Comedy Central work"
+  },
+  "Josh Ocean Thomas": {},
+  "Jourdain Fisher": {},
+  "Juan Nicolón": {},
+  "Judah Friedlander": {
+   "profile": "known",
+   "profile_why": "Played Frank on 30 Rock; known for the 'World Champion' persona",
+   "taste": "strong",
+   "taste_why": "Deadpan absurdism built on a ridiculous, fully committed character"
+  },
+  "Judy Gold": {
+   "profile": "known",
+   "profile_why": "Veteran comic with HBO special, Emmy-winning writer, creator of 25 Questions for a Jewish Mother",
+   "taste": "partial",
+   "taste_why": "Personal, confessional material about family and identity, delivered with strong opinions"
+  },
+  "Julian McCullough": {
+   "profile": "known",
+   "profile_why": "Comic with Comedy Central credits and Comedy Cellar appearances"
+  },
+  "Julio Diaz": {},
+  "Justin Martindale": {},
+  "Kaneez Surka": {
+   "profile": "known",
+   "profile_why": "Comedian and actor known for character work and Comedy Central credits",
+   "taste": "different",
+   "taste_why": "Character-driven and sketch-influenced rather than confessional or rant-based"
+  },
+  "Karla Watkins": {},
+  "Kate Sisk": {},
+  "Kc Shornima": {},
+  "Keith Alberstadt": {
+   "profile": "known",
+   "profile_why": "Known for celebrity impressions and musical comedy, with TV appearances",
+   "taste": "different",
+   "taste_why": "Impression-based, crowd-pleasing act rather than personal or deadpan material"
+  },
+  "Keith Robinson": {
+   "profile": "known",
+   "profile_why": "Veteran NYC comic with TV and Comedy Cellar regular credits"
+  },
+  "Kerryn Feehan": {},
+  "Kevin Dombrowski": {},
+  "Kevin Israel": {},
+  "Konner Kienzle": {},
+  "Kristal Adams": {},
+  "Kunal C. Arora": {},
+  "LeClerc Andre": {
+   "profile": "known",
+   "profile_why": "Longtime NYC comic with Comedy Central and late-night credits"
+  },
+  "Lenny Marcus": {
+   "profile": "known",
+   "profile_why": "Veteran Comedy Cellar regular and longtime working New York comic"
+  },
+  "Lev Fer": {},
+  "Lisa Marie": {},
+  "Liz Barrett": {},
+  "Liz Glazer": {},
+  "Liza Treyger": {
+   "profile": "known",
+   "profile_why": "Has specials and TV credits; Chicago-born comic, Comedy Central and Netflix appearances",
+   "taste": "partial",
+   "taste_why": "Blunt, personal, sex-heavy material, with some confessional depth"
+  },
+  "Louis CK": {
+   "profile": "star",
+   "profile_why": "Theater headliner with multiple acclaimed specials and Louie on FX",
+   "taste": "strong",
+   "taste_why": "Dark, confessional, personal comedy; a named reference in this taste"
+  },
+  "Lucas Zelnick": {},
+  "Luis J Gomez": {
+   "profile": "known",
+   "profile_why": "Podcaster and comic, co-host of Legion of Skanks and Story Warz",
+   "taste": "different",
+   "taste_why": "Crude, shock-oriented podcast-style comedy"
+  },
+  "Lukas Arnold": {},
+  "Luke Severeid": {},
+  "Lynne Koplitz": {
+   "profile": "known",
+   "profile_why": "Has comedy specials and TV credits, including Chelsea Lately appearances",
+   "taste": "different",
+   "taste_why": "Raunchy, brash storytelling about sex and relationships"
+  },
+  "Maddy Smith": {},
+  "Maggie Crane": {},
+  "Maggie Lalley": {},
+  "Maggie Naughton": {},
+  "Marcus Monroe": {},
+  "Marie Faustin": {},
+  "Mariel O'Reilly": {},
+  "Marina Franklin": {
+   "profile": "known",
+   "profile_why": "Has a Netflix special and Comedy Cellar regular; Louie appearances",
+   "taste": "partial",
+   "taste_why": "Personal, observational storytelling with a sharp point of view"
+  },
+  "Marion Grodin": {},
+  "Mark Gagnon": {},
+  "Mark Normand": {
+   "profile": "known",
+   "profile_why": "Netflix specials, Tires podcast host, frequent late-night guest",
+   "taste": "different",
+   "taste_why": "Quick, joke-dense, irreverent one-liners rather than confessional or rant comedy"
+  },
+  "Matt Koff": {},
+  "Matt Lopes": {},
+  "Matt Richards": {},
+  "Matt Ruby": {},
+  "Matteo lane": {
+   "profile": "known",
+   "profile_why": "HBO special, Netflix credits, toured theaters as a stand-up",
+   "taste": "different",
+   "taste_why": "Flamboyant, character-driven, campy persona comedy rather than confessional rants"
+  },
+  "Matthew Broussard": {},
+  "Meka Mo": {},
+  "Melissa Rauch": {
+   "profile": "known",
+   "profile_why": "Actress in The Big Bang Theory and Night Court"
+  },
+  "Mia Jackson": {
+   "profile": "known",
+   "profile_why": "Netflix special Grown, TV appearances, touring stand-up",
+   "taste": "partial",
+   "taste_why": "Personal, story-driven material about family and relationships with a sharp point of view"
+  },
+  "Michael Fleming": {},
+  "Michael Kosta": {
+   "profile": "known",
+   "profile_why": "Correspondent on The Daily Show, hosts Nice Try, tours as stand-up",
+   "taste": "different",
+   "taste_why": "Polished, crowd-friendly topical comedy rather than dark or confessional material"
+  },
+  "Michael Rowland": {},
+  "Mike Britt": {},
+  "Mike Cannon": {},
+  "Mike Feeney": {},
+  "Mike Figs": {},
+  "Mike Vecchione": {
+   "profile": "known",
+   "profile_why": "Comedy Central and Netflix credits, Gotham Comedy Live appearances, Comedy Cellar regular",
+   "taste": "partial",
+   "taste_why": "Blue-collar, personal storytelling with a strong voice and some self-deprecating edge"
+  },
+  "Mike Yard": {},
+  "Mo Mussa": {},
+  "Molly Kearney": {
+   "profile": "known",
+   "profile_why": "Saturday Night Live cast member, touring stand-up"
+  },
+  "Neko White": {},
+  "Nick Griffin": {
+   "profile": "known",
+   "profile_why": "Longtime Comedy Cellar regular, Letterman and Conan appearances",
+   "taste": "partial",
+   "taste_why": "Sardonic, opinionated New York comic with dark, cynical edges"
+  },
+  "Nick Smith": {},
+  "Nore Davis": {
+   "profile": "known",
+   "profile_why": "Comedy Central special, Netflix and late-night credits",
+   "taste": "partial",
+   "taste_why": "Personal, story-driven material with a distinct voice and dry delivery"
+  },
+  "Onika Mclean": {},
+  "Ontonio Kareem": {},
+  "Ophira Eisenberg": {
+   "profile": "known",
+   "profile_why": "Host of NPR's Ask Me Another, author of Screw Everyone",
+   "taste": "partial",
+   "taste_why": "Confessional, personal storytelling about her life and relationships"
+  },
+  "Orion Levine": {},
+  "Oscar Aydin": {},
+  "Paige Smith-Hogan": {},
+  "Patricia Dinglasan": {},
+  "Peng Dang": {},
+  "Pete Lee": {
+   "profile": "known",
+   "profile_why": "Touring comic with Comedy Central and TV appearances, Comedy Cellar regular",
+   "taste": "different",
+   "taste_why": "Upbeat, crowd-friendly observational and storytelling style, not confessional or dark"
+  },
+  "Peter Revello": {},
+  "Petey DeAbreu": {},
+  "Phil Duckett": {},
+  "Philipp Kostelecky": {},
+  "Rachel Feinstein": {
+   "profile": "known",
+   "profile_why": "Comedy Central special, TV credits, Comedy Cellar regular",
+   "taste": "partial",
+   "taste_why": "Sharp, personal and raunchy; some real depth beneath the shock"
+  },
+  "Ray Ellin": {},
+  "Reggie Conquest": {},
+  "Rich Aronovitch": {},
+  "Richie Redding": {},
+  "Riley Flanagan": {},
+  "Riley Lassin": {},
+  "Robby Slowik": {},
+  "Robert Kelly": {
+   "profile": "known",
+   "profile_why": "Comedy specials, Louie and Crashing appearances, podcast Pardon My French",
+   "taste": "partial",
+   "taste_why": "Loud, personal storytelling about family and life; heavy on raunch"
+  },
+  "Ryan Dacalos": {},
+  "Ryan Hamilton": {
+   "profile": "known",
+   "profile_why": "Multiple specials, late-night sets, Netflix and Comedy Central credits",
+   "taste": "different",
+   "taste_why": "Clean, gentle, whimsical storytelling; opposite of dark or confessional"
+  },
+  "Ryan Reiss": {},
+  "Ryan Rizzuti": {},
+  "Sam Kochman": {},
+  "Samantha Santos": {},
+  "Sean Patton": {
+   "profile": "known",
+   "profile_why": "Specials including Rested, Comedy Central and podcast credits",
+   "taste": "partial",
+   "taste_why": "Chaotic, personal storytelling with some depth; leans loud and shocking"
+  },
+  "Seaton C. Smith": {},
+  "Shafi Hossain": {},
+  "Sharief Johnson": {},
+  "Shyam Subramanian": {},
+  "Simeon Goodson": {},
+  "Sydnee Washington": {
+   "profile": "known",
+   "profile_why": "Comedy Central and late-night credits, Comedy Cellar regular",
+   "taste": "partial",
+   "taste_why": "Personal, confident storytelling with some edge; not mainly dark or confessional"
+  },
+  "Talent Harris Jr": {},
+  "Tanner Simon": {},
+  "Tara Cannistraci": {},
+  "Terry Thomas": {},
+  "Terry Thomas Jr.": {},
+  "Tocarra Elise": {},
+  "Todd Barry": {
+   "profile": "known",
+   "profile_why": "Deadpan veteran with several specials, Louie and Flight of the Conchords credits",
+   "taste": "strong",
+   "taste_why": "Dry deadpan delivery, understated and absurdist-leaning observations"
+  },
+  "Tom Cassidy": {},
+  "Tom Thakkar": {
+   "profile": "rising",
+   "profile_why": "Frequent Comedy Cellar and NYCC lineups, building a following"
+  },
+  "Tommy Brennan": {},
+  "Tyler Fischer": {},
+  "Usama Siddiquee": {
+   "profile": "rising",
+   "profile_why": "New York comedian with Comedy Cellar appearances and growing credits"
+  },
+  "Vinny Guadagnino": {
+   "profile": "known",
+   "profile_why": "Jersey Shore cast member who turned to stand-up touring",
+   "taste": "different",
+   "taste_why": "Brash, reality-TV-persona comedy rather than confessional or deadpan material"
+  },
+  "Wil Sylvince": {},
+  "Will Purpura": {},
+  "Will Sylvince": {},
+  "Yamaneika Saunders": {
+   "profile": "known",
+   "profile_why": "Comedy Central and late-night credits, longtime Comedy Cellar regular",
+   "taste": "partial",
+   "taste_why": "Personal, confessional storytelling with a strong voice, plus some raunchy material"
+  },
+  "Zach Liss": {},
+  "Zahid Dewji": {},
+  "Zubi Ahmed": {}
+ }
+}

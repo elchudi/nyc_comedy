@@ -7,6 +7,8 @@ Usage:
     python3 rate.py --model opus         another claude model (default: sonnet; haiku knows few names)
     python3 rate.py --workers 2          fewer calls at once (default: 6 for claude, 1 for ollama)
     python3 rate.py --backend ollama     use a local model through Ollama (default model: gemma4:12b)
+    python3 rate.py --taste examples/x/taste.txt --ratings examples/x/ratings.json
+                                         rate against another taste file, into another ratings file
 
 Backends: "claude" runs the claude CLI; "ollama" posts to a local Ollama server (http://localhost:11434).
 
@@ -22,6 +24,7 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+from pathlib import Path
 
 import build
 
@@ -95,6 +98,8 @@ def ask_ollama(prompt, model):
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "stream": False,
+        # Gemma 4 thinks by default. The thinking took minutes per batch and left the answer empty.
+        "think": False,
         "format": "json",
         "options": {"temperature": 0, "num_ctx": 8192},
     }
@@ -134,11 +139,11 @@ def parse_answer(answer, entries):
     return ratings
 
 
-def load_existing(taste):
-    """Return (ratings by key, names by key) from ratings.json. A changed taste starts over."""
-    if not build.RATINGS_FILE.exists():
+def load_existing(ratings_file, taste):
+    """Return (ratings by key, names by key) from the ratings file. A changed taste starts over."""
+    if not ratings_file.exists():
         return {}, {}
-    data = json.loads(build.RATINGS_FILE.read_text(encoding="utf-8"))
+    data = json.loads(ratings_file.read_text(encoding="utf-8"))
     if " ".join(data.get("taste", "").split()) != " ".join(taste.split()):
         print("taste.txt changed: every comedian is rated again")
         return {}, {}
@@ -153,6 +158,8 @@ def main():
     parser.add_argument("--backend", choices=BACKENDS, default="claude", help="claude CLI or local Ollama (default: claude)")
     parser.add_argument("--model", help="model name for the backend (default: sonnet for claude, gemma4:12b for ollama)")
     parser.add_argument("--workers", type=int, help="calls at once (default: 6 for claude, 1 for ollama)")
+    parser.add_argument("--taste", type=Path, default=TASTE_FILE, help="taste file (default: taste.txt)")
+    parser.add_argument("--ratings", type=Path, default=build.RATINGS_FILE, help="ratings file to write (default: ratings.json)")
     args = parser.parse_args()
     backend = BACKENDS[args.backend]
     ask = ASK[args.backend]
@@ -160,11 +167,11 @@ def main():
     workers = args.workers or backend["workers"]
     batch_size = backend["batch"]
 
-    taste = TASTE_FILE.read_text(encoding="utf-8").strip()
+    taste = args.taste.read_text(encoding="utf-8").strip()
     snapshot = json.loads(build.DATA_FILE.read_text(encoding="utf-8"))
     comedians = build.group_by_comedian([show for show in snapshot["shows"] if show["comedians"]])
 
-    existing, names = ({}, {}) if args.all else load_existing(taste)
+    existing, names = ({}, {}) if args.all else load_existing(args.ratings, taste)
     todo = [entry for entry in comedians if entry["key"] not in existing]
     batches = [todo[start:start + batch_size] for start in range(0, len(todo), batch_size)]
     print(f"{len(comedians)} comedians, {len(todo)} to rate, {len(batches)} batches, {workers} at once, {args.backend} model {model}")
@@ -201,8 +208,8 @@ def main():
                 "reasons are not verified. An empty entry means the model did not know the name.",
         "ratings": {names[key]: existing[key] for key in sorted(existing, key=lambda key: names[key].casefold())},
     }
-    build.RATINGS_FILE.write_text(json.dumps(output, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {build.RATINGS_FILE}")
+    args.ratings.write_text(json.dumps(output, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"Wrote {args.ratings}")
 
 
 if __name__ == "__main__":

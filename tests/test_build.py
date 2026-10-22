@@ -173,10 +173,7 @@ class LoadRatingsTest(unittest.TestCase):
     """Uses tests/fixtures/ratings.json. load_ratings() exits on an unknown tier or a missing reason."""
 
     def setUp(self):
-        self.real_file = build.RATINGS_FILE
-        build.RATINGS_FILE = FIXTURES / "ratings.json"
-        self.addCleanup(setattr, build, "RATINGS_FILE", self.real_file)
-        self.loaded = build.load_ratings()
+        self.loaded = build.load_ratings(FIXTURES / "ratings.json", FIXTURES / "no-such-taste.txt")
 
     def test_keys_ratings_like_group_by_comedian(self):
         self.assertEqual(self.loaded["ratings"]["luis j gomez"]["profile"], "known")
@@ -191,8 +188,7 @@ class LoadRatingsTest(unittest.TestCase):
         self.assertEqual(self.loaded["ratings"]["tanner simon"], {})
 
     def test_without_a_file_nothing_is_rated(self):
-        build.RATINGS_FILE = FIXTURES / "no-such-file.json"
-        loaded = build.load_ratings()
+        loaded = build.load_ratings(FIXTURES / "no-such-file.json", FIXTURES / "no-such-taste.txt")
         self.assertEqual(loaded["ratings"], {})
         self.assertIsNone(loaded["rated_on"])
 

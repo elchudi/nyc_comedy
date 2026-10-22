@@ -9,6 +9,8 @@ Usage:
     python3 build.py                 fetch lineups, write data/shows.json and index.html
     python3 build.py --nights 14     look further ahead (default: 7 nights)
     python3 build.py --render-only   rebuild index.html from data/shows.json, no network
+    python3 build.py --render-only --ratings examples/x/ratings.json --taste examples/x/taste.txt --out examples/x/index.html
+                                     render another ratings file to another page (see examples/)
 
 A show is a dict:
     venue      "The Stand"
@@ -321,31 +323,31 @@ def group_by_comedian(shows):
     return sorted(comedians.values(), key=lambda entry: entry["key"])
 
 
-def load_ratings():
-    """Read ratings.json, written by rate.py. Return it with the ratings keyed by comedian key.
+def load_ratings(ratings_file=RATINGS_FILE, taste_file=TASTE_FILE):
+    """Read a ratings file written by rate.py. Return it with the ratings keyed by comedian key.
 
     Before the first rate.py run there is no file: the page then shows every comedian as not rated.
     """
-    if not RATINGS_FILE.exists():
-        taste = TASTE_FILE.read_text(encoding="utf-8").strip() if TASTE_FILE.exists() else ""
+    if not ratings_file.exists():
+        taste = taste_file.read_text(encoding="utf-8").strip() if taste_file.exists() else ""
         return {"rated_on": None, "taste": taste, "model": "", "stale": False, "ratings": {}}
-    data = json.loads(RATINGS_FILE.read_text(encoding="utf-8"))
+    data = json.loads(ratings_file.read_text(encoding="utf-8"))
     ratings = {}
     for name, rating in data["ratings"].items():
         for kind, tiers in SCALES.items():
             if kind not in rating:
                 continue
             if rating[kind] not in tiers:
-                sys.exit(f"{RATINGS_FILE.name}: {name} has unknown {kind} tier {rating[kind]!r}")
+                sys.exit(f"{ratings_file.name}: {name} has unknown {kind} tier {rating[kind]!r}")
             if not rating.get(f"{kind}_why"):
-                sys.exit(f"{RATINGS_FILE.name}: {name} has a {kind} rating without {kind}_why")
+                sys.exit(f"{ratings_file.name}: {name} has a {kind} rating without {kind}_why")
         # Use the same key as group_by_comedian, so a rating under either billing matches.
         ratings[name_key(ALIASES.get(name_key(name), name))] = rating
     # ratings.json keeps the taste it was rated against. A different taste.txt means rate.py has not run yet.
-    current = TASTE_FILE.read_text(encoding="utf-8").strip() if TASTE_FILE.exists() else data["taste"]
+    current = taste_file.read_text(encoding="utf-8").strip() if taste_file.exists() else data["taste"]
     stale = " ".join(current.split()) != " ".join(data["taste"].split())
     if stale:
-        print(f"Warning: taste.txt changed since {RATINGS_FILE.name} was made. Run rate.py, then build.py --render-only.")
+        print(f"Warning: {taste_file.name} changed since {ratings_file.name} was made. Run rate.py, then build.py --render-only.")
     return {"rated_on": data["rated_on"], "taste": data["taste"], "model": data.get("model", ""), "stale": stale, "ratings": ratings}
 
 
@@ -651,9 +653,12 @@ def main():
     parser = argparse.ArgumentParser(description="Build index.html, a table of comedians playing in NYC.")
     parser.add_argument("--nights", type=int, default=7, help="number of nights to cover, from tonight (default: 7)")
     parser.add_argument("--render-only", action="store_true", help="rebuild index.html from data/shows.json, no network")
+    parser.add_argument("--ratings", type=Path, default=RATINGS_FILE, help="ratings file to show (default: ratings.json)")
+    parser.add_argument("--taste", type=Path, default=TASTE_FILE, help="taste file the ratings should match (default: taste.txt)")
+    parser.add_argument("--out", type=Path, default=OUTPUT_FILE, help="page to write (default: index.html)")
     args = parser.parse_args()
 
-    ratings = load_ratings()
+    ratings = load_ratings(args.ratings, args.taste)
     if args.render_only:
         snapshot = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     else:
@@ -662,8 +667,8 @@ def main():
         DATA_FILE.write_text(json.dumps(snapshot, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"Wrote {DATA_FILE}")
 
-    OUTPUT_FILE.write_text(render(snapshot, ratings), encoding="utf-8")
-    print(f"Wrote {OUTPUT_FILE}")
+    args.out.write_text(render(snapshot, ratings), encoding="utf-8")
+    print(f"Wrote {args.out}")
 
 
 if __name__ == "__main__":

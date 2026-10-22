@@ -64,6 +64,7 @@ class AskOllamaTest(unittest.TestCase):
         body = post.call_args.kwargs["json"]
         self.assertEqual(body["model"], "gemma4:12b")
         self.assertEqual(body["format"], "json")
+        self.assertIs(body["think"], False)
         self.assertEqual(body["messages"][0]["content"], "the prompt")
 
     def test_says_how_to_start_the_server_when_it_is_down(self):
