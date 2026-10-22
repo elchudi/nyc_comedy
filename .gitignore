@@ -1,2 +1,4 @@
 .scratch_pads/
 __pycache__/
+*.swp
+*.bak
